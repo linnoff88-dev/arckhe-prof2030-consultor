@@ -1,0 +1,127 @@
+{
+  "slug": "valor-viabilidade",
+  "num": 3,
+  "menu": "Prioridade",
+  "titulo": "Valor × viabilidade (e quando NÃO usar IA)",
+  "titulo_curto": "Valor × viabilidade",
+  "minutos": 18,
+  "lead": "A descoberta sempre traz mais ideias do que a empresa consegue tocar. Se você não escolher, o dono escolhe pela mais vistosa. A matriz de valor e viabilidade põe as oportunidades lado a lado, e o teste do \"quando não usar IA\" tira da lista o que uma regra simples resolve melhor.",
+  "objetivo": "priorizar oportunidades numa matriz de valor × viabilidade e descartar as que não precisam de IA, com o motivo escrito.",
+  "competencias": ["priorizar-oportunidades-de-ia", "estimar-valor-em-reais", "avaliar-viabilidade", "decidir-quando-nao-usar-ia"],
+  "aprende": [
+    {"t": "Calcular o valor de uma oportunidade em reais por ano"},
+    {"t": "Medir a viabilidade: dados, integração, tolerância a erro e dono"},
+    {"t": "Os quatro quadrantes e o que fazer em cada um"},
+    {"t": "Os três sinais de que a IA não é a resposta"}
+  ],
+  "hero_alt": "Mão colando um bilhete adesivo numa parede de vidro dividida em quatro quadrantes.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A escada da solução mais simples",
+      "sub": "Antes da matriz, cada oportunidade passa por esta escada. Clique em cada degrau.",
+      "estilo": "escada",
+      "nos": [
+        {"icone": "x", "titulo": "Deixar de fazer", "sub": "o ganho mais barato",
+         "detalhe": "Relatório que ninguém lê, aprovação que só carimba, planilha duplicada. Antes de automatizar, pergunte se a etapa precisa existir."},
+        {"icone": "fila", "titulo": "Regra fixa", "sub": "automação sem IA",
+         "detalhe": "Se a decisão cabe num \"se acontecer X, faça Y\", use automação comum (planilha, n8n, o próprio sistema). Mais barata, mais previsível e fácil de auditar."},
+        {"icone": "chip", "titulo": "IA num passo", "sub": "fluxo com um modelo", "forte": true,
+         "detalhe": "O modelo de linguagem entra num passo só: classificar a mensagem, extrair dados de um PDF, rascunhar a resposta. O resto do fluxo é fixo e uma pessoa confere a saída.",
+         "itens": [{"t": "classificar", "icone": "lista"}, {"t": "extrair", "icone": "arquivo"}, {"t": "rascunhar", "icone": "caneta"}]},
+        {"icone": "robo", "titulo": "Agente", "sub": "caminho que muda a cada vez",
+         "detalhe": "Só quando a tarefa tem vários passos que não dá para prever, usa ferramentas e precisa decidir no caminho. Custa mais para construir, operar e supervisionar."}
+      ],
+      "legenda": "Regra: use o degrau mais baixo que resolve. Suba só com o motivo escrito.",
+      "dica": "Pergunta-teste para subir de degrau: \"o que acontece quando ele errar, e quem percebe?\""
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do catálogo à decisão",
+      "sub": "Quatro passos. A matriz preenchida não é o entregável: a decisão é.",
+      "passos": [
+        {"titulo": "Valor em reais", "sub": "frequência × custo × dias",
+         "texto": ["Valor anual ≈ ocorrências por dia × custo de cada ocorrência × dias úteis. O custo inclui tempo de gente (minutos × custo da hora), retrabalho e venda perdida.", "Valor que não vira número (reputação, risco) entra como alto, médio ou baixo, mas não substitui a conta."],
+         "exemplo": {"rot": "Horizonte, simulação", "texto": "60 orçamentos por dia × 12 min de vendedor a R$ 40/h (R$ 8) × 250 dias ≈ R$ 120 mil por ano só em tempo."}},
+        {"titulo": "Viabilidade", "sub": "quatro perguntas",
+         "texto": ["Os dados existem e estão acessíveis? A integração é simples ou exige sistema antigo sem API? Um erro é tolerável, ou causa dano financeiro ou legal? Existe um dono interno que vai usar e cuidar?", "Cada \"não\" baixa a viabilidade. Integração com sistema antigo e mudança de hábito da equipe são os custos que mais escondem."],
+         "exemplo": {"rot": "Desconfie quando ouvir", "texto": "\"Os dados já estão prontos\" e \"a integração leva uma semana\"."}},
+        {"titulo": "Os quatro quadrantes", "sub": "onde cada uma cai",
+         "texto": ["<b>Fazer já</b> (valor alto, viável): piloto em 30 dias. <b>Planejar</b> (valor alto, difícil): preparar dados ou processo antes. <b>Se sobrar tempo</b> (valor baixo, fácil). <b>Descartar</b> (valor baixo, difícil), com o motivo escrito.", "Escolha uma, no máximo duas, para o piloto."],
+         "exemplo": {"rot": "Bom primeiro projeto", "texto": "Mensurável em 30 dias, visível para quem aprova, com dados acessíveis e pouca mudança de rotina."}},
+        {"titulo": "Quando NÃO usar IA", "sub": "três sinais",
+         "texto": ["Volume baixo (poucas ocorrências por mês não pagam a construção). Regra fixa (cabe num \"se X, então Y\"). Erro caro sem revisão humana (dinheiro, contrato, saúde): aí a IA só ajuda, nunca decide.", "Um sinal basta para descer a escada. Registre o motivo: é o que protege o cliente da próxima moda."],
+         "exemplo": {"rot": "Teste rápido", "texto": "\"Se isto errar 1 vez em 20, o estrago é tolerável?\" Se não, IA só com uma pessoa aprovando."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: matriz valor × viabilidade",
+      "sub": "Cole numa planilha. Notas de 1 a 5; o motivo vai sempre por escrito.",
+      "blocos": [
+        {"rot": "Catálogo + matriz (planilha)", "icone": "lista",
+         "conteudo": "| # | Oportunidade | Etapa do processo | Degrau (deixar/regra/IA num passo/agente) | Valor R$/ano (conta) | Valor 1-5 | Dados 1-5 | Integração 1-5 | Tolerância a erro 1-5 | Dono interno 1-5 | Viabilidade (média) | Quadrante | Motivo |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| 1 | <ex.: rascunho de orçamento> | <vendas> | <IA num passo> | <60/dia × R$ 8 × 250> | <4> | <3> | <3> | <4> | <5> | <3,75> | <Fazer já> | <dados na planilha de preços> |\n\nQuadrante: Valor >= 3 e Viabilidade >= 3 -> Fazer já | Valor >= 3 e Viab < 3 -> Planejar\n           Valor < 3 e Viab >= 3 -> Se sobrar tempo | Valor < 3 e Viab < 3 -> Descartar"},
+        {"rot": "Checklist: precisa de IA?", "icone": "check",
+         "conteudo": "[ ] A tarefa envolve linguagem, imagem ou documento sem formato fixo?\n[ ] O volume paga a construção em até 12 meses?\n[ ] Existem dados de qualidade para o modelo usar?\n[ ] Um erro é tolerável OU uma pessoa revisa antes de valer?\n[ ] Não existe ferramenta pronta que já resolve?\n[ ] Alguém na empresa vai manter isso funcionando?\nMaioria \"não\" -> fica no degrau de baixo (regra fixa ou deixar de fazer)."},
+        {"rot": "Registro da decisão (uma linha por oportunidade)", "icone": "caneta",
+         "conteudo": "<oportunidade> | degrau escolhido: <...> | por que não o de baixo: <...> | por que não o de cima: <...> | revisar se: <ex.: erro acima de 10% ou custo acima de R$ X/mês>"}
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {"rot": "Horizonte: 6 oportunidades", "html": "<ol><li><b>Rascunho de orçamento a partir do WhatsApp</b> · IA num passo · valor 4, viab. 3,8 → <b>Fazer já</b>.</li><li><b>Lembrete de boleto vencido</b> · regra fixa · valor 3, viab. 5 → Fazer já, <b>sem IA</b>.</li><li><b>Resumo de atendimento</b> · IA num passo · valor 3, viab. 2 (dado indo para fora sem contrato) → <b>Planejar</b>.</li><li><b>Agente que vende sozinho</b> · agente · valor 4, viab. 1,5 → <b>Planejar</b> (depois do piloto 1).</li><li><b>Relatório semanal de visitas</b> · ninguém lê → <b>deixar de fazer</b>.</li><li><b>Previsão de demanda</b> · valor 2, viab. 2 (histórico bagunçado) → <b>Descartar agora</b>.</li></ol>"},
+          {"rot": "Erros comuns", "html": "<ul><li><b>Valor com 100% de adoção no primeiro dia</b>: corte o ganho do primeiro ano.</li><li><b>Escolher pelo \"uau\"</b>: o agente vendedor encanta, mas depende de preço, estoque e regras que ainda não estão organizados.</li><li><b>Descartar sem motivo</b>: daqui a três meses a ideia volta e você não lembra por que saiu.</li></ul>"}
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: priorizar a Horizonte",
+      "sub": "Use o que você levantou na aula 2.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Catálogo de 6 oportunidades", "min": "25 min",
+         "texto": "Liste 6 oportunidades da Horizonte, cada uma ligada a uma etapa do processo. Para cada uma, escolha o degrau da escada e faça a conta de valor em reais por ano (pode usar números simulados, marcados como simulação).",
+         "pronto": "as 6 linhas têm etapa, degrau e uma conta de valor que outra pessoa consegue refazer."},
+        {"id": "e2", "titulo": "E2 · Matriz e decisão", "min": "25 min",
+         "texto": "Dê as notas de viabilidade, ponha cada oportunidade num quadrante e escreva o registro da decisão das duas primeiras.",
+         "pronto": "a matriz tem as 6 oportunidades, pelo menos uma marcada \"sem IA\" ou \"deixar de fazer\" e o motivo de cada descarte escrito."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "\"Pedido acima de R$ 500 tem frete grátis.\" Qual degrau?",
+         "opcoes": ["Agente.", "IA num passo.", "Regra fixa, sem IA.", "Deixar de fazer."],
+         "certa": 2, "explica": "Cabe num \"se X, então Y\". Modelo de linguagem aqui só acrescenta custo e imprevisibilidade.", "ref": "diagrama", "cert": true},
+        {"p": "Uma oportunidade tem valor alto, mas os dados estão espalhados em três planilhas. Quadrante?",
+         "opcoes": ["Fazer já.", "Planejar: arrumar os dados antes.", "Descartar.", "Se sobrar tempo."],
+         "certa": 1, "explica": "Valor alto e viabilidade baixa: vale a pena, mas não agora. O primeiro trabalho é arrumar os dados, e isso também é consultoria.", "ref": "passos"},
+        {"p": "Qual destes é um sinal de que NÃO é caso de IA?",
+         "opcoes": ["A tarefa usa texto livre.", "O erro causaria dano financeiro e ninguém revisa a saída.", "O volume é alto.", "Existe um dono interno."],
+         "certa": 1, "explica": "Erro caro sem revisão humana é sinal para descer a escada ou pôr uma pessoa aprovando. Os outros itens são a favor da IA.", "ref": "passos"},
+        {"p": "Qual é o entregável da reunião de priorização?",
+         "opcoes": ["A matriz colorida.", "A decisão tomada, com o motivo de cada escolha e descarte.", "A lista de ferramentas.", "O preço do projeto."],
+         "certa": 1, "explica": "A matriz é o meio. O dono precisa sair com uma decisão: o que vai para o piloto, o que espera e o que foi descartado, e por quê.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Degrau mais baixo", "texto": "Deixar de fazer, regra fixa, IA num passo, agente. Suba só com motivo escrito."},
+        {"t": "Valor com conta", "texto": "Frequência × custo × dias úteis. Desconfie de adoção de 100% no primeiro dia."},
+        {"t": "Decisão, não planilha", "texto": "Uma ou duas para o piloto; descartes com motivo."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Empresa-laboratório: Horizonte Distribuidora", "href": "https://inematds.github.io/prof2030-lab/", "icone": "pasta"},
+        {"t": "Base comum: o mapa de 2027 (o que a IA faz bem e onde erra)", "href": "https://inematds.github.io/prof2030-base/", "icone": "camadas"}
+      ]
+    }
+  ]
+}

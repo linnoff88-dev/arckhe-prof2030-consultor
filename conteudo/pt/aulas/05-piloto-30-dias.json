@@ -1,0 +1,281 @@
+{
+  "slug": "piloto-30-dias",
+  "num": 5,
+  "menu": "Piloto",
+  "titulo": "Piloto de 30 dias com agente",
+  "titulo_curto": "Piloto de 30 dias",
+  "minutos": 18,
+  "lead": "Piloto não é versão pequena do projeto: é um experimento com pergunta, prazo e regra de saída. Quando o critério de sucesso e o de parar são combinados antes de começar, ninguém discute depois se deu certo. E se a ferramenta sair de linha no meio do caminho, o plano já diz como trocar.",
+  "objetivo": "desenhar um piloto de 30 dias em uma página, com métrica, limites do agente, critério de parar e plano de saída.",
+  "competencias": [
+    "desenhar-piloto-reversivel",
+    "definir-criterio-de-parar",
+    "planejar-saida-de-fornecedor"
+  ],
+  "aprende": [
+    {
+      "t": "A pergunta que o piloto responde e o menor experimento possível"
+    },
+    {
+      "t": "As quatro semanas: preparar, ensaiar, rodar com aprovação, decidir"
+    },
+    {
+      "t": "Critério de sucesso, critério de parar e quem desliga"
+    },
+    {
+      "t": "Plano de saída quando a ferramenta sai de linha"
+    }
+  ],
+  "hero_alt": "Calendário de mesa com alguns dias marcados, uma muda de planta e um cronômetro analógico.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "As quatro semanas do piloto",
+      "sub": "Cada semana tem uma entrega. Clique em cada uma.",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Semana 1",
+          "sub": "preparar",
+          "detalhe": "Linha de base congelada (o número de antes), 5 a 10 casos reais escritos com o dono, regras e limites do agente aprovados, permissões mínimas configuradas. Nada fala com cliente ainda."
+        },
+        {
+          "icone": "check",
+          "titulo": "Semana 2",
+          "sub": "ensaiar",
+          "detalhe": "O agente roda nos casos de teste, por dentro. Uma pessoa confere cada saída. Se errar o que não pode errar (preço, desconto, dado de cliente), volta para a semana 1."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Semana 3",
+          "sub": "rodar com aprovação",
+          "forte": true,
+          "detalhe": "Com clientes reais, mas toda ação que vale dinheiro passa por uma pessoa antes. Tudo fica registrado: o que o agente propôs, quem aprovou, o que mudou.",
+          "itens": [
+            {
+              "t": "registro de cada ação",
+              "icone": "arquivo"
+            },
+            {
+              "t": "aprovação humana",
+              "icone": "usuario"
+            },
+            {
+              "t": "teto de desconto",
+              "icone": "cadeado"
+            }
+          ]
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Semana 4",
+          "sub": "decidir",
+          "detalhe": "Comparar com a linha de base e responder: seguir, ajustar ou parar. Parar também é resultado: você economizou o projeto grande."
+        }
+      ],
+      "volta": "Ajustar = voltar à semana 1 com uma mudança só",
+      "legenda": "Uma equipe, um processo, uma métrica principal. Piloto que mexe em quatro áreas não ensina nada.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Pequeno, medido e reversível",
+        "texto": "Prepara, ensaia por dentro, roda com aprovação e decide contra a linha de base. Se algo grave acontece, desliga na hora e volta ao processo manual."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que não pode faltar",
+      "sub": "Quatro peças do plano de uma página.",
+      "passos": [
+        {
+          "titulo": "A pergunta",
+          "sub": "e o menor teste",
+          "texto": [
+            "\"Um agente que rascunha o orçamento reduz o tempo de resposta sem aumentar o erro de preço?\" Uma pergunta só, com número.",
+            "Corte o escopo até caber em 30 dias: uma categoria de produto, um vendedor, um canal. Integração manual é aceitável no piloto."
+          ],
+          "exemplo": {
+            "rot": "Escopo da Horizonte",
+            "texto": "Só pedidos de reposição de clientes antigos, só no WhatsApp da Patrícia, por 30 dias."
+          }
+        },
+        {
+          "titulo": "Limites do agente",
+          "sub": "o que ele não pode fazer",
+          "texto": [
+            "Escreva o que o agente pode, o que só com aprovação e o que nunca. Desconto com teto, pedido acima de um valor com aprovação, sem apagar e sem enviar nada fora do fluxo.",
+            "Todas as ações registradas. Isso é o que o Auditor vai cobrar depois."
+          ],
+          "exemplo": {
+            "rot": "Lembrete do laboratório",
+            "texto": "As falhas F5 (desconto sem teto) e F7 (sem registro e sem aprovação acima de R$ 5 mil) são exatamente o que o plano deve impedir."
+          }
+        },
+        {
+          "titulo": "Critério de parar",
+          "sub": "combinado antes",
+          "texto": [
+            "Para na hora se cair uma proteção: erro de preço, desconto acima do teto, reclamação de cliente, dado pessoal exposto. Não se decide por \"está ganhando\" na primeira semana: amostra pequena engana.",
+            "Quem desliga tem nome, não cargo, e prazo para voltar ao manual (ex.: 2 horas)."
+          ],
+          "exemplo": {
+            "rot": "Regra de amostra",
+            "texto": "Com menos de 30 casos no período, o resultado é \"amostra insuficiente\", não vitória."
+          }
+        },
+        {
+          "titulo": "Plano de saída",
+          "sub": "a ferramenta muda",
+          "texto": [
+            "Ferramentas de agente saem de linha. A OpenAI anunciou em 03/06/2026 que o Agent Builder será desligado em 30/11/2026, com migração para o Agents SDK ou para os Workspace Agents do ChatGPT.",
+            "Por isso as instruções, os casos de teste e os dados ficam em arquivos do cliente, fora da ferramenta."
+          ],
+          "exemplo": {
+            "rot": "Cláusula do plano",
+            "texto": "\"Se a ferramenta anunciar desativação, migramos em até 15 dias usando as instruções e os casos de teste guardados.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: plano de piloto de uma página",
+      "sub": "Preencha com o dono antes de começar. Assinado, vira o contrato do experimento.",
+      "blocos": [
+        {
+          "rot": "Plano de piloto (1 página)",
+          "icone": "arquivo",
+          "conteudo": "PILOTO · <empresa> · <processo> · <data de início> a <data de fim (30 dias)>\n\n1. PERGUNTA: <a mudança X melhora Y sem piorar Z?>\n2. ESCOPO: <1 equipe>, <1 canal>, <1 tipo de caso>. Fora do piloto: <...>\n3. LINHA DE BASE (medida em <data>, por <quem>, de <onde vem o número>):\n   métrica principal: <valor hoje>   meta: <valor> em 30 dias\n   proteções (não pode piorar): <erro de preço>, <reclamações>, <desconto médio>\n4. FERRAMENTA E FORNECEDOR: <qual>, custo teto do mês: R$ <...>\n   dados que entram: <...>  dados que NÃO entram: <CPF, ...>\n5. LIMITES DO AGENTE:\n   pode: <ler pedidos, rascunhar resposta>\n   só com aprovação de <nome>: <enviar orçamento, pedido acima de R$ ...>\n   nunca: <dar desconto acima de X%, apagar, enviar fora do fluxo>\n   registro: toda ação com data, proposta, quem aprovou\n6. SEMANAS: S1 preparar | S2 ensaiar por dentro | S3 rodar com aprovação | S4 decidir\n7. CRITÉRIO DE SUCESSO: <métrica principal atinge X com N >= 30 casos e nenhuma proteção piora>\n8. CRITÉRIO DE PARAR (na hora): <erro de preço>, <desconto acima do teto>, <reclamação>, <dado exposto>\n   quem desliga: <nome>   volta ao manual em: <2 horas>\n9. PLANO DE SAÍDA: instruções, casos de teste e dados guardados em <pasta do cliente>;\n   se a ferramenta anunciar desativação, migrar em <15 dias>.\n10. DECISÃO NO DIA 30: [seguir] [ajustar e repetir] [parar]   assinam: <dono> e <consultor>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte: piloto do orçamento",
+            "html": "<p><b>Pergunta:</b> o rascunho de orçamento pelo agente reduz o tempo entre a mensagem e o orçamento enviado, sem aumentar o erro de preço?</p><p><b>Linha de base:</b> 50 pedidos medidos por Patrícia Lima: mediana de 3 h 40 min; 4 orçamentos com preço errado em 50.</p><p><b>Meta:</b> mediana abaixo de 1 hora, com erro de preço igual ou menor.</p><p><b>Limites:</b> desconto máximo de 5%; orçamento acima de R$ 5 mil só com aprovação de Patrícia; registro de todas as ações.</p><p><b>Parar:</b> qualquer orçamento enviado com desconto acima de 5% ou reclamação de preço. Quem desliga: Rafael (TI), em até 2 h.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Sem linha de base</b>: no dia 30 vira opinião contra opinião.</li><li><b>Escopo grande</b>: quatro áreas ao mesmo tempo e nenhuma conclusão.</li><li><b>Critério de parar depois do problema</b>: aí já é tarde.</li><li><b>Tudo dentro da ferramenta</b>: se ela sair de linha, você recomeça do zero.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o plano de piloto da Horizonte",
+      "sub": "Escolha a oportunidade \"Fazer já\" da aula 3 com melhor custo por tarefa na aula 4.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Plano de uma página",
+          "min": "40 min",
+          "texto": "Preencha os 10 blocos do modelo para a Horizonte. Use os limites que evitam as falhas F5 e F7 do laboratório.",
+          "pronto": "o plano cabe numa página e tem linha de base com data, meta, pelo menos 2 proteções, critério de parar com nome de quem desliga e plano de saída."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Teste do pessimista",
+          "min": "15 min",
+          "texto": "Peça a uma IA ou a um colega para ler o plano como um diretor desconfiado e listar 5 jeitos de o piloto dar errado. Ajuste o plano para cada um.",
+          "pronto": "cada um dos 5 riscos tem uma linha no plano (limite, proteção ou critério de parar) que trata dele."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Na primeira semana com clientes, o agente parece ótimo em 12 casos. O que fazer?",
+          "opcoes": [
+            "Declarar sucesso e expandir.",
+            "Continuar: com menos de 30 casos, o resultado ainda é amostra insuficiente.",
+            "Parar o piloto.",
+            "Trocar de modelo."
+          ],
+          "certa": 1,
+          "explica": "Amostra pequena engana para os dois lados. Só se para cedo quando uma proteção cai, nunca porque \"está ganhando\".",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Quando o critério de parar deve ser escrito?",
+          "opcoes": [
+            "Depois do primeiro problema.",
+            "No dia 30.",
+            "Antes de começar, no plano assinado.",
+            "Nunca: o consultor decide na hora."
+          ],
+          "certa": 2,
+          "explica": "Combinado antes, o critério tira a decisão do calor do momento e evita discussão depois.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Por que guardar instruções e casos de teste fora da ferramenta de agente?",
+          "opcoes": [
+            "Para economizar espaço.",
+            "Porque ferramentas saem de linha, como o Agent Builder, previsto para desligar em 30/11/2026.",
+            "Porque a LGPD exige.",
+            "Porque o agente esquece."
+          ],
+          "certa": 1,
+          "explica": "Com o material em arquivos do cliente, a troca de ferramenta leva dias. Dentro dela, você recomeça do zero.",
+          "ref": "passos"
+        },
+        {
+          "p": "O que a semana 3 tem que a semana 2 não tem?",
+          "opcoes": [
+            "Clientes reais, com aprovação humana nas ações que valem dinheiro.",
+            "Mais modelos.",
+            "Nenhuma pessoa conferindo.",
+            "A decisão final."
+          ],
+          "certa": 0,
+          "explica": "A semana 2 ensaia por dentro; a 3 encontra o cliente, mas com uma pessoa aprovando e tudo registrado.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "Uma pergunta, 30 dias",
+          "texto": "Uma equipe, um processo, uma métrica principal e proteções que não podem piorar."
+        },
+        {
+          "t": "Parar é combinado antes",
+          "texto": "Proteção caiu, desliga. Quem desliga tem nome e prazo."
+        },
+        {
+          "t": "Saída planejada",
+          "texto": "Instruções, testes e dados fora da ferramenta; ferramenta de agente sai de linha."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fontes e para ir além",
+      "links": [
+        {
+          "t": "OpenAI: desativações (Agent Builder anunciado em 03/06/2026, desligamento em 30/11/2026)",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "relogio"
+        },
+        {
+          "t": "Empresa-laboratório: falhas do agente de WhatsApp",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Laboratório Horizonte: Agente de WhatsApp (F5–F7)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

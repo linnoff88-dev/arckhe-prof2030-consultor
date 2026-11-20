@@ -1,0 +1,128 @@
+{
+  "slug": "construtor-consultor",
+  "num": 1,
+  "menu": "Posição",
+  "titulo": "De construtor a consultor",
+  "titulo_curto": "Construtor → consultor",
+  "minutos": 15,
+  "lead": "Quando todo mundo consegue construir um agente, construir vira leilão de preço. O dono continua sem saber por onde começar, o que vale automatizar, onde está o risco e se funcionou. É isso que o consultor entrega: clareza antes da construção e prova depois dela.",
+  "objetivo": "explicar por que o diagnóstico vale mais que o agente e escrever a sua frase de posicionamento como consultor de IA.",
+  "competencias": ["posicionar-consultoria-de-ia", "separar-diagnostico-de-construcao", "declarar-escopo-e-limites"],
+  "aprende": [
+    {"t": "Por que construir ficou barato e confiar ficou caro"},
+    {"t": "As quatro caixas de um diagnóstico: pessoa, agente, automação simples, deixa de existir"},
+    {"t": "O que o consultor entrega e o que ele não é"},
+    {"t": "Escrever a sua frase de posicionamento em duas linhas"}
+  ],
+  "hero_alt": "Bancada com ferramentas afastadas e, em primeiro plano, uma prancheta com checklist e caneta.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O que o dono compra de verdade",
+      "sub": "O agente é a última peça. Clique em cada bloco.",
+      "nos": [
+        {"icone": "usuario", "titulo": "O pedido", "sub": "\"Quero um agente\"",
+         "detalhe": "O dono chega com uma ferramenta na cabeça, quase sempre vista num vídeo ou no concorrente. O pedido é o ponto de partida da conversa, não a especificação do trabalho."},
+        {"icone": "lupa", "titulo": "Diagnóstico", "sub": "onde está o gargalo", "forte": true,
+         "detalhe": "Achar o processo que trava o resultado, medir quanto ele custa hoje (a linha de base) e separar o trabalho nas quatro caixas: fica com a pessoa, vai para um agente, continua automação simples ou deixa de existir.",
+         "itens": [{"t": "fica com a pessoa", "icone": "usuario"}, {"t": "vai para um agente", "icone": "robo"}, {"t": "automação simples", "icone": "fila"}, {"t": "deixa de existir", "icone": "x"}]},
+        {"icone": "alvo", "titulo": "Prioridade", "sub": "o que primeiro",
+         "detalhe": "Das oportunidades encontradas, escolher uma ou duas que dão valor rápido e são viáveis com os dados e a equipe que a empresa já tem. Dizer também o que NÃO fazer."},
+        {"icone": "calendario", "titulo": "Piloto", "sub": "pequeno e reversível",
+         "detalhe": "Testar em 30 dias, com uma equipe, uma métrica e um critério de parar combinado antes. Se não der certo, desliga sem prejuízo."},
+        {"icone": "grafico", "titulo": "Valor medido", "sub": "antes × depois",
+         "detalhe": "Comparar com a linha de base em 30, 60 e 90 dias. É aqui que o consultor vira parceiro de longo prazo: o modelo muda, o processo muda, alguém precisa conferir se continua valendo."}
+      ],
+      "volta": "O que você mediu no fim vira a linha de base do próximo ciclo",
+      "legenda": "O construtor entra no último degrau. O consultor responde pelos cinco.",
+      "rolagem": true,
+      "rolagem_fim": {"titulo": "A cadeia inteira", "texto": "Pedido, diagnóstico, prioridade, piloto e valor medido. Sem o diagnóstico, o agente resolve o problema errado; sem a medição, ninguém sabe se ele ajudou."}
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que muda para quem trabalha com IA",
+      "sub": "Quatro ideias que sustentam a formação.",
+      "passos": [
+        {"titulo": "Construir ficou barato", "sub": "o preço cai a cada geração",
+         "texto": ["Os modelos ficam mais baratos e mais capazes a cada poucos meses. Em setembro de 2026, o Claude Opus 5.5 chegou custando 40% menos que o Opus 5 em uso típico, segundo a Anthropic.", "Quem só vende \"eu construo o seu agente\" disputa preço com uma assinatura que o cliente também pode contratar."],
+         "exemplo": {"rot": "Consequência", "texto": "O valor sai de \"saber fazer\" e vai para saber o que fazer, onde está o risco e se funcionou."}},
+        {"titulo": "Adotar ainda é raro", "sub": "muito interesse, pouco agente em uso",
+         "texto": ["Numa pesquisa de 2026 do Gartner com executivos de tecnologia, só 17% das organizações já tinham agentes de IA em uso, e mais de 60% esperavam ter em dois anos.", "Entre o interesse e o uso real há um buraco: escolher o processo, preparar dados, testar pequeno e medir."],
+         "exemplo": {"rot": "Onde você entra", "texto": "No buraco entre \"queremos IA\" e \"sabemos que a IA ajudou\"."}},
+        {"titulo": "As quatro caixas", "sub": "o coração do diagnóstico",
+         "texto": ["Todo processo que você mapear sai dividido em quatro: o que fica com a pessoa (julgamento, relação), o que vai para um agente (caminho que muda a cada vez), o que vira automação simples (regra fixa) e o que deveria deixar de existir.", "A quarta caixa costuma dar o ganho mais barato."],
+         "exemplo": {"rot": "Exemplo na Horizonte", "texto": "Lembrete de boleto vencido: automação simples. Responder dúvida de produto no WhatsApp: agente com limites. Aprovar desconto acima da tabela: pessoa. Relatório que ninguém lê: deixa de existir."}},
+        {"titulo": "O que você não é", "sub": "escopo escrito",
+         "texto": ["Consultor de IA não é auditor de segurança, advogado nem programador de sistema legado. Quando o caso pede parecer jurídico, teste de invasão ou integração pesada, você chama quem é habilitado.", "A certificação INEMA desta formação é de qualificação, não de profissão regulada. Diga isso ao cliente."],
+         "exemplo": {"rot": "Frase pronta", "texto": "\"Eu faço o diagnóstico, a prioridade e a medição. Para LGPD formal e segurança, trago um especialista.\""}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos: posicionamento e cartão de escopo",
+      "sub": "Copie, troque o que está entre < > e leia em voz alta.",
+      "blocos": [
+        {"rot": "Frase de posicionamento (2 linhas)", "icone": "caneta",
+         "conteudo": "Eu ajudo <tipo de empresa> a <resultado em número ou decisão>\ncomeçando por um diagnóstico de <prazo>.\nEu não <o que você não faz: vendo ferramenta antes do diagnóstico,\nprogramo sistemas legados, dou parecer jurídico>."},
+        {"rot": "Cartão de escopo (5 linhas)", "icone": "lista",
+         "conteudo": "FAÇO: descoberta, diagnóstico, prioridade, plano de piloto, medição 30/60/90.\nNÃO FAÇO: parecer jurídico, teste de invasão, integração com sistema legado.\nCHAMO UM ESPECIALISTA QUANDO: <dado sensível em escala, contrato, segurança>.\nMEU RESULTADO É MEDIDO POR: <indicador do cliente contra a linha de base>.\nMINHA CERTIFICAÇÃO: qualificação INEMA (não é profissão regulada)."},
+        {"rot": "Prompt: teste de estresse da frase", "icone": "chat",
+         "conteudo": "Você é o dono de uma distribuidora com 40 funcionários, cético com IA.\nLeia a minha frase de posicionamento abaixo e:\n1) diga em uma linha o que você entendeu que eu vendo;\n2) faça as 3 perguntas mais duras que você faria antes de me contratar;\n3) aponte qualquer palavra de jargão ou promessa que você não acredita.\nNão elogie.\n\nFrase: <cole aqui>"}
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {"rot": "Exemplo preenchido", "html": "<p><b>Eu ajudo</b> distribuidoras e atacados de até 100 pessoas <b>a</b> reduzir o tempo de resposta ao cliente sem aumentar a equipe, <b>começando por</b> um diagnóstico de duas semanas.</p><p><b>Eu não</b> vendo ferramenta antes do diagnóstico nem programo o sistema de gestão da empresa.</p>"},
+          {"rot": "Erros comuns", "html": "<ul><li><b>Citar ferramenta</b> (\"especialista em agentes no WhatsApp\"): a ferramenta troca a cada trimestre; o problema do cliente fica.</li><li><b>Prometer número</b> (\"aumento suas vendas em 30%\"): você ainda não mediu nada.</li><li><b>Segunda linha vazia</b>: quem não diz o que não faz parece que faz tudo.</li></ul>"}
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a sua posição",
+      "sub": "Dois exercícios curtos. Faça antes de seguir para a aula 2.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Frase de posicionamento", "min": "15 min",
+         "texto": "Preencha o modelo de duas linhas. Rode o prompt de teste de estresse e reescreva até ele não achar jargão nem promessa.",
+         "pronto": "a frase tem duas linhas, não cita nenhuma ferramenta e a segunda linha diz o que você não faz."},
+        {"id": "e2", "titulo": "E2 · Cartão de escopo", "min": "10 min",
+         "texto": "Preencha o cartão de cinco linhas e mostre a frase e o cartão a duas pessoas que não trabalham com IA.",
+         "pronto": "as duas pessoas conseguem repetir, com as palavras delas, o que você faz e o que não faz."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "Por que \"eu construo o seu agente\" é uma posição frágil?",
+         "opcoes": ["Porque agentes não funcionam em PME.", "Porque construir ficou barato e o cliente compara com o preço de uma assinatura.", "Porque é ilegal construir agentes sem certificação.", "Porque o cliente não quer agentes."],
+         "certa": 1, "explica": "Agentes funcionam, mas construir virou commodity. O que continua escasso é saber qual processo mexer, o risco e se funcionou. O erro comum é achar que o problema é técnico.", "ref": "passos", "cert": true},
+        {"p": "Na Horizonte, o lembrete automático de boleto vencido cai em qual caixa?",
+         "opcoes": ["Fica com a pessoa.", "Vai para um agente.", "Automação simples.", "Deixa de existir."],
+         "certa": 2, "explica": "É regra fixa: venceu, manda o lembrete. Não precisa de modelo de linguagem. Pôr um agente aqui é pagar mais por algo menos previsível.", "ref": "diagrama"},
+        {"p": "O cliente pede um parecer sobre se o uso de dados está de acordo com a LGPD. O que você faz?",
+         "opcoes": ["Dá o parecer, porque conhece a lei.", "Recusa o cliente.", "Faz o diagnóstico e chama um advogado para o parecer formal.", "Pede ao agente para escrever o parecer."],
+         "certa": 2, "explica": "Você aponta o risco no diagnóstico, mas o parecer jurídico é de quem é habilitado. Isso está no seu cartão de escopo.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Construir é a última peça", "texto": "O dono compra clareza: por onde começar, o que vale, onde está o risco e se funcionou."},
+        {"t": "Quatro caixas", "texto": "Pessoa, agente, automação simples e deixa de existir. A última costuma ser o ganho mais barato."},
+        {"t": "Escopo escrito", "texto": "Diga o que você não faz e quando chama um especialista."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fontes e para ir além",
+      "links": [
+        {"t": "Anthropic: Claude Opus 5.5 (22/09/2026), preço e custo por tarefa", "href": "https://www.anthropic.com/claude-opus-5-5", "icone": "arquivo"},
+        {"t": "Gartner: Hype Cycle for Agentic AI, 17% com agentes em uso (cópia no Internet Archive)", "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai", "icone": "grafico"},
+        {"t": "Profissional 2030: a base comum e as quatro formações", "href": "https://inematds.github.io/profissional-2030/", "icone": "camadas"}
+      ]
+    }
+  ]
+}

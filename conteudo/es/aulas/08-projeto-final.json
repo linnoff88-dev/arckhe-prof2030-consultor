@@ -1,0 +1,305 @@
+{
+  "slug": "projeto-final",
+  "num": 8,
+  "menu": "Proyecto final",
+  "titulo": "Proyecto final: el diagnóstico de Horizonte + Lo que cambió",
+  "titulo_curto": "Proyecto final",
+  "minutos": 20,
+  "lead": "Ahora juntas todo: el diagnóstico completo y el plan de adopción de Horizonte Distribuidora, en una página para Carlos y anexos para quien quiera revisarlos. La rúbrica dice lo que tiene que estar ahí. Al final, el panel de lo que cambió en el mercado este trimestre, para que tu cuenta no envejezca.",
+  "objetivo": "entregar el diagnóstico completo y el plan de adopción de Horizonte, aprobados por la rúbrica, y actualizar la cuenta con lo que cambió en el trimestre.",
+  "competencias": [
+    "entregar-diagnostico-completo",
+    "escrever-plano-de-adocao",
+    "comunicar-para-diretoria",
+    "atualizar-premissas-de-mercado"
+  ],
+  "aprende": [
+    {
+      "t": "La estructura del informe: una página y seis anexos"
+    },
+    {
+      "t": "Cómo la rúbrica evalúa tu diagnóstico"
+    },
+    {
+      "t": "Corregir las fallas F11 y F12 del laboratorio dentro del plan"
+    },
+    {
+      "t": "Qué cambió en el mercado en octubre de 2026"
+    }
+  ],
+  "hero_alt": "Consultora con una tableta y el dueño de la distribuidora caminando entre pallets y estanterías, él señalando una mesa de trabajo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Lo que entregas",
+      "sub": "Una página al frente, seis anexos atrás. Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Descubrimiento",
+          "sub": "anexo 1",
+          "detalhe": "Guion aplicado (clase 2) e inventario de IA en uso: las herramientas que los empleados usan sin que TI lo sepa (falla F12), con el dato que entra y el riesgo."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Prioridades",
+          "sub": "anexo 2",
+          "detalhe": "Matriz valor × viabilidad con 6 oportunidades, la escalera de la solución más simple y el motivo de cada descarte (clase 3)."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Costo y proveedor",
+          "sub": "anexo 3",
+          "detalhe": "Tabla de costo por tarea para 2 procesos en 4 rangos, con fecha y enlace de cada precio, y las 5 preguntas de riesgo del proveedor (clase 4)."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Informe de 1 página",
+          "sub": "para Carlos",
+          "forte": true,
+          "detalhe": "Situación en palabras del dueño, el cuello de botella con número, UNA recomendación, qué no hacer ahora, el plan de 90 días, la inversión y los límites de tu trabajo. Se lee en 2 minutos.",
+          "itens": [
+            {
+              "t": "una recomendación",
+              "icone": "check"
+            },
+            {
+              "t": "qué no hacer",
+              "icone": "x"
+            },
+            {
+              "t": "plan de 90 días",
+              "icone": "calendario"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Piloto y panel",
+          "sub": "anexos 4 y 5",
+          "detalhe": "Plan de piloto de 1 página con criterio de parada (clase 5) y panel 30/60/90 con línea de base, que corrige el panel actual sin \"antes\" (falla F11, clase 6)."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Propuesta",
+          "sub": "anexo 6",
+          "detalhe": "Propuesta de una página con exclusiones, obligaciones del cliente, criterio de aceptación y precio por paquete (clase 7)."
+        }
+      ],
+      "legenda": "El informe responde \"¿qué hago el lunes?\". Los anexos responden \"¿cómo llegaste a esto?\".",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Diagnóstico + plan de adopción",
+        "texto": "Descubrimiento, prioridades, costo, piloto, panel y propuesta, resumidos en una página que el dueño lee en dos minutos."
+      }
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos: informe de una página y rúbrica",
+      "sub": "Escribe el informe al final, después de los anexos. Evalúalo con la rúbrica antes de entregarlo.",
+      "blocos": [
+        {
+          "rot": "Informe de una página (dirección)",
+          "icone": "arquivo",
+          "conteudo": "DIAGNÓSTICO DE IA · Horizonte Distribuidora · <fecha> · <tu nombre>\n\n1. SITUACIÓN (palabras de Carlos, 3-5 frases, con 1 cita literal)\n2. EL CUELLO DE BOTELLA: <etapa> cuesta <R$/año u horas/semana> (línea de base: <valor>, medida el <fecha>)\n3. LO QUE YA FUNCIONA SIN CONTROL: <n> herramientas de IA en uso; <n> con datos de clientes -> acción: <...>\n4. RECOMENDACIÓN (una sola): <oportunidad> en el nivel <regla / IA en un paso / agente>\n   porque: <valor> y <viabilidad>   costo por tarea estimado: R$ <...> (precios del <fecha>)\n5. QUÉ NO HACER AHORA: <oportunidad> - <motivo> | <oportunidad> - <motivo>\n6. PLAN DE 90 DÍAS:\n   días 1-30 piloto (criterio de parada: <...>) | día 30 decide | 31-60 estabiliza | 61-90 mide el ROI\n7. CÓMO SABREMOS SI FUNCIONÓ: <resultado>, <operación>, <protección> contra la línea de base\n8. INVERSIÓN: diagnóstico R$ <...> (hecho) | piloto R$ <...> | acompañamiento R$ <...>/mes\n9. LÍMITES: no incluye dictamen legal ni prueba de seguridad; los riesgos de datos pasan a <Auditor/abogado>\n10. DECISIÓN QUE SE PIDE: aprobar el piloto hasta el <fecha>"
+        },
+        {
+          "rot": "Rúbrica (100 puntos, aprobado con 70 y ningún cero)",
+          "icone": "check",
+          "conteudo": "| Criterio | 0 | 5 | 10 |\n|---|---|---|---|\n| Línea de base del cuello de botella | ausente | estimación del cliente | medida, con fecha y quién la midió |\n| Inventario de IA en uso (F12) | ausente | lista sin riesgo | herramienta + dato + cuenta + riesgo + acción |\n| Matriz valor x viabilidad | ausente | sin cuentas | 6 ítems, cuentas rehacibles, descartes con motivo |\n| Cuándo NO usar IA | nada descartado | descarte sin motivo | >= 1 ítem resuelto sin IA, con motivo |\n| Costo por tarea | ausente | solo precio de token | 4 rangos + revisión humana + fecha y enlace del precio |\n| Riesgo del proveedor | ausente | genérico | 5 preguntas respondidas para el ganador |\n| Plan de piloto | ausente | sin criterio de parada | 1 página, parada con nombre y plazo, plan de salida |\n| Panel 30/60/90 (corrige F11) | ausente | sin protección | resultado + operación + protección, con antes |\n| Propuesta | ausente | sin exclusiones | exclusiones, obligaciones, aceptación sí/no, precio fijo |\n| Informe para el dueño | ausente | jerga o 3 recomendaciones | 1 página, 1 recomendación, sin jerga, límites dichos |"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Proyecto final",
+      "sub": "Reúne lo que hiciste en las clases 2 a 7. Donde falte, hazlo ahora.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Los seis anexos",
+          "min": "60 min",
+          "texto": "Reúne y revisa los anexos: descubrimiento + inventario (F12), matriz, costo por tarea, plan de piloto, panel 30/60/90 (corrigiendo la F11) y propuesta.",
+          "pronto": "los 6 anexos existen y cada número tiene origen escrito (medido, del laboratorio o simulación)."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · El informe de una página",
+          "min": "40 min",
+          "texto": "Escribe el informe para Carlos Mendes. Léelo en voz alta y corta lo que no cambia su decisión.",
+          "pronto": "el informe cabe en una página, tiene una única recomendación, qué no hacer ahora y la decisión que se pide con fecha."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Autoevaluación con la rúbrica",
+          "min": "20 min",
+          "texto": "Puntúa tu trabajo con la rúbrica. Para cada criterio por debajo de 10, corrígelo o escribe por qué no fue posible.",
+          "pronto": "la suma es 70 o más y ningún criterio tiene cero. Después, compara con la plantilla de respuestas del laboratorio."
+        }
+      ],
+      "fonte": "Laboratorio y plantilla de respuestas: <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">inematds.github.io/prof2030-lab</a> (la plantilla de respuestas está en una página aparte, con aviso de spoiler)."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba final",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuántas recomendaciones debe tener el informe de una página?",
+          "opcoes": [
+            "Todas las que encontraste.",
+            "Tres, para que el dueño elija.",
+            "Una, con lo que no se debe hacer ahora al lado.",
+            "Ninguna: solo el diagnóstico."
+          ],
+          "certa": 2,
+          "explica": "Tres recomendaciones que compiten le devuelven la decisión difícil al dueño. Una recomendación, con el motivo y con lo que queda fuera, es lo que él compra.",
+          "ref": "codigo",
+          "cert": true
+        },
+        {
+          "p": "¿Cómo corrige tu plan la falla F11 (panel sin línea de base)?",
+          "opcoes": [
+            "Cambiando el gráfico.",
+            "Midiendo el valor de antes y armando resultado, operación y protección con la misma vara.",
+            "Contando más mensajes.",
+            "Apagando el agente."
+          ],
+          "certa": 1,
+          "explica": "Sin el número de antes no hay comparación. El panel 30/60/90 trae la línea de base e indicadores que muestran resultado, no solo movimiento.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Un nuevo modelo salió más barato en el trimestre. ¿Qué cambia en tu método?",
+          "opcoes": [
+            "Todo: rehacer el curso.",
+            "Nada en el método; rehaces la tabla de costo por tarea con el precio nuevo, con fecha y enlace.",
+            "Cambiar de modelo de inmediato.",
+            "Ignorarlo hasta el próximo año."
+          ],
+          "certa": 1,
+          "explica": "El método se queda; la premisa cambia. Por eso el panel \"Qué cambió\" es trimestral y cada precio tiene fecha."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen de la formación",
+      "itens": [
+        {
+          "t": "Diagnóstico antes del agente",
+          "texto": "Descubrimiento con número, inventario de lo que ya funciona y prioridad con motivo."
+        },
+        {
+          "t": "Cuenta y riesgo",
+          "texto": "Costo por tarea con revisión humana; el proveedor pasa por las preguntas de riesgo."
+        },
+        {
+          "t": "Piloto, medición, propuesta",
+          "texto": "30 días con criterio de parada, panel 30/60/90 contra la línea de base y propuesta de una página con exclusiones."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Qué cambió (oct/2026)",
+      "sub": "Panel actualizado cada trimestre. Los hechos cambian; el método de las clases 1 a 7 continúa.",
+      "itens": [
+        {
+          "t": "22/09/2026 · Opus 5.5 más barato",
+          "texto": "Anthropic lanzó Claude Opus 5.5 a US$ 4/20 por millón de tokens, cerca de 40% más barato que Opus 5 por tarea típica. Rehaz la tabla de costo de la clase 4. <a href=\"https://www.anthropic.com/claude-opus-5-5\">anthropic.com</a>"
+        },
+        {
+          "t": "28/09/2026 · Sonnet 5.5, mismo precio",
+          "texto": "Sonnet 5.5 mantuvo US$ 2/10 y, según Anthropic, gasta menos tokens por tarea: el costo por tarea baja incluso sin cambiar la tabla de precios. <a href=\"https://www.anthropic.com/news/claude-sonnet-5-5\">anthropic.com</a>"
+        },
+        {
+          "t": "21/09/2026 · Grok 4.7 en la franja intermedia",
+          "texto": "xAI lanzó Grok 4.7 a US$ 2/6. Un proveedor más en la franja del medio: compáralo por la tarea y pásalo por las preguntas de riesgo. <a href=\"https://docs.x.ai/developers/grok-4-7\">docs.x.ai</a>"
+        },
+        {
+          "t": "08/2026 · Modelo abierto que corre local",
+          "texto": "Qwen3.8-27B, de Alibaba, salió abierto (licencia Apache 2.0) y corre en un computador potente, con cerca de 17 GB en la versión de 4 bits. La franja \"abierto local\" se volvió viable para una pyme con datos sensibles. <a href=\"https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model\">thenextweb.com</a>"
+        },
+        {
+          "t": "30/11/2026 · Agent Builder sale de línea",
+          "texto": "OpenAI anunció el 03/06/2026 el apagado de Agent Builder el 30/11/2026, con migración al Agents SDK o a Workspace Agents. Es el caso para el plan de salida del piloto. <a href=\"https://platform.openai.com/docs/deprecations\">platform.openai.com</a>"
+        },
+        {
+          "t": "25/09/2026 · Proveedor en disputa con el gobierno",
+          "texto": "Un tribunal de apelación de EE. UU. mantuvo la etiqueta de \"riesgo de cadena de suministro\" que el Pentágono le dio a Anthropic. La estabilidad del proveedor entra en las preguntas de riesgo. <a href=\"https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html\">cnbc.com</a>"
+        },
+        {
+          "t": "2026 · Los agentes aún son minoría",
+          "texto": "Encuesta de Gartner: solo 17% de las organizaciones tienen agentes de IA en uso, y la IA agéntica está en el pico del hype. El diagnóstico y la medición siguen marcando la diferencia. <a href=\"https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai\">gartner.com (Internet Archive)</a>"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Próximos pasos en Profesional 2030",
+      "links": [
+        {
+          "t": "Empresa-laboratorio y plantilla de respuestas",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Auditor de IA: el triaje de riesgo que complementa el diagnóstico",
+          "href": "https://inematds.github.io/prof2030-auditor/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Profesional 2030: certificación INEMA (detalles próximamente)",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Fuente: Anthropic, Claude Opus 5.5 (22/09/2026)",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: Anthropic, Claude Sonnet 5.5 (28/09/2026)",
+          "href": "https://www.anthropic.com/news/claude-sonnet-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: xAI, Grok 4.7 (21/09/2026)",
+          "href": "https://docs.x.ai/developers/grok-4-7",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: The Next Web, Qwen3.8-27B (19/08/2026)",
+          "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: OpenAI, desactivación del Agent Builder (30/11/2026)",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: CNBC, Pentágono × Anthropic (25/09/2026)",
+          "href": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Fuente: Gartner, Hype Cycle for Agentic AI (Internet Archive)",
+          "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Laboratorio Horizonte: Panel de indicadores (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "lupa"
+        },
+        {
+          "t": "Laboratorio Horizonte: Inventario e IA en la sombra (F12)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

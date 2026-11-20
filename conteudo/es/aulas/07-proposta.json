@@ -1,0 +1,348 @@
+{
+  "slug": "proposta",
+  "num": 7,
+  "menu": "Propuesta",
+  "titulo": "Propuesta, alcance y precio",
+  "titulo_curto": "Propuesta y precio",
+  "minutos": 18,
+  "lead": "La mayoría de las peleas con el cliente nacen de un alcance mal escrito, no de un trabajo mal hecho. Una propuesta de una página, con el número de hoy, lo que entra, lo que NO entra y el criterio de aceptación, protege a ambas partes. El precio sale del método, nunca de la improvisación en medio de la conversación.",
+  "objetivo": "escribir una propuesta de una página con línea de base, exclusiones, obligaciones del cliente, criterio de aceptación y precio por paquete.",
+  "competencias": [
+    "escrever-proposta-de-uma-pagina",
+    "definir-exclusoes-e-aceite",
+    "precificar-por-pacote",
+    "segurar-escopo"
+  ],
+  "aprende": [
+    {
+      "t": "Los bloques de la propuesta de una página"
+    },
+    {
+      "t": "Exclusiones, obligaciones del cliente y criterio de aceptación"
+    },
+    {
+      "t": "Tres formas de cobrar: por hora, por paquete y por valor"
+    },
+    {
+      "t": "Mantener el alcance cuando el cliente pide \"solo una cosa más\""
+    }
+  ],
+  "hero_alt": "Una sola hoja impresa sobre la mesa de madera, con pluma estilográfica y línea de firma, y un apretón de manos desenfocado al fondo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de ofertas",
+      "sub": "Cada nivel es un paquete con plazo, entrega y precio propios. Haz clic en cada uno.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Diagnóstico",
+          "sub": "2 a 3 semanas",
+          "detalhe": "Descubrimiento, inventario de IA en uso, matriz de prioridades, costo por tarea e informe de una página. Precio fijo. Un diagnóstico gratis le enseña al cliente que el diagnóstico no vale nada."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Piloto",
+          "sub": "30 días",
+          "forte": true,
+          "detalhe": "Un proceso, un equipo, una métrica, con el plan de una página de la clase 5. Precio fijo, con criterio de aceptación y de parada escritos."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Implementación",
+          "sub": "por oleadas",
+          "detalhe": "Ampliar lo que el piloto comprobó, un equipo a la vez. Cada oleada es una propuesta nueva, con su línea de base."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Acompañamiento",
+          "sub": "mensual",
+          "detalhe": "Revisiones de 30/60/90 días, panel, ajustes cuando cambia el modelo o la herramienta. Es el contrato que no termina con la entrega."
+        }
+      ],
+      "legenda": "Cada nivel solo se vende después de que el anterior entregó. El cliente puede detenerse en cualquiera.",
+      "dica": "Quien se salta el diagnóstico y vende directo la implementación asume el riesgo de construir lo equivocado."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo cobrar y qué escribir",
+      "sub": "Cuatro decisiones de la propuesta.",
+      "passos": [
+        {
+          "titulo": "Por hora, por paquete o por valor",
+          "sub": "la lógica del precio",
+          "texto": [
+            "<b>Por hora</b> castiga la eficiencia: con IA haces en 4 horas lo que antes tomaba 10, y ganas menos. <b>Por paquete</b> (precio fijo por entrega) es el estándar: horas estimadas × tu tarifa, más un margen para imprevistos, contrastado con el valor que gana el cliente.",
+            "<b>Por valor</b> (parte de la ganancia) solo existe con una línea de base medida y acceso al número."
+          ],
+          "exemplo": {
+            "rot": "Prueba del precio",
+            "texto": "¿El precio es bastante menor que la ganancia anual medida? Si no, reduce el alcance, no la calidad."
+          }
+        },
+        {
+          "titulo": "Lo que NO está incluido",
+          "sub": "la línea que evita la pelea",
+          "texto": [
+            "Escribe lo que queda fuera: integración con el sistema de gestión, costo de API y licencias (se trasladan al costo), dictamen jurídico, prueba de intrusión, nuevos casos de uso.",
+            "Un pedido nuevo a mitad de camino se convierte en una propuesta aparte, con precio propio."
+          ],
+          "exemplo": {
+            "rot": "Frase lista",
+            "texto": "\"Excelente idea. Entra en la cola de la próxima etapa, con propuesta propia, para no atrasar esta.\""
+          }
+        },
+        {
+          "titulo": "Obligaciones del cliente",
+          "sub": "sin ellas no hay plazo",
+          "texto": [
+            "Acceso a los datos y a las pantallas, una persona con poder de decisión disponible unas horas por semana, validaciones en el plazo acordado y un patrocinador en la dirección.",
+            "Si el cliente no cumple, el plazo se corre junto. Eso está escrito."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Patrícia Lima mide la línea de base; Rafael libera los accesos; Carlos Mendes aprueba las fases."
+          }
+        },
+        {
+          "titulo": "Criterio de aceptación",
+          "sub": "objetivo y binario",
+          "texto": [
+            "La aceptación dice cuándo el trabajo está entregado: objetivo, sí o no, acordado de antemano. \"Informe entregado con las 6 secciones y presentado a la dirección\" es aceptación. \"Cliente satisfecho\" no lo es.",
+            "Nunca prometas el resultado del negocio (\"+30% en ventas\"): promete el método, la medición y la entrega."
+          ],
+          "exemplo": {
+            "rot": "Aceptación del piloto",
+            "texto": "\"Piloto ejecutado durante 30 días, panel con antes y después y decisión registrada.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: propuesta de una página",
+      "sub": "Complétala después del descubrimiento. Los valores entre < > son tuyos: aquí no hay precio de mercado.",
+      "blocos": [
+        {
+          "rot": "Propuesta (1 página)",
+          "icone": "arquivo",
+          "conteudo": "PROPUESTA · <empresa> · <fecha> · válida hasta <fecha>\n\n1. LO QUE ESCUCHAMOS: <el dolor en las palabras del cliente, 2 líneas>\n2. LÍNEA DE BASE: <indicador> = <valor> (medido el <fecha>, por <quién>, <cómo>)\n   Objetivo: <indicador> de <valor> a <valor> en <plazo>, sin empeorar <protección>\n3. LO QUE VAMOS A ENTREGAR (paquete <Diagnóstico | Piloto | Onda N | Acompañamiento>):\n   - <entrega 1>  - <entrega 2>  - <entrega 3>\n4. LO QUE NO ESTÁ INCLUIDO:\n   - integración con <sistema>   - costos de API/licencias (pagados por el cliente, al costo)\n   - dictamen jurídico y prueba de seguridad (indicamos a un especialista)\n   - nuevos casos de uso (propuesta aparte)\n5. OBLIGACIONES DEL CLIENTE: acceso a <datos/pantallas> hasta <fecha>; <nombre> disponible <N> h/semana;\n   validaciones en hasta <N> días hábiles; patrocinador: <nombre>\n6. PLAZO Y FASES: <semana 1-2: ...> <semana 3-4: ...>\n7. CRITERIO DE ACEPTACIÓN: <objetivo, sí/no>\n8. RIESGOS: <lo que puede no funcionar> | a lo que la empresa renuncia: <...>\n9. INVERSIÓN: R$ <valor> (<paquete, precio fijo>), pago <ej.: 50% al inicio, 50% en la aceptación>\n10. PRÓXIMO PASO: <tarea del cliente> hasta <fecha>; próxima conversación: <fecha>"
+        },
+        {
+          "rot": "Cálculo del precio del paquete",
+          "icone": "grafico",
+          "conteudo": "Horas estimadas por entrega ............ <h>\nTu tarifa por hora (piso) ............... R$ <tarifa>\nPiso del paquete = h x tarifa ........... R$ <...>\n+ margen de imprevistos (regla de bolsillo 15-20%) R$ <...>\n= Precio propuesto ...................... R$ <...>\nVerificación: precio < ganancia anual medida/estimada del cliente? [sí/no]\nSi no: reducir alcance (menos entregas), nunca la calidad."
+        }
+      ]
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Conversación simulada: Carlos quiere \"solo una cosa más\"",
+      "sub": "Simulación para entrenar el alcance. Elige la respuesta que darías.",
+      "personagem": {
+        "nome": "Carlos Mendes",
+        "papel": "dueño de Horizonte · leyendo la propuesta del piloto"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Me gustó la propuesta. Pero ya que vas a tocar el WhatsApp, ¿incluyes también el agente que cierra el pedido solo, al mismo precio?",
+          "opcoes": [
+            {
+              "t": "Está bien, lo incluyo para cerrar rápido.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "Duplicaste el alcance sin cambiar plazo ni precio, y el agente que cierra solo tiene riesgos (descuento, aprobación) que el piloto aún no probó."
+            },
+            {
+              "t": "Entra como próxima etapa, con propuesta propia. Primero probamos el borrador de presupuesto; si funciona, el cierre viene con datos.",
+              "vai": "garantia",
+              "nota": 2,
+              "comenta": "Alcance protegido sin cerrar la puerta. La idea se vuelve la próxima onda, con línea de base."
+            },
+            {
+              "t": "Eso no se puede, es otro proyecto.",
+              "vai": "garantia",
+              "nota": 1,
+              "comenta": "Correcto en el contenido, seco en la forma. Muestra el camino: cuándo y cómo entra la idea."
+            }
+          ]
+        },
+        "garantia": {
+          "cliente": "Bueno. ¿Y me garantizas al menos 30% más de ventas?",
+          "opcoes": [
+            {
+              "t": "Te lo garantizo, la IA siempre aumenta las ventas.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "Una promesa que no controlas y que el panel puede desmentir el día 90. La credibilidad no vuelve."
+            },
+            {
+              "t": "No garantizo ventas. Garantizo el método: medir el tiempo de respuesta, el error de precio y los pedidos cerrados contra el número de hoy, y parar si empeora.",
+              "vai": "preco",
+              "nota": 2,
+              "comenta": "Prometes lo que controlas: método, medición y criterio de parada. Es lo que dice el criterio de aceptación."
+            },
+            {
+              "t": "Depende de muchas cosas.",
+              "vai": "preco",
+              "nota": 1,
+              "comenta": "Es verdad, pero vago. Di lo que garantizas, en vez de solo lo que no garantizas."
+            }
+          ]
+        },
+        "preco": {
+          "cliente": "¿Y si pagamos por hora? Así solo pago lo que uses.",
+          "opcoes": [
+            {
+              "t": "Prefiero precio fijo por entrega: con IA lo hago más rápido, y tú conoces el costo total antes de empezar.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "El paquete da previsibilidad al cliente y no castiga tu eficiencia."
+            },
+            {
+              "t": "Puede ser, yo anoto las horas.",
+              "vai": "fim-meio",
+              "nota": 1,
+              "comenta": "Funciona, pero genera discusión de horas y hace que ganes menos cuando trabajas mejor."
+            },
+            {
+              "t": "Entonces bajo el precio 30% para cerrar hoy.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "Un descuento improvisado enseña al cliente a pedir descuento siempre. Si el precio no cabe, reduce el alcance."
+            }
+          ]
+        },
+        "fim-ruim": {
+          "fim": true,
+          "titulo": "Alcance abierto",
+          "texto": "Aceptaste más trabajo, prometiste resultado o bajaste el precio sin cambiar la entrega. Es el guion de la pelea del mes 2. Vuelve y protege alcance, garantía y precio."
+        },
+        "fim-meio": {
+          "fim": true,
+          "titulo": "Cerró, con un cabo suelto",
+          "texto": "Alcance y promesa quedaron bien, pero cobrar por hora generará discusión. La próxima vez, ofrece el paquete."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Propuesta protegida",
+          "texto": "La idea nueva se volvió próxima etapa, la promesa es de método y medición y el precio es fijo por entrega. El cliente sabe lo que compra y lo que queda fuera."
+        }
+      },
+      "licao": "Alcance nuevo se vuelve propuesta nueva, la garantía es del método y de la medición, y el precio no se negocia sobre la marcha: si no cabe, se reduce el alcance."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la propuesta de Horizonte",
+      "sub": "Una propuesta para el piloto que diseñaste en la clase 5.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Propuesta de una página",
+          "min": "40 min",
+          "texto": "Completa los 10 bloques del modelo para el piloto de Horizonte, con tu precio calculado por la hoja de cálculo del paquete.",
+          "pronto": "la propuesta cabe en una página y tiene línea de base con fecha, al menos 3 exclusiones, obligaciones del cliente con nombres, criterio de aceptación sí/no y precio fijo."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Prueba del cliente difícil",
+          "min": "15 min",
+          "texto": "Lee la propuesta como Carlos, el de la conversación simulada: busca dónde pediría \"solo una cosa más\", una garantía de ventas o un descuento. Reescribe el fragmento que dejaría la puerta abierta.",
+          "pronto": "ninguna frase de la propuesta promete resultado de negocio y todo posible pedido extra tiene una exclusión o una próxima etapa."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estos es un buen criterio de aceptación?",
+          "opcoes": [
+            "Cliente satisfecho con el resultado.",
+            "Aumento de 30% en las ventas.",
+            "Piloto ejecutado durante 30 días, panel con antes y después y decisión registrada.",
+            "Agente funcionando bien."
+          ],
+          "certa": 2,
+          "explica": "La aceptación es objetiva y binaria: se puede decir sí o no. La satisfacción es subjetiva y el resultado de ventas depende de cosas fuera de tu control.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Por qué cobrar por hora es malo para quien trabaja con IA?",
+          "opcoes": [
+            "Es ilegal.",
+            "Castiga la eficiencia: cuanto más rápido entregas, menos ganas.",
+            "El cliente lo prefiere.",
+            "No se puede calcular."
+          ],
+          "certa": 1,
+          "explica": "Con IA el mismo trabajo toma menos horas. Un paquete con precio fijo por entrega remunera el resultado y le da previsibilidad al cliente.",
+          "ref": "passos"
+        },
+        {
+          "p": "El cliente pide incluir un caso nuevo a mitad del piloto. ¿Qué haces?",
+          "opcoes": [
+            "Incluirlo sin costo, para agradar.",
+            "Rechazarlo y terminar el proyecto.",
+            "Registrarlo como próxima etapa, con propuesta y precio propios.",
+            "Incluirlo y extender el plazo sin avisar."
+          ],
+          "certa": 2,
+          "explica": "Un pedido nuevo se convierte en una propuesta aparte. Así el piloto actual termina a tiempo y la idea no se pierde.",
+          "ref": "simconversa"
+        },
+        {
+          "p": "El precio calculado quedó mayor que la ganancia anual estimada del cliente. ¿Qué ajustas?",
+          "opcoes": [
+            "Dar descuento hasta que quepa.",
+            "Reducir el alcance (menos entregas), manteniendo la calidad.",
+            "Mantenerlo e insistir.",
+            "Cobrar por hora."
+          ],
+          "certa": 1,
+          "explica": "Si el precio no se paga solo, el paquete es demasiado grande para el problema. Recorta entregas, no la calidad ni la medición.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Una página",
+          "texto": "Lo que escuchamos, línea de base, entregas, exclusiones, obligaciones, aceptación, riesgos, precio y próximo paso."
+        },
+        {
+          "t": "Paquete, no hora",
+          "texto": "Horas × tarifa + margen de imprevistos, contrastado con la ganancia del cliente."
+        },
+        {
+          "t": "Garantía de método",
+          "texto": "Promete medición y criterio de parada, nunca resultado de ventas."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Empresa-laboratorio: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Profesional 2030: las otras formaciones",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

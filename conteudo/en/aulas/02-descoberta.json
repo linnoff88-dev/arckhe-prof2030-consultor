@@ -1,0 +1,435 @@
+{
+  "slug": "descoberta",
+  "num": 2,
+  "menu": "Discovery",
+  "titulo": "The discovery conversation",
+  "titulo_curto": "Discovery conversation",
+  "minutos": 20,
+  "lead": "Nobody leaves the doctor's office with a prescription before the exam. In AI consulting, this happens all the time: the owner describes a pain and the consultant already answers with a tool. In 45 minutes of a well-run conversation, you walk out with the bottleneck, a number for today, and the list of what's already running in the shadows of the company.",
+  "objetivo": "run a 45-minute discovery conversation and walk out with the bottleneck, the baseline, and the inventory of AI in use.",
+  "competencias": [
+    "conduzir-conversa-de-descoberta",
+    "levantar-linha-de-base",
+    "inventariar-ia-na-sombra",
+    "pedir-dados-com-minimizacao"
+  ],
+  "aprende": [
+    {
+      "t": "The 45-minute script, block by block"
+    },
+    {
+      "t": "Turning pain into a number: the baseline"
+    },
+    {
+      "t": "Finding the AI your employees already use without IT knowing"
+    },
+    {
+      "t": "Asking for data without creating an LGPD (Brazil's data protection law) problem"
+    }
+  ],
+  "hero_alt": "A consultant taking handwritten notes while the owner of a distributor explains the work, with shelves of boxes in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The 45 minutes of discovery",
+      "sub": "Six blocks, always in this order. Click each one.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Opening",
+          "sub": "3 min",
+          "detalhe": "Three sentences: the goal (\"to understand where the work gets stuck\"), the prep (\"I looked at your website and reviews\"), and the word handed back (\"I wanted to hear it in your own words\"). Ask permission to take notes."
+        },
+        {
+          "icone": "fila",
+          "titulo": "The path of the order",
+          "sub": "10 min",
+          "detalhe": "\"Tell me, step by step, what happens from the moment the customer places an order until the money comes in.\" Write down each step, who does it, and where it gets stuck. Ask for a real case from last week, not the rule."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "The bottleneck",
+          "sub": "10 min",
+          "forte": true,
+          "detalhe": "Where queues form, where work gets redone, where customers get lost. For each pain, ask for the number: how many per week, how long, how much it costs. A pain without a number is still an opinion.",
+          "itens": [
+            {
+              "t": "how many per week?",
+              "icone": "grafico"
+            },
+            {
+              "t": "how long does each one take?",
+              "icone": "relogio"
+            },
+            {
+              "t": "where is it written down?",
+              "icone": "arquivo"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "AI that's already running",
+          "sub": "7 min",
+          "detalhe": "\"Who here already uses ChatGPT, Gemini, summarizers, browser extensions? With what data?\" This is shadow AI: tools IT doesn't know about, often with customer data. It goes into the inventory."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Data and access",
+          "sub": "8 min",
+          "detalhe": "Where the data lives, who has the password, what can leave the company. Ask to see the screen, not to receive the database. Samples only without CPF (Brazilian tax ID) and without phone numbers."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Next step",
+          "sub": "7 min",
+          "detalhe": "Sum it up in three sentences and ask \"is that right?\" Agree on one task for the client (e.g., counting the week's orders) and the date for your feedback. No \"I'll send you a proposal later.\""
+        }
+      ],
+      "legenda": "Talk 20% of the time. The other 80% belongs to the owner and the team.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "What comes out of the conversation",
+        "texto": "The bottleneck with a number from today, the list of AI that's already running, and what can or can't leave the company. With that, lesson 3 can prioritize."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Four precautions that separate discovery from selling",
+      "sub": "Click on each one.",
+      "passos": [
+        {
+          "titulo": "Case, not rule",
+          "sub": "last week",
+          "texto": [
+            "\"How do you handle service?\" gets a textbook answer. \"Tell me about the last order that went wrong\" gets the real process, with the workarounds.",
+            "Gather three cases of the same kind: one case is an anecdote, three already show a pattern."
+          ],
+          "exemplo": {
+            "rot": "Good question",
+            "texto": "\"What was the last order that came back or was late? What happened, step by step?\""
+          }
+        },
+        {
+          "titulo": "Pain with a number",
+          "sub": "the baseline starts here",
+          "texto": [
+            "The baseline is today's number, before any change. Without it, 90 days from now nobody can say whether AI helped.",
+            "If nobody knows the number, the client's first task is to count for one week. \"I don't know, let's count\" is a valid answer."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "\"On average, how long does it take between the customer's message and the quote being sent?\" Patrícia Lima guesses \"about 4 hours.\" Agree to measure 50 orders."
+          }
+        },
+        {
+          "titulo": "Shadow AI",
+          "sub": "the inventory",
+          "texto": [
+            "Employees use AI tools on their own, sometimes with a personal account and with customer data. The goal isn't to punish anyone: it's to know what exists.",
+            "For each tool: who uses it, for what, what data goes in, personal or company account, who pays."
+          ],
+          "exemplo": {
+            "rot": "Signal",
+            "texto": "\"Juliana summarizes the service calls on a site she found\" = customer data leaving without a contract. It goes into the inventory and to the Auditor."
+          }
+        },
+        {
+          "titulo": "Data with minimization",
+          "sub": "LGPD (Brazil's data protection law) in the diagnosis",
+          "texto": [
+            "The consultant doesn't need the customer database to make a diagnosis. Ask to see the screen, and ask for counts and samples without CPF (Brazilian tax ID), phone numbers, and addresses.",
+            "If you need personal data, agree in writing on the purpose and the deadline for deleting it. Legal opinion is for a lawyer."
+          ],
+          "exemplo": {
+            "rot": "Ready-made line",
+            "texto": "\"Don't send me the spreadsheet. Show me the screen and tell me how many rows there are per month.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: 45-minute discovery script",
+      "sub": "Print it or keep it open during the conversation. Replace what's between < >.",
+      "blocos": [
+        {
+          "rot": "Discovery script",
+          "icone": "lista",
+          "conteudo": "DISCOVERY · <company> · <date> · with <name and title>\n\n[0-3] OPENING\n- \"My goal today is to understand where the work gets stuck. Whatever I suggest later comes from here.\"\n- \"I looked at <website / reviews / social media>.\"  - \"May I take notes?\"\n\n[3-13] THE PATH OF AN ORDER\n1. From the order to the money coming in: what are the steps, and who does each one?\n2. Tell me about the last case that went wrong, step by step.\n3. When you (the owner) are not around, what stops?\n\n[13-23] THE BOTTLENECK (always ask for the number)\n4. Where does a queue form? How many per week?\n5. What work gets redone every week? How long does it take?\n6. Where do you lose customers: before, during, or after the sale?\n7. Is that number written down anywhere? If not: who can count it for 1 week?\n\n[23-30] AI ALREADY RUNNING (no judgment)\n8. Who uses ChatGPT, Gemini, Copilot, a summarizer, an extension? For what?\n9. With what data? A personal account or a company account? Who pays?\n\n[30-38] DATA AND ACCESS\n10. Where are orders, customers, and prices kept? Who has the admin password?\n11. Can you show me the main system's screen for 2 minutes?\n12. What data can NOT leave the company?\n\n[38-45] WRAP-UP\n- Summary in 3 sentences + \"is that right?\"\n- Client's task: <count X for 1 week> by <date>\n- Follow-up meeting scheduled: <date>\n\nNOTES: \"surprised me\" column | owner's phrases, word for word"
+        },
+        {
+          "rot": "Inventory of AI in use (shadow AI)",
+          "icone": "lupa",
+          "conteudo": "| Tool | Who uses it | For what | Data that goes in | Account (personal/company) | Who pays | Risk (low/medium/high) |\n|---|---|---|---|---|---|---|\n| <e.g.: summarizer site> | <Juliana> | <summarize customer service> | <conversation with name and phone number> | <personal> | <no one/free> | <high> |"
+        },
+        {
+          "rot": "Data request (minimum necessary)",
+          "icone": "cadeado",
+          "conteudo": "For the diagnosis I need ONLY:\n- counts: orders per week, messages per day, quotes sent\n- times: 50 orders with the time received and the time answered (without the customer's name)\n- screens: see the system in a meeting, without copying the database\nI do NOT need: tax ID (CPF), phone number, address, the full customer database.\nIf a need for personal data comes up: purpose and disposal in writing."
+        }
+      ]
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulated conversation: Carlos Mendes, owner of Horizonte",
+      "sub": "A simulation for practice. Pick the answer you would give; the comment appears right after.",
+      "personagem": {
+        "nome": "Carlos Mendes",
+        "papel": "owner of Horizonte Distribuidora · 40 people"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Good morning. I'll be direct: I want a WhatsApp agent that sells on its own. My competitor already has one. How much is it?",
+          "opcoes": [
+            {
+              "t": "Sure, I can do that. It'll be live in two weeks, for a fixed price.",
+              "vai": "fim-pressa",
+              "nota": 0,
+              "comenta": "You gave the prescription before the exam. Without knowing the volume, the process, and where the data lives, price and timeline are guesses."
+            },
+            {
+              "t": "Before the price: can you walk me through the path of an order, from WhatsApp until the money comes in?",
+              "vai": "caminho",
+              "nota": 2,
+              "comenta": "Good one. You showed that the price comes out of the diagnosis, and you started with the process, not the tool."
+            },
+            {
+              "t": "Does your competitor's work well?",
+              "vai": "caminho",
+              "nota": 1,
+              "comenta": "A useful question for understanding the pressure, but the competitor's numbers don't apply to Horizonte. Better to go to your own process."
+            }
+          ]
+        },
+        "caminho": {
+          "cliente": "The customer sends a message, Patrícia or a salesperson replies, builds the quote in a spreadsheet, sends the PDF. Sometimes it takes a while, and then the customer buys from someone else.",
+          "opcoes": [
+            {
+              "t": "How long does it take, on average, between the message and the quote? And how many orders per week?",
+              "vai": "numero",
+              "nota": 2,
+              "comenta": "You turned the pain into a number. That's the start of the baseline."
+            },
+            {
+              "t": "So the agent solves it: it builds the quote right away.",
+              "vai": "fim-pressa",
+              "nota": 0,
+              "comenta": "You went back to prescribing. You still don't know where prices, inventory, and discounts would come from."
+            },
+            {
+              "t": "Who else takes part in that process?",
+              "vai": "numero",
+              "nota": 1,
+              "comenta": "Good to know who takes part, but you skipped the number. Without it there is no before and after."
+            }
+          ]
+        },
+        "numero": {
+          "cliente": "I don't know... Patrícia says about four hours. Around 300 orders a week. Nobody really measures that.",
+          "opcoes": [
+            {
+              "t": "Could Patrícia write down the time received and the time answered for 50 orders this week?",
+              "vai": "sombra",
+              "nota": 2,
+              "comenta": "Perfect: the client takes part, the number stays with them, and the baseline comes into existence."
+            },
+            {
+              "t": "Four hours is a lot. With AI it drops to five minutes.",
+              "vai": "fim-pressa",
+              "nota": 0,
+              "comenta": "A promise with no measurement. If it doesn't drop, you lose your credibility in the first month."
+            },
+            {
+              "t": "Okay, we'll use the four hours as the baseline.",
+              "vai": "sombra",
+              "nota": 1,
+              "comenta": "Better than nothing, but a guess turns into a fight when it's time to measure. Agree to count."
+            }
+          ]
+        },
+        "sombra": {
+          "cliente": "Agreed. Oh, and Juliana in customer service already uses a site that summarizes the conversations. It helps a lot.",
+          "opcoes": [
+            {
+              "t": "Great, so you're already ahead with AI.",
+              "vai": "fim-meio",
+              "nota": 0,
+              "comenta": "You let shadow AI slip by: customer conversations going to a site with no contract. That's an LGPD (Brazil's data protection law) risk."
+            },
+            {
+              "t": "What data goes to that site? Is it a personal account or a company account? Are there other tools like it?",
+              "vai": "dados",
+              "nota": 2,
+              "comenta": "That's an inventory with no judgment. You find out the risk and the real usage, which becomes an opportunity."
+            },
+            {
+              "t": "That has to stop today.",
+              "vai": "dados",
+              "nota": 1,
+              "comenta": "The risk is real, but banning it in the first conversation closes the door. Take inventory first, then recommend."
+            }
+          ]
+        },
+        "dados": {
+          "cliente": "I'll check with Rafael in IT. Do you want me to send you the customer spreadsheet so you can analyze it?",
+          "opcoes": [
+            {
+              "t": "Go ahead and send it, the more data the better.",
+              "vai": "fim-meio",
+              "nota": 0,
+              "comenta": "You just received tax IDs (CPF) and phone numbers you didn't need. Minimization: ask only for what's necessary."
+            },
+            {
+              "t": "No need. Show me the screen in a meeting and tell me how many active customers you have.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Minimization in practice. The diagnosis doesn't need the database, and you protect the client and yourself."
+            }
+          ]
+        },
+        "fim-pressa": {
+          "fim": true,
+          "titulo": "You prescribed before the exam",
+          "texto": "The agent may well go live, but on a process you don't know and with no number to compare against. Go back and ask the process and number questions before the solution."
+        },
+        "fim-meio": {
+          "fim": true,
+          "titulo": "A good conversation, with one risk that slipped by",
+          "texto": "You got to the bottleneck and the number, but you let a data risk slip by. In discovery, shadow AI and minimization matter as much as the bottleneck."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Complete discovery",
+          "texto": "A bottleneck with a number, an agreed baseline, shadow AI in the inventory, and no personal data received needlessly. The next conversation is the readout."
+        }
+      },
+      "licao": "Process before tool, number before promise, and the minimum of data. That is what gives the owner the confidence for the next step."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the Horizonte discovery",
+      "sub": "Use the lab company's website as if it were your first visit.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Prepare the conversation",
+          "min": "20 min",
+          "texto": "Open the Horizonte Distribuidora lab and read the introduction to the company and its people. Write 3 bottleneck hypotheses and 2 questions for each one, without suggesting a solution inside the question.",
+          "pronto": "you have 3 hypotheses and 6 questions, and no question mentions a tool."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Applied script",
+          "min": "30 min",
+          "texto": "Fill in the 45-minute script with what the lab shows and with the simulated conversation above. Where there is no answer, write the task the client would have to do.",
+          "pronto": "the script has a bottleneck with a number (or the task of counting) and a readout date."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Shadow AI inventory",
+          "min": "20 min",
+          "texto": "In the lab, look for the AI tools the employees use without IT knowing (failure F12, the inventory). Fill in the inventory table with one row per tool.",
+          "pronto": "the table has one row per tool found, with the data that goes in and a risk marked."
+        }
+      ],
+      "fonte": "Lab company: <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">inematds.github.io/prof2030-lab</a>. The answer key is on a separate page, with a warning."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Patrícia says the quote takes \"about four hours.\" What do you do with that number?",
+          "opcoes": [
+            "Use it as the baseline.",
+            "Ignore it, because it's an opinion.",
+            "Agree that she will log the input and response of 50 requests to measure it for real.",
+            "Ask the owner for a better number."
+          ],
+          "certa": 2,
+          "explica": "A guess turns into an argument when it's time to measure the result. Counting a sample turns opinion into a baseline, and the number belongs to the client.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "An employee summarizes customer conversations on a free website. In discovery, you:",
+          "opcoes": [
+            "Praise it, because the company already uses AI.",
+            "Log it in the inventory: tool, data that goes in, account type, and risk.",
+            "Order the site blocked right away.",
+            "Ignore it, because it's not the focus."
+          ],
+          "certa": 1,
+          "explica": "It's shadow AI with customer data. Inventory first, without judgment; the recommendation comes in the diagnosis. Banning it outright closes the door.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The owner offers to send the complete customer spreadsheet. The best response:",
+          "opcoes": [
+            "Accept it, the more data the better.",
+            "Ask to see the screen and receive only counts and samples without personal data.",
+            "Ask for the spreadsheet with a password.",
+            "Ask Rafael from IT to send it."
+          ],
+          "certa": 1,
+          "explica": "Minimization: the diagnosis doesn't need a CPF or a phone number. Receiving data without need creates liability for you and for the company.",
+          "ref": "simconversa"
+        },
+        {
+          "p": "Which question best reveals the real process?",
+          "opcoes": [
+            "How do you serve the customer?",
+            "What was the last order that had a problem? What happened, step by step?",
+            "Do you use a CRM?",
+            "Do you want an agent?"
+          ],
+          "certa": 1,
+          "explica": "The concrete case brings out the workarounds and the waits. The general question brings out the manual, which is rarely what actually happens.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "45 minutes, six blocks",
+          "texto": "Opening, the path of the order, bottleneck, AI already running, data and access, next step with a date."
+        },
+        {
+          "t": "Pain with a number",
+          "texto": "The baseline is born in discovery. If there is no number, agree on how to count."
+        },
+        {
+          "t": "Minimum data",
+          "texto": "Look at the screen, count, take a sample with no personal data. A LGPD (Brazil's data protection law) opinion is for a lawyer."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Lab company: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Common Core: data, LGPD (Brazil's data protection law), and choosing a vendor",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "cadeado"
+        },
+        {
+          "t": "Horizonte Lab: Inventory and shadow AI (F12)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

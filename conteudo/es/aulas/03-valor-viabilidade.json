@@ -1,0 +1,283 @@
+{
+  "slug": "valor-viabilidade",
+  "num": 3,
+  "menu": "Prioridad",
+  "titulo": "Valor × viabilidad (y cuándo NO usar IA)",
+  "titulo_curto": "Valor × viabilidad",
+  "minutos": 18,
+  "lead": "El descubrimiento siempre trae más ideas de las que la empresa puede sacar adelante. Si tú no eliges, el dueño elige la más llamativa. La matriz de valor y viabilidad pone las oportunidades lado a lado, y la prueba de \"cuándo no usar IA\" saca de la lista lo que una regla simple resuelve mejor.",
+  "objetivo": "priorizar oportunidades en una matriz de valor × viabilidad y descartar las que no necesitan IA, con el motivo por escrito.",
+  "competencias": [
+    "priorizar-oportunidades-de-ia",
+    "estimar-valor-em-reais",
+    "avaliar-viabilidade",
+    "decidir-quando-nao-usar-ia"
+  ],
+  "aprende": [
+    {
+      "t": "Calcular el valor de una oportunidad en reales por año"
+    },
+    {
+      "t": "Medir la viabilidad: datos, integración, tolerancia al error y dueño"
+    },
+    {
+      "t": "Los cuatro cuadrantes y qué hacer en cada uno"
+    },
+    {
+      "t": "Las tres señales de que la IA no es la respuesta"
+    }
+  ],
+  "hero_alt": "Mano pegando una nota adhesiva en una pared de vidrio dividida en cuatro cuadrantes.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de la solución más simple",
+      "sub": "Antes de la matriz, cada oportunidad pasa por esta escalera. Haz clic en cada nivel.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Dejar de hacer",
+          "sub": "la ganancia más barata",
+          "detalhe": "Un informe que nadie lee, una aprobación que solo sella, una planilla duplicada. Antes de automatizar, pregúntate si la etapa necesita existir."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Regla fija",
+          "sub": "automatización sin IA",
+          "detalhe": "Si la decisión cabe en un \"si pasa X, haz Y\", usa automatización común (planilla, n8n, el propio sistema). Es más barata, más predecible y fácil de auditar."
+        },
+        {
+          "icone": "chip",
+          "titulo": "IA en un paso",
+          "sub": "flujo con un modelo",
+          "forte": true,
+          "detalhe": "El modelo de lenguaje entra en un solo paso: clasificar el mensaje, extraer datos de un PDF, redactar la respuesta. El resto del flujo es fijo y una persona revisa la salida.",
+          "itens": [
+            {
+              "t": "clasificar",
+              "icone": "lista"
+            },
+            {
+              "t": "extraer",
+              "icone": "arquivo"
+            },
+            {
+              "t": "redactar",
+              "icone": "caneta"
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agente",
+          "sub": "camino que cambia cada vez",
+          "detalhe": "Solo cuando la tarea tiene varios pasos que no se pueden prever, usa herramientas y necesita decidir en el camino. Cuesta más construirlo, operarlo y supervisarlo."
+        }
+      ],
+      "legenda": "Regla: usa el nivel más bajo que resuelva. Sube solo con el motivo por escrito.",
+      "dica": "Pregunta de prueba para subir de nivel: \"¿qué pasa cuando se equivoque, y quién se da cuenta?\""
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Del catálogo a la decisión",
+      "sub": "Cuatro pasos. La matriz completa no es el entregable: la decisión sí lo es.",
+      "passos": [
+        {
+          "titulo": "Valor en reales",
+          "sub": "frecuencia × costo × días",
+          "texto": [
+            "Valor anual ≈ ocurrencias por día × costo de cada ocurrencia × días hábiles. El costo incluye el tiempo de las personas (minutos × costo por hora), el retrabajo y la venta perdida.",
+            "El valor que no se vuelve número (reputación, riesgo) entra como alto, medio o bajo, pero no reemplaza el cálculo."
+          ],
+          "exemplo": {
+            "rot": "Horizonte, simulación",
+            "texto": "60 cotizaciones por día × 12 min de vendedor a R$ 40/h (R$ 8) × 250 días ≈ R$ 120 mil por año solo en tiempo."
+          }
+        },
+        {
+          "titulo": "Viabilidad",
+          "sub": "cuatro preguntas",
+          "texto": [
+            "¿Los datos existen y están accesibles? ¿La integración es simple o exige un sistema antiguo sin API? ¿Un error es tolerable, o causa daño financiero o legal? ¿Existe un dueño interno que lo va a usar y a cuidar?",
+            "Cada \"no\" baja la viabilidad. La integración con un sistema antiguo y el cambio de hábitos del equipo son los costos que más se esconden."
+          ],
+          "exemplo": {
+            "rot": "Desconfía cuando oigas",
+            "texto": "\"Los datos ya están listos\" y \"la integración toma una semana\"."
+          }
+        },
+        {
+          "titulo": "Los cuatro cuadrantes",
+          "sub": "dónde cae cada una",
+          "texto": [
+            "<b>Hacer ya</b> (valor alto, viable): piloto en 30 días. <b>Planificar</b> (valor alto, difícil): preparar datos o proceso antes. <b>Si sobra tiempo</b> (valor bajo, fácil). <b>Descartar</b> (valor bajo, difícil), con el motivo escrito.",
+            "Elige una, máximo dos, para el piloto."
+          ],
+          "exemplo": {
+            "rot": "Buen primer proyecto",
+            "texto": "Medible en 30 días, visible para quien aprueba, con datos accesibles y poco cambio de rutina."
+          }
+        },
+        {
+          "titulo": "Cuándo NO usar IA",
+          "sub": "tres señales",
+          "texto": [
+            "Volumen bajo (pocas ocurrencias al mes no pagan la construcción). Regla fija (cabe en un \"si X, entonces Y\"). Error caro sin revisión humana (dinero, contrato, salud): ahí la IA solo ayuda, nunca decide.",
+            "Una señal basta para bajar un peldaño de la escalera. Registra el motivo: es lo que protege al cliente de la próxima moda."
+          ],
+          "exemplo": {
+            "rot": "Prueba rápida",
+            "texto": "\"Si esto falla 1 vez de cada 20, ¿el daño es tolerable?\" Si no, IA solo con una persona que apruebe."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: matriz valor × viabilidad",
+      "sub": "Pégalo en una hoja de cálculo. Notas de 1 a 5; el motivo siempre va por escrito.",
+      "blocos": [
+        {
+          "rot": "Catálogo + matriz (hoja de cálculo)",
+          "icone": "lista",
+          "conteudo": "| # | Oportunidad | Etapa del proceso | Nivel (dejar/regla/IA en un paso/agente) | Valor R$/año (cuenta) | Valor 1-5 | Datos 1-5 | Integración 1-5 | Tolerancia a error 1-5 | Dueño interno 1-5 | Viabilidad (promedio) | Cuadrante | Motivo |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| 1 | <ej.: borrador de cotización> | <ventas> | <IA en un paso> | <60/día × R$ 8 × 250> | <4> | <3> | <3> | <4> | <5> | <3,75> | <Hacer ya> | <datos en la hoja de precios> |\n\nCuadrante: Valor >= 3 y Viabilidad >= 3 -> Hacer ya | Valor >= 3 y Viab < 3 -> Planificar\n           Valor < 3 y Viabilidad >= 3 -> Si sobra tiempo | Valor < 3 y Viab < 3 -> Descartar"
+        },
+        {
+          "rot": "Checklist: ¿necesita IA?",
+          "icone": "check",
+          "conteudo": "[ ] ¿La tarea involucra lenguaje, imagen o documento sin formato fijo?\n[ ] ¿El volumen paga la construcción en hasta 12 meses?\n[ ] ¿Existen datos de calidad para que el modelo los use?\n[ ] ¿Un error es tolerable O una persona revisa antes de que valga?\n[ ] ¿No existe una herramienta lista que ya lo resuelva?\n[ ] ¿Alguien en la empresa va a mantener esto funcionando?\nMayoría \"no\" -> se queda en el nivel de abajo (regla fija o dejar de hacer)."
+        },
+        {
+          "rot": "Registro de la decisión (una línea por oportunidad)",
+          "icone": "caneta",
+          "conteudo": "<oportunidad> | nivel elegido: <...> | por qué no el de abajo: <...> | por qué no el de arriba: <...> | revisar si: <ej.: error por encima de 10% o costo por encima de R$ X/mes>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte: 6 oportunidades",
+            "html": "<ol><li><b>Borrador de cotización a partir de WhatsApp</b> · IA en un paso · valor 4, viab. 3,8 → <b>Hacer ya</b>.</li><li><b>Recordatorio de boleto vencido</b> · regla fija · valor 3, viab. 5 → Hacer ya, <b>sin IA</b>.</li><li><b>Resumen de atención</b> · IA en un paso · valor 3, viab. 2 (dato que sale sin contrato) → <b>Planificar</b>.</li><li><b>Agente que vende solo</b> · agente · valor 4, viab. 1,5 → <b>Planificar</b> (después del piloto 1).</li><li><b>Informe semanal de visitas</b> · nadie lo lee → <b>dejar de hacer</b>.</li><li><b>Previsión de demanda</b> · valor 2, viab. 2 (historial desordenado) → <b>Descartar por ahora</b>.</li></ol>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Valor con 100% de adopción desde el primer día</b>: recorta la ganancia del primer año.</li><li><b>Elegir por el \"guau\"</b>: el agente vendedor encanta, pero depende de precios, inventario y reglas que aún no están organizados.</li><li><b>Descartar sin motivo</b>: dentro de tres meses la idea vuelve y no recuerdas por qué salió.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: priorizar Horizonte",
+      "sub": "Usa lo que levantaste en la clase 2.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Catálogo de 6 oportunidades",
+          "min": "25 min",
+          "texto": "Lista 6 oportunidades de Horizonte, cada una ligada a una etapa del proceso. Para cada una, elige el nivel de la escalera y haz la cuenta de valor en reales por año (puedes usar números simulados, marcados como simulación).",
+          "pronto": "las 6 líneas tienen etapa, nivel y una cuenta de valor que otra persona puede rehacer."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Matriz y decisión",
+          "min": "25 min",
+          "texto": "Da las notas de viabilidad, ubica cada oportunidad en un cuadrante y escribe el registro de la decisión de las dos primeras.",
+          "pronto": "la matriz tiene las 6 oportunidades, al menos una marcada \"sin IA\" o \"dejar de hacer\" y el motivo de cada descarte escrito."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "\"Un pedido de más de R$ 500 tiene flete gratis.\" ¿Qué nivel?",
+          "opcoes": [
+            "Agente.",
+            "IA en un paso.",
+            "Regla fija, sin IA.",
+            "Dejar de hacer."
+          ],
+          "certa": 2,
+          "explica": "Cabe en un \"si X, entonces Y\". Un modelo de lenguaje aquí solo agrega costo e imprevisibilidad.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Una oportunidad tiene valor alto, pero los datos están repartidos en tres hojas de cálculo. ¿Cuadrante?",
+          "opcoes": [
+            "Hacer ya.",
+            "Planificar: ordenar los datos antes.",
+            "Descartar.",
+            "Si sobra tiempo."
+          ],
+          "certa": 1,
+          "explica": "Valor alto y viabilidad baja: vale la pena, pero no ahora. El primer trabajo es ordenar los datos, y eso también es consultoría.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cuál de estos es una señal de que NO es un caso para IA?",
+          "opcoes": [
+            "La tarea usa texto libre.",
+            "El error causaría daño financiero y nadie revisa el resultado.",
+            "El volumen es alto.",
+            "Existe un dueño interno."
+          ],
+          "certa": 1,
+          "explica": "Un error costoso sin revisión humana es señal para bajar un peldaño de la escalera o poner a una persona que apruebe. Los otros puntos están a favor de la IA.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cuál es el entregable de la reunión de priorización?",
+          "opcoes": [
+            "La matriz de colores.",
+            "La decisión tomada, con el motivo de cada elección y descarte.",
+            "La lista de herramientas.",
+            "El precio del proyecto."
+          ],
+          "certa": 1,
+          "explica": "La matriz es el medio. El dueño necesita salir con una decisión: qué va al piloto, qué espera y qué se descartó, y por qué.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Nivel más bajo",
+          "texto": "Dejar de hacer, regla fija, IA en un paso, agente. Sube solo con un motivo escrito."
+        },
+        {
+          "t": "Valor con cuentas",
+          "texto": "Frecuencia × costo × días hábiles. Desconfía de una adopción del 100% el primer día."
+        },
+        {
+          "t": "Decisión, no hoja de cálculo",
+          "texto": "Una o dos para el piloto; descartes con motivo."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Empresa-laboratorio: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Base común: el mapa de 2027 (lo que la IA hace bien y dónde se equivoca)",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

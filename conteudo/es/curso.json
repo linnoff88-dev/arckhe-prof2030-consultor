@@ -1,0 +1,187 @@
+{
+  "id": "prof2030-consultor",
+  "lang": "es",
+  "url": "https://inematds.github.io/prof2030-consultor/es/",
+  "nome": "Consultor de IA",
+  "sub": "Profesional 2030 · formación",
+  "volta": {
+    "t": "Profesional 2030",
+    "href": "https://inematds.github.io/profissional-2030/"
+  },
+  "lado_card": {
+    "rot": "Empresa-laboratorio",
+    "t": "Horizonte Distribuidora",
+    "texto": "Una pyme ficticia de 40 personas, la misma en los cinco cursos. Haces su diagnóstico de principio a fin.",
+    "link": "Abrir el laboratorio",
+    "href": "https://inematds.github.io/prof2030-lab/"
+  },
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inematds.github.io/profissional-2030/\">Profesional 2030</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">Empresa-laboratorio</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/337-profissional-2030-consultor-de-ia-diagnostico-piloto-e-medicao-de-valor-8-aulas/\">Ficha de este curso en INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender IA</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "Profesional 2030 · Consultor de IA · 8 clases",
+    "titulo": "Consultor de IA: del diagnóstico al valor medido",
+    "lead": "Construir con IA ya es barato. Lo difícil es elegir el proceso correcto, probar en pequeño y demostrar que valió la pena. En ocho clases aprendes a ayudar a dueños y a la dirección a adoptar IA con diagnóstico, prioridad, piloto y medición.",
+    "cta": "Empezar por la clase 1",
+    "cta2": {
+      "t": "Ver el Profesional 2030",
+      "href": "https://inematds.github.io/profissional-2030/"
+    },
+    "capa_alt": "Mesa de consultor en una distribuidora: cuaderno con una matriz de cuatro cuadrantes, informes y el depósito al fondo.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "clases de 15 a 20 min"
+      },
+      {
+        "v": "6",
+        "t": "modelos para copiar"
+      },
+      {
+        "v": "1",
+        "t": "empresa para diagnosticar"
+      },
+      {
+        "v": "90",
+        "t": "días de medición en el plan"
+      }
+    ],
+    "aulas_titulo": "Las clases",
+    "aulas_sub": "Cada clase tiene diagrama, modelo para copiar, práctica con \"listo cuando\" y prueba comentada. La práctica siempre es en la misma empresa: Horizonte Distribuidora.",
+    "blocos": [
+      {
+        "t": "Para quién es",
+        "itens": [
+          "Quien quiere ayudar a dueños y a la dirección a adoptar IA con método, sin vender herramientas.",
+          "Profesionales de procesos, gestión, TI o ventas consultivas. No necesitas programar.",
+          "Quien ya construye con IA y quiere pasar a diagnosticar, priorizar y medir.",
+          "Recomendado antes: la <a href=\"https://inematds.github.io/prof2030-base/\">Base común</a> (no es obligatoria)."
+        ]
+      },
+      {
+        "t": "Qué sales haciendo",
+        "itens": [
+          "Conducir una conversación de descubrimiento de 45 minutos y salir con la línea de base.",
+          "Priorizar oportunidades por valor y viabilidad, incluyendo cuándo NO usar IA.",
+          "Comparar modelos y proveedores por el costo de cada tarea, con revisión humana incluida en la cuenta.",
+          "Diseñar un piloto de 30 días con criterio de parada, medir a 30/60/90 días y escribir la propuesta de una página."
+        ]
+      },
+      {
+        "t": "Profesional 2030",
+        "itens": [
+          "Este curso es parte del <a href=\"https://inematds.github.io/profissional-2030/\">Profesional 2030</a>: una base común, cuatro formaciones y un laboratorio.",
+          "Cada formación tendrá certificación INEMA; detalles próximamente. Es una certificación de cualificación, no una profesión regulada.",
+          "Base común: <a href=\"https://inematds.github.io/prof2030-base/\">Confiar en lo que construye la IA</a> · Laboratorio: <a href=\"https://inematds.github.io/prof2030-lab/\">Horizonte Distribuidora</a>",
+          "Formaciones: <a href=\"https://inematds.github.io/prof2030-consultor/\">Consultor</a> · <a href=\"https://inematds.github.io/prof2030-auditor/\">Auditor</a> · <a href=\"https://inematds.github.io/prof2030-mentor/\">Mentor</a> · <a href=\"https://inematds.github.io/prof2030-treinador/\">Entrenador</a>"
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Saltar al contenido",
+    "aulas": "Clases",
+    "concluido": "completado",
+    "aula": "Clase",
+    "nesta_aula": "En esta clase, vas a aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Siguiente clase",
+    "aula_anterior": "Clase anterior",
+    "voltar_inicio": "Volver al inicio del curso",
+    "marcar_concluida": "Marcar la clase como completada",
+    "dg_dica": "Haz clic en cada bloque del diagrama para ver qué hace.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulación: ejemplo ilustrativo",
+    "selo_real": "Ejemplo del repositorio",
+    "pronto_quando": "Listo cuando:",
+    "fiz": "Hice este ejercicio",
+    "video_pagina": "Página del video con guion",
+    "pergunta": "Pregunta",
+    "de": "de",
+    "cert_tag": "competencia",
+    "correto": "Correcto",
+    "errado": "No es esa",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
+    "proxima_pergunta": "Siguiente pregunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Prueba concluida",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como concluida.",
+    "aparencia": "Apariencia",
+    "tamanho_texto": "Tamaño del texto",
+    "tema": "Tema",
+    "tema_escuro": "Oscuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Desplázate por la página: cada etapa de abajo ilumina su parte del diagrama.",
+    "pre_requisito": "requiere",
+    "ver_aula": "Ver la clase",
+    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
+    "etapas": "Etapas",
+    "exercicios": "ejercicios",
+    "rever": "Repasar:",
+    "revisar_erradas": "Revisar las incorrectas",
+    "refazer": "Rehacer la prueba",
+    "h_semana": "h por semana",
+    "data_inicio": "Fecha de inicio",
+    "ritmo": "Tiempo disponible",
+    "gerar_plano": "Generar mi plan",
+    "baixar_md": "Descargar plan.md",
+    "baixar_ics": "Descargar para el calendario (.ics)",
+    "ind_estudo": "Estudio (clases)",
+    "ind_pratica": "Práctica declarada",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en el examen de la certificación.",
+    "estudo": {
+      "titulo": "Tu estudio",
+      "continuar": "Continuar donde lo dejé",
+      "comecar": "Empezar por la clase 1",
+      "cta_continuar": "Continuar la clase {n}",
+      "hoje": "hoy",
+      "ontem": "ayer",
+      "ha_dias": "hace {n} días",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
+      "dados": "Copiar mis datos",
+      "sem_testes": "Aún no has hecho ninguna prueba. La prueba está al final de cada clase.",
+      "nao_fez": "prueba aún no hecha",
+      "ultimo": "Última",
+      "melhor": "Mejor",
+      "tentativas": "intentos",
+      "tentativa": "intento",
+      "tudo_certo": "Acertaste todo en la última prueba.",
+      "rever": "Para repasar",
+      "resposta": "Respuesta correcta:",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay anotaciones. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "so_marcado": "(solo marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Guardar",
+      "apagar": "Borrar marca",
+      "fechar": "Cerrar",
+      "nota_ph": "Escribe tu anotación sobre este fragmento…",
+      "um_bloco": "Marca dentro de un solo párrafo.",
+      "nao_marca": "Este fragmento no se puede marcar.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de las pruebas se guardan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otro computador o navegador; allí, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
+      "exportar": "Descargar copia",
+      "importar": "Cargar copia",
+      "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
+      "export_ok": "Copia descargada."
+    },
+    "conv_dica": "Elige tu respuesta. El comentario aparece justo después y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Elección débil",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "comecar": "Comenzar la clase",
+    "nesta_vai": "En esta clase vas a",
+    "trocar_tema": "Cambiar tema claro/oscuro"
+  },
+  "icone": "camadas"
+}

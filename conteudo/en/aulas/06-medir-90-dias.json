@@ -1,0 +1,294 @@
+{
+  "slug": "medir-90-dias",
+  "num": 6,
+  "menu": "Measure",
+  "titulo": "Really measuring: 30, 60, and 90 days",
+  "titulo_curto": "Measure 30/60/90",
+  "minutos": 18,
+  "lead": "\"The agent answered 4,000 messages\" doesn't tell you whether the company gained anything. Really measuring means comparing against the number from before, on the same scale, and also looking at what may have gotten worse. At 30, 60, and 90 days the question changes: does it work, is it stable, was it worth the money?",
+  "objetivo": "build a dashboard of 3 indicators with before-and-after values and run the 30-, 60-, and 90-day reviews against the baseline.",
+  "competencias": [
+    "montar-painel-de-indicadores",
+    "comparar-com-linha-de-base",
+    "calcular-roi-e-payback",
+    "evitar-metrica-de-vaidade"
+  ],
+  "aprende": [
+    {
+      "t": "The three indicators: result, operation, and safeguard"
+    },
+    {
+      "t": "Vanity metrics and the target that teaches people to cheat"
+    },
+    {
+      "t": "What you ask at 30, 60, and 90 days"
+    },
+    {
+      "t": "ROI and payback in owner's language"
+    }
+  ],
+  "hero_alt": "Tablet with a line chart next to two printed sheets with bar charts, a ruler, and a pencil.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The three-indicator dashboard",
+      "sub": "One of each type, always with the before value. Click each one.",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Result",
+          "sub": "what the owner tracks",
+          "forte": true,
+          "detalhe": "Closed sale, margin, order delivered on time, cost per order. Slow to move, but it's what pays for the project. At Horizonte: orders closed from a quote sent."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Operation",
+          "sub": "what changes first",
+          "detalhe": "Response time, time per task, the day's queue. It moves in days and shows whether the agent is being used. On its own, it misleads."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Protection",
+          "sub": "what can't get worse",
+          "detalhe": "Pricing error, complaints, average discount, rework, data incident. If operations improve and protection gets worse, the gain is false."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Baseline",
+          "sub": "the number from before",
+          "detalhe": "Each indicator has its value from before the agent, measured the same way, in the same type of period. Without it, the dashboard only shows movement.",
+          "itens": [
+            {
+              "t": "same yardstick",
+              "icone": "check"
+            },
+            {
+              "t": "same period",
+              "icone": "calendario"
+            },
+            {
+              "t": "who measures",
+              "icone": "usuario"
+            }
+          ]
+        }
+      ],
+      "legenda": "Weekly or monthly frequency, never daily: Monday has a backlog and Friday has people leaving early.",
+      "dica": "Lab counterexample (F11): the Horizonte dashboard shows messages answered and conversations started, with no baseline column and no sales or complaints."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The three reviews",
+      "sub": "Each review answers a different question.",
+      "passos": [
+        {
+          "titulo": "30 days",
+          "sub": "is it working?",
+          "texto": [
+            "End of the pilot. Is the agent being used? Did operations improve against the baseline? Did any protection get worse?",
+            "Fix the usage friction: where the team gives up, where they go back to the old way. Decision: continue, adjust, or stop."
+          ],
+          "exemplo": {
+            "rot": "Warning sign",
+            "texto": "Usage dropping in the third week: the process didn't fit into the routine. Go back to the diagnosis."
+          }
+        },
+        {
+          "titulo": "60 days",
+          "sub": "has it stayed stable?",
+          "texto": [
+            "Did the gain hold without the consultant around? Does the real cost per task match what you calculated in lesson 4? Did errors go down, or just move somewhere else?",
+            "Compare the gain estimated at the start with the real one."
+          ],
+          "exemplo": {
+            "rot": "Question",
+            "texto": "\"If I disappear for a month, does this keep working?\""
+          }
+        },
+        {
+          "titulo": "90 days",
+          "sub": "was it worth the money?",
+          "texto": [
+            "Now the result indicator has had time to move. Calculate the ROI and the payback, and decide: expand to another team, keep it as it is, or turn it off.",
+            "What you measured becomes the baseline for the next cycle."
+          ],
+          "exemplo": {
+            "rot": "Owner's language",
+            "texto": "\"We invested R$ X, we earn R$ Y per month, the money comes back in Z months.\""
+          }
+        },
+        {
+          "titulo": "Watch out for the target",
+          "sub": "it teaches people to cheat",
+          "texto": [
+            "An indicator on its own becomes a target: response time drops because people answer anything; support closes tickets without solving them; discounts go up to close a sale.",
+            "That's why each operations indicator goes together with a protection one. And the dashboard shows adoption: how many people use it per week."
+          ],
+          "exemplo": {
+            "rot": "Right pair",
+            "texto": "Response time (operations) + quotes with the wrong price (protection)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: 30/60/90 dashboard",
+      "sub": "One row per indicator. Paste it into a spreadsheet and update it at the agreed frequency.",
+      "blocos": [
+        {
+          "rot": "30/60/90 dashboard",
+          "icone": "grafico",
+          "conteudo": "DASHBOARD · <company> · <process> · baseline measured on <date> by <who>\n\n| Type | Metric | How it's measured (source, who counts) | Before | 30 days | 60 days | 90 days | Target |\n|---|---|---|---|---|---|---|---|\n| Result | <closed orders / quotes> | <sales spreadsheet, Patrícia> | <...> | | | | <...> |\n| Operation | <median time to quote> | <50 orders, intake time x send time> | <...> | | | | <...> |\n| Protection | <quotes with the wrong price> | <weekly check> | <...> | | | | <don't get worse> |\n| Adoption | <people who used it this week> | <agent log> | 0 | | | | <...> |\n| Cost | <real cost per task (R$)> | <invoice + review minutes> | — | | | | <<= calculated> |\n\nREVIEW 30: does it work? | REVIEW 60: is it stable? | REVIEW 90: was it worth it? -> [expand] [keep] [turn off]"
+        },
+        {
+          "rot": "ROI and payback",
+          "icone": "caneta",
+          "conteudo": "Monthly gain (R$)  = (value before - value after) x volume x unit cost\n                     (e.g.: minutes saved x orders x cost per minute)\nMonthly cost (R$)  = tool + tokens + human review + maintenance\nInvestment (R$)    = diagnosis + pilot + rollout (one time)\n\nYearly ROI (%)     = (monthly gain x 12 - monthly cost x 12 - investment)\n                     / (monthly cost x 12 + investment) x 100\nPayback (months)   = investment / (monthly gain - monthly cost)\n\nUse the MEASURED gain (dashboard), not the estimated one. If monthly gain <= monthly cost, there is no payback: the project doesn't pay for itself."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte on day 90",
+            "html": "<ul><li><b>Operation:</b> median time to quote from 3 h 40 min → 50 min.</li><li><b>Protection:</b> quotes with a wrong price from 8% → 6%.</li><li><b>Result:</b> orders closed from quotes from 31% → 35%.</li><li><b>Adoption:</b> 5 of 6 salespeople using it every week.</li></ul><p>Investment R$ 18k; measured gain R$ 9k/month; cost R$ 2k/month. Payback = 18 ÷ (9 − 2) ≈ <b>2.6 months</b>. ROI for the year = (108 − 24 − 18) ÷ (24 + 18) ≈ <b>157%</b>.</p><p>Illustrative numbers, for practicing the math.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Vanity metric</b>: messages answered and conversations started measure motion, not results.</li><li><b>No \"before\" column</b>: the period starts on the day the agent was turned on (this is failure F11 from the lab).</li><li><b>Changing the yardstick</b>: measuring before by sample and after by the system gives numbers that can't be compared.</li><li><b>ROI with the estimated gain</b>: on day 90, use the measured one.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the Horizonte dashboard",
+      "sub": "Start from the lab's dashboard, which has failure F11.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Diagnose the current dashboard",
+          "min": "15 min",
+          "texto": "In the lab, open Horizonte's metrics dashboard. List what it measures, what is missing (baseline, result, protection), and why no one knows whether the agent helped.",
+          "pronto": "you wrote, in up to 5 lines, why the current dashboard proves nothing."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A 3-metric dashboard",
+          "min": "30 min",
+          "texto": "Build the 30/60/90 dashboard for the lesson 5 pilot: one result metric, one operation metric, and one protection metric, with how to measure it and the before value (real from the lab, or simulated, marked as a simulation).",
+          "pronto": "the dashboard has 3 metrics with before and after values filled in, and a line saying who measures and where the number comes from."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · ROI and payback",
+          "min": "15 min",
+          "texto": "Using the numbers from your dashboard and an estimated investment, calculate ROI and payback, and write the sentence for Carlos in owner's language.",
+          "pronto": "the sentence fits in two lines and has the amount invested, the monthly gain, and the payback period."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The dashboard shows \"4,000 messages answered this month\". What is missing?",
+          "opcoes": [
+            "Nothing, it's a great number.",
+            "The before value and a result and protection metric.",
+            "A prettier chart.",
+            "The name of the model used."
+          ],
+          "certa": 1,
+          "explica": "It's a vanity metric: it measures motion. Without a baseline and without a result (sale, margin) or protection (complaints), it doesn't prove a gain.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Response time was cut in half, but price complaints doubled. Conclusion?",
+          "opcoes": [
+            "Success: operations improved.",
+            "The gain is false: a protection got worse; adjust or stop.",
+            "Swap the protection metric.",
+            "Ignore the complaints."
+          ],
+          "certa": 1,
+          "explica": "An operation metric on its own teaches people to cheat. If protection gets worse, the result doesn't hold up.",
+          "ref": "passos"
+        },
+        {
+          "p": "Investment of R$ 12k, measured gain of R$ 5k/month, cost of R$ 1k/month. Payback?",
+          "opcoes": [
+            "2.4 months.",
+            "3 months.",
+            "12 months.",
+            "There is no payback."
+          ],
+          "certa": 1,
+          "explica": "Payback = investment ÷ (gain − cost) = 12 ÷ (5 − 1) = 3 months. The common mistake is forgetting to subtract the monthly cost.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Why measure weekly or monthly, and not daily?",
+          "opcoes": [
+            "To make less work.",
+            "Because each day has its own variation (pile-up on Monday, a shorter Friday) that muddles the comparison.",
+            "Because the system doesn't allow it.",
+            "It makes no difference."
+          ],
+          "certa": 1,
+          "explica": "Short periods mix the agent's effect with the normal variation of the week.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Three metrics + baseline",
+          "texto": "Result, operation, and protection, always with the before value and the same yardstick."
+        },
+        {
+          "t": "30, 60, 90",
+          "texto": "Does it work? Is it stable? Was it worth the money? Then: expand, keep, or turn it off."
+        },
+        {
+          "t": "No vanity",
+          "texto": "Motion is not a result. Operation goes hand in hand with protection."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "Gartner: only 17% of organizations have agents in use; agentic AI at the peak of the hype (copy on the Internet Archive)",
+          "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          "icone": "grafico"
+        },
+        {
+          "t": "LOOP-R: improve a process with evidence and an undo button",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "fila"
+        },
+        {
+          "t": "Lab company: the dashboard with no baseline",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Horizonte Lab: Metrics dashboard (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

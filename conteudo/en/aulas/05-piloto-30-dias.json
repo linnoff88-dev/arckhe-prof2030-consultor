@@ -1,0 +1,281 @@
+{
+  "slug": "piloto-30-dias",
+  "num": 5,
+  "menu": "Pilot",
+  "titulo": "30-day pilot with an agent",
+  "titulo_curto": "30-day pilot",
+  "minutos": 18,
+  "lead": "A pilot is not a small version of the project: it is an experiment with a question, a deadline, and an exit rule. When the success criterion and the stop criterion are agreed on before you start, nobody argues later about whether it worked. And if the tool is discontinued along the way, the plan already says how to switch.",
+  "objetivo": "design a 30-day pilot on one page, with a metric, agent limits, a stop criterion, and an exit plan.",
+  "competencias": [
+    "desenhar-piloto-reversivel",
+    "definir-criterio-de-parar",
+    "planejar-saida-de-fornecedor"
+  ],
+  "aprende": [
+    {
+      "t": "The question the pilot answers and the smallest possible experiment"
+    },
+    {
+      "t": "The four weeks: prepare, rehearse, run with approval, decide"
+    },
+    {
+      "t": "Success criterion, stop criterion, and who pulls the plug"
+    },
+    {
+      "t": "Exit plan for when the tool is discontinued"
+    }
+  ],
+  "hero_alt": "Desk calendar with a few days marked, a plant cutting, and an analog stopwatch.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The four weeks of the pilot",
+      "sub": "Each week has one deliverable. Tap each one.",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Week 1",
+          "sub": "prepare",
+          "detalhe": "Frozen baseline (the number from before), 5 to 10 real cases written with the owner, agent rules and limits approved, minimum permissions set up. Nothing talks to a customer yet."
+        },
+        {
+          "icone": "check",
+          "titulo": "Week 2",
+          "sub": "rehearse",
+          "detalhe": "The agent runs on the test cases, internally. A person checks every output. If it gets wrong what it can't get wrong (price, discount, customer data), go back to week 1."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Week 3",
+          "sub": "run with approval",
+          "forte": true,
+          "detalhe": "With real customers, but every action that involves money goes through a person first. Everything is logged: what the agent proposed, who approved it, what changed.",
+          "itens": [
+            {
+              "t": "log of every action",
+              "icone": "arquivo"
+            },
+            {
+              "t": "human approval",
+              "icone": "usuario"
+            },
+            {
+              "t": "discount cap",
+              "icone": "cadeado"
+            }
+          ]
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Week 4",
+          "sub": "decide",
+          "detalhe": "Compare against the baseline and answer: continue, adjust, or stop. Stopping is also a result: you saved the big project."
+        }
+      ],
+      "volta": "Adjust = go back to week 1 with a single change",
+      "legenda": "One team, one process, one main metric. A pilot that touches four areas teaches nothing.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Small, measured, and reversible",
+        "texto": "Prepare, rehearse internally, run with approval, and decide against the baseline. If something serious happens, shut it off right away and go back to the manual process."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What can't be missing",
+      "sub": "Four pieces of the one-page plan.",
+      "passos": [
+        {
+          "titulo": "The question",
+          "sub": "and the smallest test",
+          "texto": [
+            "\"Does an agent that drafts the quote reduce response time without increasing price errors?\" One question only, with a number.",
+            "Cut the scope until it fits in 30 days: one product category, one salesperson, one channel. Manual integration is acceptable in the pilot."
+          ],
+          "exemplo": {
+            "rot": "Horizonte scope",
+            "texto": "Only restock orders from existing customers, only on Patrícia's WhatsApp, for 30 days."
+          }
+        },
+        {
+          "titulo": "Agent limits",
+          "sub": "what it cannot do",
+          "texto": [
+            "Write down what the agent can do, what it can do only with approval, and what it never does. Discounts with a cap, orders above a set amount with approval, no deleting, and nothing sent outside the workflow.",
+            "Every action is logged. This is what the Auditor will ask for later."
+          ],
+          "exemplo": {
+            "rot": "Lab reminder",
+            "texto": "Failures F5 (discount with no cap) and F7 (no log and no approval above R$ 5 mil) are exactly what the plan must prevent."
+          }
+        },
+        {
+          "titulo": "Stop criterion",
+          "sub": "agreed beforehand",
+          "texto": [
+            "Stop right away if a safeguard fails: price error, discount above the cap, customer complaint, personal data exposed. Don't decide because \"it's winning\" in the first week: a small sample misleads.",
+            "The person who shuts it off has a name, not a job title, and a deadline to go back to manual (e.g., 2 hours)."
+          ],
+          "exemplo": {
+            "rot": "Sample rule",
+            "texto": "With fewer than 30 cases in the period, the result is \"insufficient sample,\" not a win."
+          }
+        },
+        {
+          "titulo": "Exit plan",
+          "sub": "the tool changes",
+          "texto": [
+            "Agent tools get discontinued. OpenAI announced on 06/03/2026 that Agent Builder will be shut down on 11/30/2026, with migration to the Agents SDK or to ChatGPT Workspace Agents.",
+            "That's why the instructions, the test cases, and the data stay in the client's files, outside the tool."
+          ],
+          "exemplo": {
+            "rot": "Plan clause",
+            "texto": "\"If the tool is announced to be discontinued, we migrate within 15 days using the saved instructions and test cases.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: one-page pilot plan",
+      "sub": "Fill it in with the owner before you start. Once signed, it becomes the contract for the experiment.",
+      "blocos": [
+        {
+          "rot": "Pilot plan (1 page)",
+          "icone": "arquivo",
+          "conteudo": "PILOT · <company> · <process> · <start date> to <end date (30 days)>\n\n1. QUESTION: <does change X improve Y without worsening Z?>\n2. SCOPE: <1 team>, <1 channel>, <1 type of case>. Outside the pilot: <...>\n3. BASELINE (measured on <date>, by <who>, from <where the number comes from>):\n   main metric: <value today>   goal: <value> in 30 days\n   safeguards (cannot get worse): <price error>, <complaints>, <average discount>\n4. TOOL AND VENDOR: <which>, monthly cost cap: R$ <...>\n   data that goes in: <...>  data that does NOT go in: <CPF, ...>\n5. AGENT LIMITS:\n   can: <read orders, draft a reply>\n   only with approval from <name>: <send a quote, order above R$ ...>\n   never: <give a discount above X%, delete, send outside the workflow>\n   log: every action with date, proposal, who approved\n6. WEEKS: W1 prepare | W2 rehearse internally | W3 run with approval | W4 decide\n7. SUCCESS CRITERION: <main metric reaches X with N >= 30 cases and no safeguard gets worse>\n8. STOP CRITERION (right away): <price error>, <discount above the cap>, <complaint>, <data exposed>\n   who shuts it off: <name>   back to manual in: <2 hours>\n9. EXIT PLAN: instructions, test cases, and data stored in <client folder>;\n   if the tool is announced to be discontinued, migrate in <15 days>.\n10. DECISION ON DAY 30: [continue] [adjust and repeat] [stop]   signed by: <owner> and <consultant>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte: quote pilot",
+            "html": "<p><b>Question:</b> does the agent's quote draft reduce the time between the message and the quote sent, without increasing price errors?</p><p><b>Baseline:</b> 50 requests measured by Patrícia Lima: median of 3 h 40 min; 4 quotes with the wrong price out of 50.</p><p><b>Goal:</b> median under 1 hour, with price errors equal or lower.</p><p><b>Limits:</b> maximum discount of 5%; quotes above R$ 5 mil only with Patrícia's approval; every action logged.</p><p><b>Stop:</b> any quote sent with a discount above 5% or a price complaint. Who shuts it off: Rafael (IT), within 2 h.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>No baseline</b>: on day 30 it becomes opinion against opinion.</li><li><b>Big scope</b>: four areas at once and no conclusion.</li><li><b>Stop criterion written after the problem</b>: by then it's too late.</li><li><b>Everything inside the tool</b>: if it gets discontinued, you start over from zero.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: Horizonte's pilot plan",
+      "sub": "Choose the \"Do now\" opportunity from lesson 3 with the best cost per task in lesson 4.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · One-page plan",
+          "min": "40 min",
+          "texto": "Fill in the 10 blocks of the template for Horizonte. Use limits that prevent lab failures F5 and F7.",
+          "pronto": "the plan fits on one page and has a baseline with a date, a goal, at least 2 safeguards, a stop criterion with the name of who shuts it off, and an exit plan."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Pessimist test",
+          "min": "15 min",
+          "texto": "Ask an AI or a colleague to read the plan like a suspicious board member and list 5 ways the pilot could go wrong. Adjust the plan for each one.",
+          "pronto": "each of the 5 risks has a line in the plan (limit, safeguard, or stop criterion) that deals with it."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "In the first week with customers, the agent looks great in 12 cases. What do you do?",
+          "opcoes": [
+            "Declare success and expand.",
+            "Keep going: with fewer than 30 cases, the result is still an insufficient sample.",
+            "Stop the pilot.",
+            "Switch models."
+          ],
+          "certa": 1,
+          "explica": "A small sample misleads in both directions. You only stop early when a safeguard fails, never because \"it's winning.\"",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "When should the stop criterion be written?",
+          "opcoes": [
+            "After the first problem.",
+            "On day 30.",
+            "Before you start, in the signed plan.",
+            "Never: the consultant decides on the spot."
+          ],
+          "certa": 2,
+          "explica": "Agreed in advance, the criterion takes the decision out of the heat of the moment and avoids arguments later.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Why keep instructions and test cases outside the agent tool?",
+          "opcoes": [
+            "To save space.",
+            "Because tools get discontinued, like the Agent Builder, scheduled to shut down on 11/30/2026.",
+            "Because LGPD (Brazil's data protection law) requires it.",
+            "Because the agent forgets."
+          ],
+          "certa": 1,
+          "explica": "With the material in the client's files, switching tools takes days. Inside the tool, you start from scratch.",
+          "ref": "passos"
+        },
+        {
+          "p": "What does week 3 have that week 2 doesn't?",
+          "opcoes": [
+            "Real clients, with human approval on the actions that involve money.",
+            "More models.",
+            "No one checking.",
+            "The final decision."
+          ],
+          "certa": 0,
+          "explica": "Week 2 rehearses internally; week 3 meets the client, but with a person approving and everything logged.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "One question, 30 days",
+          "texto": "One team, one process, one main metric, and safeguards that can't get worse."
+        },
+        {
+          "t": "Stopping is agreed in advance",
+          "texto": "Safeguard fell, switch it off. Whoever switches it off has a name and a deadline."
+        },
+        {
+          "t": "Planned exit",
+          "texto": "Instructions, tests, and data outside the tool; agent tools get discontinued."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "OpenAI: deprecations (Agent Builder announced on 06/03/2026, shutdown on 11/30/2026)",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "relogio"
+        },
+        {
+          "t": "Lab company: WhatsApp agent failures",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Laboratório Horizonte: WhatsApp Agent (F5–F7)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

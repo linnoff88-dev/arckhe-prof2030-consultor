@@ -1,0 +1,289 @@
+{
+  "slug": "construtor-consultor",
+  "num": 1,
+  "menu": "Position",
+  "titulo": "From builder to consultant",
+  "titulo_curto": "Builder → consultant",
+  "minutos": 15,
+  "lead": "When everyone can build an agent, building turns into a price auction. The owner still doesn't know where to start, what is worth automating, where the risk is, or whether it worked. That is what the consultant delivers: clarity before the build and proof after it.",
+  "objetivo": "explain why the diagnosis is worth more than the agent and write your own positioning statement as an AI consultant.",
+  "competencias": [
+    "posicionar-consultoria-de-ia",
+    "separar-diagnostico-de-construcao",
+    "declarar-escopo-e-limites"
+  ],
+  "aprende": [
+    {
+      "t": "Why building got cheap and trust got expensive"
+    },
+    {
+      "t": "The four boxes of a diagnosis: person, agent, simple automation, ceases to exist"
+    },
+    {
+      "t": "What the consultant delivers and what they are not"
+    },
+    {
+      "t": "Write your positioning statement in two lines"
+    }
+  ],
+  "hero_alt": "A workbench with tools pushed aside and, in the foreground, a clipboard with a checklist and a pen.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "What the owner really buys",
+      "sub": "The agent is the last piece. Click each block.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "The request",
+          "sub": "\"I want an agent\"",
+          "detalhe": "The owner arrives with a tool in mind, almost always seen in a video or at a competitor. The request is the starting point of the conversation, not the specification of the work."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Diagnosis",
+          "sub": "where the bottleneck is",
+          "forte": true,
+          "detalhe": "Find the process that holds back the result, measure what it costs today (the baseline), and split the work into the four boxes: stays with the person, goes to an agent, stays simple automation, or ceases to exist.",
+          "itens": [
+            {
+              "t": "stays with the person",
+              "icone": "usuario"
+            },
+            {
+              "t": "goes to an agent",
+              "icone": "robo"
+            },
+            {
+              "t": "simple automation",
+              "icone": "fila"
+            },
+            {
+              "t": "ceases to exist",
+              "icone": "x"
+            }
+          ]
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Priority",
+          "sub": "what comes first",
+          "detalhe": "From the opportunities found, pick one or two that deliver quick value and are feasible with the data and the team the company already has. Also say what NOT to do."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Pilot",
+          "sub": "small and reversible",
+          "detalhe": "Test it for 30 days, with one team, one metric, and a stop criterion agreed on beforehand. If it doesn't work, switch it off with no harm done."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Measured value",
+          "sub": "before × after",
+          "detalhe": "Compare against the baseline at 30, 60, and 90 days. This is where the consultant becomes a long-term partner: the model changes, the process changes, and someone needs to check that it's still worth it."
+        }
+      ],
+      "volta": "What you measured at the end becomes the baseline for the next cycle",
+      "legenda": "The builder comes in on the last step. The consultant answers for all five.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The whole chain",
+        "texto": "Request, diagnosis, priority, pilot, and measured value. Without the diagnosis, the agent solves the wrong problem; without measurement, no one knows whether it helped."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What changes for people who work with AI",
+      "sub": "Four ideas that underpin the program.",
+      "passos": [
+        {
+          "titulo": "Building got cheap",
+          "sub": "the price drops with every generation",
+          "texto": [
+            "Models get cheaper and more capable every few months. In September 2026, Claude Opus 5.5 arrived costing 40% less than Opus 5 in typical use, according to Anthropic.",
+            "Anyone who only sells \"I'll build your agent\" is competing on price with a subscription the client can also sign up for."
+          ],
+          "exemplo": {
+            "rot": "Consequence",
+            "texto": "The value moves away from \"knowing how to do it\" and toward knowing what to do, where the risk is, and whether it worked."
+          }
+        },
+        {
+          "titulo": "Adoption is still rare",
+          "sub": "lots of interest, few agents in use",
+          "texto": [
+            "In a 2026 Gartner survey of technology executives, only 17% of organizations already had AI agents in use, and more than 60% expected to have them within two years.",
+            "Between interest and real use there is a gap: choosing the process, preparing data, testing small, and measuring."
+          ],
+          "exemplo": {
+            "rot": "Where you come in",
+            "texto": "In the gap between \"we want AI\" and \"we know AI helped.\""
+          }
+        },
+        {
+          "titulo": "The four boxes",
+          "sub": "the heart of the diagnosis",
+          "texto": [
+            "Every process you map comes out split into four: what stays with a person (judgment, relationships), what goes to an agent (a path that changes each time), what becomes simple automation (fixed rule), and what should stop existing.",
+            "The fourth box usually gives the cheapest win."
+          ],
+          "exemplo": {
+            "rot": "Example at Horizonte",
+            "texto": "Overdue invoice reminder: simple automation. Answering a product question on WhatsApp: agent with limits. Approving a discount above the price list: person. A report nobody reads: stops existing."
+          }
+        },
+        {
+          "titulo": "What you are not",
+          "sub": "written scope",
+          "texto": [
+            "An AI consultant is not a security auditor, a lawyer, or a legacy-system programmer. When the case calls for a legal opinion, a penetration test, or heavy integration, you bring in someone qualified.",
+            "The INEMA certification in this program is a qualification, not a regulated profession. Tell the client this."
+          ],
+          "exemplo": {
+            "rot": "Ready-made line",
+            "texto": "\"I do the diagnosis, the prioritization, and the measurement. For formal LGPD (Brazil's data protection law) and security, I bring in a specialist.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates: positioning and scope card",
+      "sub": "Copy it, replace what is between < >, and read it out loud.",
+      "blocos": [
+        {
+          "rot": "Positioning statement (2 lines)",
+          "icone": "caneta",
+          "conteudo": "I help <type of company> <result as a number or decision>\nstarting with a <time frame> diagnosis.\nI don't <what you don't do: sell tools before the diagnosis,\nprogram legacy systems, give legal opinions>."
+        },
+        {
+          "rot": "Scope card (5 lines)",
+          "icone": "lista",
+          "conteudo": "I DO: discovery, diagnosis, prioritization, pilot plan, 30/60/90 measurement.\nI DON'T: legal opinions, penetration tests, integration with legacy systems.\nI CALL A SPECIALIST WHEN: <sensitive data at scale, contract, security>.\nMY RESULT IS MEASURED BY: <client indicator against the baseline>.\nMY CERTIFICATION: INEMA qualification (not a regulated profession)."
+        },
+        {
+          "rot": "Prompt: stress test of the statement",
+          "icone": "chat",
+          "conteudo": "You are the owner of a distribution company with 40 employees, skeptical about AI.\nRead my positioning statement below and:\n1) say in one line what you understood I sell;\n2) ask the 3 toughest questions you would ask before hiring me;\n3) point out any jargon word or promise you don't believe.\nDon't compliment me.\n\nStatement: <paste here>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in example",
+            "html": "<p><b>I help</b> distributors and wholesalers of up to 100 people <b>to</b> cut customer response time without growing the team, <b>starting with</b> a two-week diagnosis.</p><p><b>I don't</b> sell tools before the diagnosis or program the company's management system.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Naming a tool</b> (\"WhatsApp agent specialist\"): the tool changes every quarter; the client's problem stays.</li><li><b>Promising a number</b> (\"I'll raise your sales by 30%\"): you haven't measured anything yet.</li><li><b>Empty second line</b>: someone who doesn't say what they don't do looks like they do everything.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your position",
+      "sub": "Two short exercises. Do them before moving on to lesson 2.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Positioning statement",
+          "min": "15 min",
+          "texto": "Fill in the two-line template. Run the stress-test prompt and rewrite until it finds no jargon or promises.",
+          "pronto": "the statement has two lines, names no tool, and the second line says what you don't do."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Scope card",
+          "min": "10 min",
+          "texto": "Fill in the five-line card and show the statement and the card to two people who don't work with AI.",
+          "pronto": "both people can repeat, in their own words, what you do and what you don't do."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Why is \"I build your agent\" a fragile position?",
+          "opcoes": [
+            "Because agents don't work in SMBs.",
+            "Because building became cheap and the client compares it with the price of a subscription.",
+            "Because it's illegal to build agents without certification.",
+            "Because the client doesn't want agents."
+          ],
+          "certa": 1,
+          "explica": "Agents work, but building them has become a commodity. What stays scarce is knowing which process to change, the risk, and whether it worked. The common mistake is thinking the problem is technical.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "At Horizonte, which box does the automatic reminder for an overdue invoice go in?",
+          "opcoes": [
+            "It stays with a person.",
+            "It goes to an agent.",
+            "Simple automation.",
+            "It stops existing."
+          ],
+          "certa": 2,
+          "explica": "It's a fixed rule: it's overdue, so send the reminder. It doesn't need a language model. Putting an agent here means paying more for something less predictable.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "The client asks for a legal opinion on whether their data use complies with LGPD (Brazil's data protection law). What do you do?",
+          "opcoes": [
+            "You give the opinion, because you know the law.",
+            "You turn the client down.",
+            "You do the diagnosis and bring in a lawyer for the formal opinion.",
+            "You ask the agent to write the opinion."
+          ],
+          "certa": 2,
+          "explica": "You point out the risk in the diagnosis, but the legal opinion belongs to someone who is licensed to give it. This is in your scope card.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Building is the last piece",
+          "texto": "The owner buys clarity: where to start, what is worth doing, where the risk is, and whether it worked."
+        },
+        {
+          "t": "Four boxes",
+          "texto": "Person, agent, simple automation, and stops existing. The last one is usually the cheapest win."
+        },
+        {
+          "t": "Written scope",
+          "texto": "Say what you don't do and when you bring in a specialist."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Sources and going further",
+      "links": [
+        {
+          "t": "Anthropic: Claude Opus 5.5 (09/22/2026), price and cost per task",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Gartner: Hype Cycle for Agentic AI, 17% with agents in use (copy on the Internet Archive)",
+          "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          "icone": "grafico"
+        },
+        {
+          "t": "Professional 2030: the Common Core and the four tracks",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "slug": "valor-viabilidade",
+  "num": 3,
+  "menu": "Priority",
+  "titulo": "Value × feasibility (and when NOT to use AI)",
+  "titulo_curto": "Value × feasibility",
+  "minutos": 18,
+  "lead": "Discovery always brings more ideas than the company can take on. If you don't choose, the owner picks the flashiest one. The value and feasibility matrix puts the opportunities side by side, and the \"when not to use AI\" test takes off the list whatever a simple rule solves better.",
+  "objetivo": "prioritize opportunities in a value × feasibility matrix and discard the ones that don't need AI, with the reason written down.",
+  "competencias": [
+    "priorizar-oportunidades-de-ia",
+    "estimar-valor-em-reais",
+    "avaliar-viabilidade",
+    "decidir-quando-nao-usar-ia"
+  ],
+  "aprende": [
+    {
+      "t": "Calculate the value of an opportunity in reais per year"
+    },
+    {
+      "t": "Measure feasibility: data, integration, error tolerance, and owner"
+    },
+    {
+      "t": "The four quadrants and what to do in each one"
+    },
+    {
+      "t": "The three signs that AI is not the answer"
+    }
+  ],
+  "hero_alt": "Hand sticking a sticky note onto a glass wall divided into four quadrants.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The simplest-solution ladder",
+      "sub": "Before the matrix, every opportunity goes through this ladder. Tap each step.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Don't do",
+          "sub": "the cheapest gain",
+          "detalhe": "A report nobody reads, an approval that just rubber-stamps, a duplicated spreadsheet. Before automating, ask whether the step needs to exist."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Fixed rule",
+          "sub": "automation without AI",
+          "detalhe": "If the decision fits in an \"if X happens, do Y,\" use ordinary automation (a spreadsheet, n8n, the system itself). Cheaper, more predictable, and easy to audit."
+        },
+        {
+          "icone": "chip",
+          "titulo": "AI in one step",
+          "sub": "flow with one model",
+          "forte": true,
+          "detalhe": "The language model comes in at one step only: classify the message, extract data from a PDF, draft the reply. The rest of the flow is fixed and a person checks the output.",
+          "itens": [
+            {
+              "t": "classify",
+              "icone": "lista"
+            },
+            {
+              "t": "extract",
+              "icone": "arquivo"
+            },
+            {
+              "t": "draft",
+              "icone": "caneta"
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agent",
+          "sub": "a path that changes every time",
+          "detalhe": "Only when the task has several steps that can't be predicted, uses tools, and has to decide along the way. It costs more to build, operate, and supervise."
+        }
+      ],
+      "legenda": "Rule: use the lowest step that solves it. Move up only with the reason written down.",
+      "dica": "Test question for moving up a step: \"what happens when it gets it wrong, and who notices?\""
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From catalog to decision",
+      "sub": "Four steps. The filled-in matrix is not the deliverable: the decision is.",
+      "passos": [
+        {
+          "titulo": "Value in reais",
+          "sub": "frequency × cost × days",
+          "texto": [
+            "Annual value ≈ occurrences per day × cost of each occurrence × working days. Cost includes people's time (minutes × hourly cost), rework, and lost sales.",
+            "Value that doesn't turn into a number (reputation, risk) goes in as high, medium, or low, but it doesn't replace the math."
+          ],
+          "exemplo": {
+            "rot": "Horizonte, simulation",
+            "texto": "60 quotes per day × 12 min of salesperson time at R$ 40/h (R$ 8) × 250 days ≈ R$ 120,000 per year in time alone."
+          }
+        },
+        {
+          "titulo": "Feasibility",
+          "sub": "four questions",
+          "texto": [
+            "Does the data exist, and can you get to it? Is the integration simple, or does it need a legacy system with no API? Is an error tolerable, or does it cause financial or legal damage? Is there an internal owner who will use it and look after it?",
+            "Each \"no\" lowers feasibility. Integration with a legacy system and changing the team's habits are the costs that hide the most."
+          ],
+          "exemplo": {
+            "rot": "Be wary when you hear",
+            "texto": "\"The data is already ready\" and \"the integration takes a week.\""
+          }
+        },
+        {
+          "titulo": "The four quadrants",
+          "sub": "where each one lands",
+          "texto": [
+            "<b>Do now</b> (high value, feasible): 30-day pilot. <b>Plan</b> (high value, hard): prepare data or process first. <b>If time allows</b> (low value, easy). <b>Don't do</b> (low value, hard), with the reason written down.",
+            "Pick one, two at most, for the pilot."
+          ],
+          "exemplo": {
+            "rot": "A good first project",
+            "texto": "Measurable in 30 days, visible to whoever approves it, with accessible data and little change to routine."
+          }
+        },
+        {
+          "titulo": "When NOT to use AI",
+          "sub": "three signs",
+          "texto": [
+            "Low volume (a few cases a month don't pay for the build). Fixed rule (it fits in an \"if X, then Y\"). Costly error with no human review (money, contract, health): there AI only helps, never decides.",
+            "One sign is enough to go down the ladder. Write down the reason: it is what protects the client from the next fad."
+          ],
+          "exemplo": {
+            "rot": "Quick test",
+            "texto": "\"If this gets it wrong 1 time in 20, is the damage tolerable?\" If not, AI only with a person approving."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: value × feasibility matrix",
+      "sub": "Paste it into a spreadsheet. Scores from 1 to 5; the reason is always written down.",
+      "blocos": [
+        {
+          "rot": "Catalog + matrix (spreadsheet)",
+          "icone": "lista",
+          "conteudo": "| # | Opportunity | Process step | Step (don't do/rule/AI in one step/agent) | Value R$/year (calculation) | Value 1-5 | Data 1-5 | Integration 1-5 | Error tolerance 1-5 | Internal owner 1-5 | Feasibility (average) | Quadrant | Reason |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| 1 | <e.g.: quote draft> | <sales> | <AI in one step> | <60/day × R$ 8 × 250> | <4> | <3> | <3> | <4> | <5> | <3.75> | <Do now> | <data in the price spreadsheet> |\n\nQuadrant: Value >= 3 and Feasibility >= 3 -> Do now | Value >= 3 and Feas < 3 -> Plan\n           Value < 3 and Feasibility >= 3 -> If time allows | Value < 3 and Feas < 3 -> Don't do"
+        },
+        {
+          "rot": "Checklist: does it need AI?",
+          "icone": "check",
+          "conteudo": "[ ] Does the task involve language, images, or documents with no fixed format?\n[ ] Does the volume pay for the build within 12 months?\n[ ] Is there quality data for the model to use?\n[ ] Is an error tolerable OR does a person review it before it takes effect?\n[ ] Is there no ready-made tool that already solves it?\n[ ] Will someone at the company keep this running?\nMostly \"no\" -> stay on the lower step (fixed rule or don't do)."
+        },
+        {
+          "rot": "Decision record (one line per opportunity)",
+          "icone": "caneta",
+          "conteudo": "<opportunity> | step chosen: <...> | why not the one below: <...> | why not the one above: <...> | review if: <e.g.: error above 10% or cost above R$ X/month>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte: 6 opportunities",
+            "html": "<ol><li><b>Quote draft from WhatsApp</b> · AI in one step · value 4, feas. 3.8 → <b>Do now</b>.</li><li><b>Overdue invoice reminder</b> · fixed rule · value 3, feas. 5 → Do now, <b>no AI</b>.</li><li><b>Customer service summary</b> · AI in one step · value 3, feas. 2 (data leaving the company without a contract) → <b>Plan</b>.</li><li><b>Agent that sells on its own</b> · agent · value 4, feas. 1.5 → <b>Plan</b> (after pilot 1).</li><li><b>Weekly visit report</b> · nobody reads it → <b>don't do</b>.</li><li><b>Demand forecast</b> · value 2, feas. 2 (messy history) → <b>Don't do now</b>.</li></ol>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Value assuming 100% adoption on day one</b>: cut the first-year gain.</li><li><b>Choosing by the \"wow\"</b>: the sales agent is exciting, but it depends on pricing, inventory, and rules that aren't organized yet.</li><li><b>Dropping an idea with no reason</b>: three months from now the idea comes back and you don't remember why it was dropped.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: prioritize Horizonte",
+      "sub": "Use what you gathered in lesson 2.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Catalog of 6 opportunities",
+          "min": "25 min",
+          "texto": "List 6 Horizonte opportunities, each tied to a process step. For each one, pick the step on the ladder and work out the value in reais per year (you can use simulated numbers, marked as simulation).",
+          "pronto": "all 6 rows have a step, a ladder step, and a value calculation that someone else can redo."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Matrix and decision",
+          "min": "25 min",
+          "texto": "Give the feasibility scores, place each opportunity in a quadrant, and write the decision record for the first two.",
+          "pronto": "the matrix has all 6 opportunities, at least one marked \"no AI\" or \"don't do,\" and the reason for each discard is written down."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "\"Orders over R$ 500 get free shipping.\" Which step?",
+          "opcoes": [
+            "Agent.",
+            "AI in one step.",
+            "Fixed rule, no AI.",
+            "Don't do."
+          ],
+          "certa": 2,
+          "explica": "It fits in an \"if X, then Y.\" A language model here only adds cost and unpredictability.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "An opportunity has high value, but the data is scattered across three spreadsheets. Which quadrant?",
+          "opcoes": [
+            "Do now.",
+            "Plan: sort out the data first.",
+            "Don't do.",
+            "If there's time left."
+          ],
+          "certa": 1,
+          "explica": "High value and low feasibility: it's worth it, but not now. The first job is to sort out the data, and that is consulting too.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which of these is a sign that it is NOT a case for AI?",
+          "opcoes": [
+            "The task uses free text.",
+            "A mistake would cause financial harm and nobody reviews the output.",
+            "The volume is high.",
+            "There is an internal owner."
+          ],
+          "certa": 1,
+          "explica": "An expensive error with no human review is a sign to move down the ladder or have a person approve. The other items are in favor of AI.",
+          "ref": "passos"
+        },
+        {
+          "p": "What is the deliverable of the prioritization meeting?",
+          "opcoes": [
+            "The color-coded matrix.",
+            "The decision made, with the reason for each choice and each item dropped.",
+            "The list of tools.",
+            "The price of the project."
+          ],
+          "certa": 1,
+          "explica": "The matrix is the means. The owner needs to leave with a decision: what goes into the pilot, what waits, and what was dropped, and why.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Lowest step",
+          "texto": "Don't do it, fixed rule, AI in one step, agent. Move up only with a written reason."
+        },
+        {
+          "t": "Value with the math",
+          "texto": "Frequency × cost × working days. Be wary of 100% adoption on day one."
+        },
+        {
+          "t": "A decision, not a spreadsheet",
+          "texto": "One or two for the pilot; dropped items with a reason."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Lab company: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Common Core: the 2027 map (what AI does well and where it fails)",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

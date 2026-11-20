@@ -1,0 +1,311 @@
+{
+  "slug": "custo-tarefa",
+  "num": 4,
+  "menu": "Cost",
+  "titulo": "Model and vendor by cost per task",
+  "titulo_curto": "Cost per task",
+  "minutos": 20,
+  "lead": "The owner asks: \"which AI should I use?\" The answer is not the trendy model or the cheapest per token. It is the one that delivers the task at the lowest total cost, counting the retries and the time of whoever reviews. And the vendor weighs in too: tools get discontinued, data crosses borders, licenses change.",
+  "objetivo": "calculate the cost per task of 2 processes across 4 model tiers, with human review in the math, and assess the vendor risk.",
+  "competencias": [
+    "calcular-custo-por-tarefa",
+    "comparar-faixas-de-modelo",
+    "avaliar-risco-de-fornecedor"
+  ],
+  "aprende": [
+    {
+      "t": "The four tiers: frontier, mid-range, cheap, and open local"
+    },
+    {
+      "t": "The cost-per-task formula, with human review"
+    },
+    {
+      "t": "Why the cheapest token is not always the cheapest task"
+    },
+    {
+      "t": "Five vendor risk questions"
+    }
+  ],
+  "hero_alt": "A desk with a calculator, stacks of coins of different heights, receipts, and a notebook with a blurred bar chart.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "What goes into the cost of a task",
+      "sub": "Four parts. Click each one.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Tokens",
+          "sub": "input and output",
+          "detalhe": "A token is the piece of text the model charges for (usually a piece of a word). The input (instruction + document) and the output (response) have different prices, quoted in dollars per million tokens."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Tier price",
+          "sub": "US$ per million",
+          "detalhe": "Each model has one price per million input tokens and another for output. The price changes with every release: check the vendor's website on the day you do the calculation, never from memory.",
+          "itens": [
+            {
+              "t": "top tier",
+              "icone": "alvo"
+            },
+            {
+              "t": "mid-range",
+              "icone": "camadas"
+            },
+            {
+              "t": "cheap",
+              "icone": "fila"
+            },
+            {
+              "t": "open local",
+              "icone": "chip"
+            }
+          ]
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Repetitions",
+          "sub": "retries and redos",
+          "detalhe": "How many times, on average, the task runs until the output is usable: a new attempt, a request for a fix, chained steps. An agent that makes 6 calls for one task multiplies the cost by 6."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Human review",
+          "sub": "almost always the biggest share",
+          "forte": true,
+          "detalhe": "Minutes a person spends checking and fixing × their hourly cost. In an SMB, this share is usually bigger than the tokens. A worse model can end up costing more because it takes more work to review."
+        }
+      ],
+      "legenda": "Cost per task = (tokens × price) × repetitions + human review. Fixed cost (local machine, subscription) goes in divided by the month's volume.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The whole calculation",
+        "texto": "Tokens times price, times repetitions, plus the minutes of whoever reviews. Compare the tiers by the total, not by the token price."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The method in four steps",
+      "sub": "Memorize the method, not the prices: they change every month.",
+      "passos": [
+        {
+          "titulo": "Measure the task",
+          "sub": "real size",
+          "texto": [
+            "Take 20 real examples of the task (no personal data). Count the average size of the input and the output. Most tools show the tokens used in each call.",
+            "Also note the volume: how many times a month the task happens."
+          ],
+          "exemplo": {
+            "rot": "Horizonte, simulation",
+            "texto": "Customer support summary: 3,000 input tokens, 500 output tokens, 1,200 tickets per month."
+          }
+        },
+        {
+          "titulo": "Choose the tiers",
+          "sub": "one of each",
+          "texto": [
+            "<b>Top tier</b> (e.g., Claude Opus 5.5, US$ 4 input and US$ 20 output per million). <b>Mid-range</b> (e.g., Claude Sonnet 5.5, US$ 2/10; Grok 4.7, US$ 2/6). <b>Cheap</b> (the small versions from each vendor). <b>Open local</b> (e.g., Qwen3.8-27B, runs on a powerful computer, Apache 2.0 license).",
+            "Prices as of Oct/2026, with the source at the end of the lesson."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "Write the date and the price link next to each number."
+          }
+        },
+        {
+          "titulo": "Test the review",
+          "sub": "20 tasks per tier",
+          "texto": [
+            "Run the same 20 tasks on each tier and time how long a person takes to make the output usable. That time is the part of the cost that the token price doesn't show.",
+            "Along the way, note the serious errors: a model that gets a price or a customer name wrong may be out, whatever the cost."
+          ],
+          "exemplo": {
+            "rot": "Who reviews",
+            "texto": "The same person who will do the work later (at Horizonte, Juliana)."
+          }
+        },
+        {
+          "titulo": "Add up and decide",
+          "sub": "total cost + risk",
+          "texto": [
+            "Add tokens, repetitions, and review; multiply by the month's volume. For the local model, add the fixed cost (amortized machine, power, maintenance hours) and divide by the volume.",
+            "Then run the winner through the vendor's five risk questions. A low cost doesn't make up for data leaving without a contract."
+          ],
+          "exemplo": {
+            "rot": "When local wins",
+            "texto": "Data that can't leave the company, very high volume, or a cost that has to be fixed."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Cost-per-task calculator",
+      "sub": "Paste it into a spreadsheet. The numbers in the simulation next to it are an example: swap in your own.",
+      "blocos": [
+        {
+          "rot": "Formula (spreadsheet)",
+          "icone": "grafico",
+          "conteudo": "INPUTS (one row per model tier)\nA  input tokens per task\nB  output tokens per task\nC  input price (US$ per million)   <- check on the website, with date\nD  output price  (US$ per million)\nE  average repetitions per task (1 = right on the first try)\nF  exchange rate (R$ per US$)                 <- today's\nG  minutes of human review per task <- measured on 20 tasks\nH  hourly cost of whoever reviews (R$)\nI  volume per month\nJ  fixed cost per month (R$)             <- local: machine/36 + power + maintenance\n\nCALCULATION\nTokens (R$)      = (A*C + B*D) / 1000000 * E * F\nRevisão (R$)     = G / 60 * H\nFixo por tarefa  = J / I\nCUSTO POR TAREFA = Tokens + Revisão + Fixo por tarefa\nCUSTO NO MÊS     = CUSTO POR TAREFA * I"
+        },
+        {
+          "rot": "Vendor risk questions",
+          "icone": "escudo",
+          "conteudo": "1. WHERE DOES THE DATA GO? Server country, contract, legal basis (LGPD (Brazil's data protection law)). Personal data leaving without a contract = stop.\n2. CAN THE TOOL BE DISCONTINUED? Is there an announced shutdown date? How do I export instructions and data?\n3. IS THE VENDOR STABLE? Dispute with a government, change of owner, IPO, sudden price change.\n4. DOES THE LICENSE ALLOW IT? (open model) Commercial use, revenue cap, research only.\n5. CAN YOU SWITCH? Instructions in your own file, no exclusive feature -> switch in days, not months."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Customer service summary (Horizonte)",
+            "html": "<p>3,000 input tokens, 500 output tokens, 1.2 repetitions, sample exchange rate R$ 5.50, review at R$ 30/h, 1,200 per month. Review minutes = <b>hypothesis</b> from a test of 20 tasks.</p><ul><li><b>Top tier</b> (Opus 5.5, US$ 4/20) · tokens R$ 0.15 + review 1 min R$ 0.50 = <b>R$ 0.65</b> · month ≈ R$ 774</li><li><b>Mid tier</b> (Sonnet 5.5, US$ 2/10) · R$ 0.07 + review 1.5 min R$ 0.75 = <b>R$ 0.82</b> · month ≈ R$ 987</li><li><b>Mid tier</b> (Grok 4.7, US$ 2/6) · R$ 0.06 + review 1.5 min R$ 0.75 = <b>R$ 0.81</b> · month ≈ R$ 971</li><li><b>Open local</b> (Qwen3.8-27B) · tokens R$ 0 + hypothetical fixed R$ 600/month (R$ 0.50 per task) + review 2 min R$ 1.00 = <b>R$ 1.50</b> · month ≈ R$ 1,800</li></ul><p>Takeaway: in this example, the most expensive token gives the cheapest task, because review weighs more than the token. With different review minutes, the order changes: that is why you measure.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Comparing only the token price</b> and forgetting human review.</li><li><b>Using prices from memory</b>: prices drop with each generation; always add the date and link.</li><li><b>Thinking local is free</b>: it takes a machine, power, and someone to maintain it.</li><li><b>Choosing without the risk questions</b>: the cheapest one may send customer conversations abroad without a contract.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: cost table for 2 processes",
+      "sub": "Use the two \"Do now\" opportunities from lesson 3.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Measure the two tasks",
+          "min": "20 min",
+          "texto": "For each process, write the average input and output size (you can estimate with 5 fictional examples) and the monthly volume.",
+          "pronto": "each process has A, B, and I filled in, with the source of each number noted."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Cost per task table",
+          "min": "30 min",
+          "texto": "Build the spreadsheet with 4 tiers for each process. Look up the prices on the vendor's website, with the date. Use estimated review minutes and mark them as a hypothesis to measure.",
+          "pronto": "the table has 8 rows (2 processes × 4 tiers), cost per task and cost per month, and each price has a date and link."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Vendor risk",
+          "min": "15 min",
+          "texto": "Run the winner of each process through the 5 risk questions. If it is the customer service summary, consider the lab's failure in which the conversation goes to a foreign API without a contract (F10).",
+          "pronto": "each winner has the 5 answers and a decision: use, use with conditions, or switch."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which portion usually weighs the most in the cost of a task at an SMB?",
+          "opcoes": [
+            "The input tokens.",
+            "The output tokens.",
+            "Human review.",
+            "The exchange rate."
+          ],
+          "certa": 2,
+          "explica": "One minute of a person's time usually costs more than the tokens of an entire task. That is why the 20-task test measures review time.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Model B has a cheaper token than A, but requires twice the review time. What should you conclude?",
+          "opcoes": [
+            "B is always cheaper.",
+            "A is always cheaper.",
+            "It depends: add up tokens and review and compare the cost per task.",
+            "It makes no difference."
+          ],
+          "certa": 2,
+          "explica": "The decision comes from the sum. With expensive review, the cheapest token can give the most expensive task.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Why does the lesson say to note the date and link of each price?",
+          "opcoes": [
+            "To decorate the report.",
+            "Because prices change with each release and the client needs to check the source.",
+            "Because it is a legal requirement.",
+            "To compare with the competitor."
+          ],
+          "certa": 1,
+          "explica": "The price per task drops with each generation of models. A number without a date gets old and undermines the credibility of your math.",
+          "ref": "passos"
+        },
+        {
+          "p": "When does an open model running inside the company tend to win?",
+          "opcoes": [
+            "Always, because it is free.",
+            "When the data cannot leave the company, the volume is very high, or the cost needs to be fixed.",
+            "Never.",
+            "When the task is rare."
+          ],
+          "certa": 1,
+          "explica": "Local is not free: it takes a machine, power, and maintenance. It pays off for privacy, volume, or cost predictability.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "The formula",
+          "texto": "(tokens × price) × repetitions + human review + fixed cost divided by volume."
+        },
+        {
+          "t": "Measure the review",
+          "texto": "20 tasks per tier, timed by the person who will do the work."
+        },
+        {
+          "t": "The vendor is a risk too",
+          "texto": "Where the data goes, whether the tool gets discontinued, license, and how easy it is to switch."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Price sources (Oct/2026) and where to go next",
+      "links": [
+        {
+          "t": "Anthropic: Claude Opus 5.5, US$ 4/20 per million tokens (09/22/2026)",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Anthropic: Claude Sonnet 5.5, US$ 2/10 per million tokens (09/28/2026)",
+          "href": "https://www.anthropic.com/news/claude-sonnet-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "xAI: Grok 4.7, US$ 2/6 per million tokens (09/21/2026)",
+          "href": "https://docs.x.ai/developers/grok-4-7",
+          "icone": "arquivo"
+        },
+        {
+          "t": "The Next Web: open Qwen3.8-27B, runs locally, Apache 2.0 license (08/19/2026)",
+          "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model",
+          "icone": "chip"
+        },
+        {
+          "t": "OpenAI: deprecations, Agent Builder shuts down on 11/30/2026",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "relogio"
+        },
+        {
+          "t": "Horizonte Lab: Service summary (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

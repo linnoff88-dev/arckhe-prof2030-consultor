@@ -1,0 +1,311 @@
+{
+  "slug": "custo-tarefa",
+  "num": 4,
+  "menu": "Custo",
+  "titulo": "Modelo e fornecedor por custo de tarefa",
+  "titulo_curto": "Custo por tarefa",
+  "minutos": 20,
+  "lead": "O dono pergunta: \"qual IA eu uso?\". A resposta não é o modelo da moda nem o mais barato por token. É o que entrega a tarefa pelo menor custo total, contando as tentativas e o tempo de quem revisa. E o fornecedor também pesa: ferramenta sai de linha, dado atravessa fronteira, licença muda.",
+  "objetivo": "calcular o custo por tarefa de 2 processos em 4 faixas de modelo, com revisão humana na conta, e avaliar o risco do fornecedor.",
+  "competencias": [
+    "calcular-custo-por-tarefa",
+    "comparar-faixas-de-modelo",
+    "avaliar-risco-de-fornecedor"
+  ],
+  "aprende": [
+    {
+      "t": "As quatro faixas: ponta, intermediário, barato e aberto local"
+    },
+    {
+      "t": "A fórmula do custo por tarefa, com revisão humana"
+    },
+    {
+      "t": "Por que o token mais barato nem sempre é a tarefa mais barata"
+    },
+    {
+      "t": "Cinco perguntas de risco do fornecedor"
+    }
+  ],
+  "hero_alt": "Mesa com calculadora, pilhas de moedas de alturas diferentes, recibos e um notebook com gráfico de barras desfocado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O que entra no custo de uma tarefa",
+      "sub": "Quatro parcelas. Clique em cada uma.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Tokens",
+          "sub": "entrada e saída",
+          "detalhe": "Token é o pedaço de texto que o modelo cobra (em geral, um pedaço de palavra). A entrada (instrução + documento) e a saída (resposta) têm preços diferentes, cotados em dólar por milhão de tokens."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Preço da faixa",
+          "sub": "US$ por milhão",
+          "detalhe": "Cada modelo tem um preço por milhão de tokens de entrada e outro de saída. O preço muda a cada lançamento: confira no site do fornecedor no dia do cálculo, nunca de memória.",
+          "itens": [
+            {
+              "t": "ponta",
+              "icone": "alvo"
+            },
+            {
+              "t": "intermediário",
+              "icone": "camadas"
+            },
+            {
+              "t": "barato",
+              "icone": "fila"
+            },
+            {
+              "t": "aberto local",
+              "icone": "chip"
+            }
+          ]
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Repetições",
+          "sub": "tentativas e refações",
+          "detalhe": "Quantas vezes, em média, a tarefa roda até sair aproveitável: nova tentativa, pedido de correção, etapas em cadeia. Um agente que faz 6 chamadas para uma tarefa multiplica o custo por 6."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Revisão humana",
+          "sub": "quase sempre a maior parcela",
+          "forte": true,
+          "detalhe": "Minutos que uma pessoa gasta conferindo e corrigindo × custo da hora dela. Em PME, essa parcela costuma ser maior que a dos tokens. Modelo pior pode sair mais caro porque dá mais trabalho para revisar."
+        }
+      ],
+      "legenda": "Custo por tarefa = (tokens × preço) × repetições + revisão humana. Custo fixo (máquina local, assinatura) entra dividido pelo volume do mês.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "A conta inteira",
+        "texto": "Tokens vezes preço, vezes repetições, mais os minutos de quem revisa. Compare as faixas pela soma, não pelo preço do token."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O método em quatro passos",
+      "sub": "Decore o método, não os preços: eles mudam a cada mês.",
+      "passos": [
+        {
+          "titulo": "Medir a tarefa",
+          "sub": "tamanho real",
+          "texto": [
+            "Pegue 20 exemplos reais da tarefa (sem dado pessoal). Conte o tamanho médio da entrada e da saída. A maioria das ferramentas mostra os tokens gastos em cada chamada.",
+            "Anote também o volume: quantas vezes por mês a tarefa acontece."
+          ],
+          "exemplo": {
+            "rot": "Horizonte, simulação",
+            "texto": "Resumo de atendimento: 3.000 tokens de entrada, 500 de saída, 1.200 atendimentos por mês."
+          }
+        },
+        {
+          "titulo": "Escolher as faixas",
+          "sub": "uma de cada",
+          "texto": [
+            "<b>Ponta</b> (ex.: Claude Opus 5.5, US$ 4 de entrada e US$ 20 de saída por milhão). <b>Intermediário</b> (ex.: Claude Sonnet 5.5, US$ 2/10; Grok 4.7, US$ 2/6). <b>Barato</b> (as versões pequenas de cada fornecedor). <b>Aberto local</b> (ex.: Qwen3.8-27B, roda num computador potente, licença Apache 2.0).",
+            "Preços de out/2026, com fonte no fim da aula."
+          ],
+          "exemplo": {
+            "rot": "Regra",
+            "texto": "Escreva a data e o link do preço ao lado de cada número."
+          }
+        },
+        {
+          "titulo": "Testar a revisão",
+          "sub": "20 tarefas por faixa",
+          "texto": [
+            "Rode as mesmas 20 tarefas em cada faixa e cronometre quanto tempo uma pessoa leva para deixar a saída aproveitável. Esse tempo é a parte do custo que o preço do token não mostra.",
+            "Junto, anote os erros graves: um modelo que erra preço ou nome de cliente pode estar fora, seja qual for o custo."
+          ],
+          "exemplo": {
+            "rot": "Quem revisa",
+            "texto": "A mesma pessoa que fará o trabalho depois (na Horizonte, a Juliana)."
+          }
+        },
+        {
+          "titulo": "Somar e decidir",
+          "sub": "custo total + risco",
+          "texto": [
+            "Some tokens, repetições e revisão; multiplique pelo volume do mês. Para o modelo local, some o custo fixo (máquina amortizada, energia, horas de manutenção) e divida pelo volume.",
+            "Depois passe o vencedor pelas cinco perguntas de risco do fornecedor. Custo baixo não compensa dado saindo sem contrato."
+          ],
+          "exemplo": {
+            "rot": "Quando o local ganha",
+            "texto": "Dado que não pode sair da empresa, volume muito alto ou custo que precisa ser fixo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Calculadora de custo por tarefa",
+      "sub": "Cole numa planilha. Os números da simulação ao lado são exemplo: troque pelos seus.",
+      "blocos": [
+        {
+          "rot": "Fórmula (planilha)",
+          "icone": "grafico",
+          "conteudo": "ENTRADAS (uma linha por faixa de modelo)\nA  tokens de entrada por tarefa\nB  tokens de saída por tarefa\nC  preço de entrada (US$ por milhão)   <- conferir no site, com data\nD  preço de saída  (US$ por milhão)\nE  repetições médias por tarefa (1 = acerta de primeira)\nF  câmbio (R$ por US$)                 <- o do dia\nG  minutos de revisão humana por tarefa <- medido em 20 tarefas\nH  custo da hora de quem revisa (R$)\nI  volume por mês\nJ  custo fixo por mês (R$)             <- local: máquina/36 + energia + manutenção\n\nCÁLCULO\nTokens (R$)      = (A*C + B*D) / 1000000 * E * F\nRevisão (R$)     = G / 60 * H\nFixo por tarefa  = J / I\nCUSTO POR TAREFA = Tokens + Revisão + Fixo por tarefa\nCUSTO NO MÊS     = CUSTO POR TAREFA * I"
+        },
+        {
+          "rot": "Perguntas de risco do fornecedor",
+          "icone": "escudo",
+          "conteudo": "1. ONDE O DADO VAI? País do servidor, contrato, base legal (LGPD). Dado pessoal saindo sem contrato = parar.\n2. A FERRAMENTA PODE SAIR DE LINHA? Tem data de desativação anunciada? Como eu exporto instruções e dados?\n3. O FORNECEDOR É ESTÁVEL? Disputa com governo, mudança de dono, abertura de capital, troca brusca de preço.\n4. A LICENÇA PERMITE? (modelo aberto) Uso comercial, teto de receita, só pesquisa.\n5. DÁ PARA TROCAR? Instruções em arquivo próprio, sem recurso exclusivo -> troca em dias, não em meses."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Resumo de atendimento (Horizonte)",
+            "html": "<p>3.000 tokens de entrada, 500 de saída, 1,2 repetição, câmbio de exemplo R$ 5,50, revisão a R$ 30/h, 1.200 por mês. Minutos de revisão = <b>hipótese</b> de um teste de 20 tarefas.</p><ul><li><b>Ponta</b> (Opus 5.5, US$ 4/20) · tokens R$ 0,15 + revisão 1 min R$ 0,50 = <b>R$ 0,65</b> · mês ≈ R$ 774</li><li><b>Intermediário</b> (Sonnet 5.5, US$ 2/10) · R$ 0,07 + revisão 1,5 min R$ 0,75 = <b>R$ 0,82</b> · mês ≈ R$ 987</li><li><b>Intermediário</b> (Grok 4.7, US$ 2/6) · R$ 0,06 + revisão 1,5 min R$ 0,75 = <b>R$ 0,81</b> · mês ≈ R$ 971</li><li><b>Aberto local</b> (Qwen3.8-27B) · tokens R$ 0 + fixo hipotético R$ 600/mês (R$ 0,50 por tarefa) + revisão 2 min R$ 1,00 = <b>R$ 1,50</b> · mês ≈ R$ 1.800</li></ul><p>Leitura: neste exemplo o token mais caro dá a tarefa mais barata, porque a revisão pesa mais que o token. Com outros minutos de revisão, a ordem muda: por isso se mede.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Comparar só o preço do token</b> e esquecer a revisão humana.</li><li><b>Usar preço de memória</b>: os preços caem a cada geração; sempre data e link.</li><li><b>Achar que local é de graça</b>: tem máquina, energia e alguém mantendo.</li><li><b>Escolher sem as perguntas de risco</b>: o mais barato pode mandar conversa de cliente para fora sem contrato.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: tabela de custo para 2 processos",
+      "sub": "Use as duas oportunidades \"Fazer já\" da aula 3.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Medir as duas tarefas",
+          "min": "20 min",
+          "texto": "Para cada processo, escreva o tamanho médio de entrada e saída (pode estimar com 5 exemplos fictícios) e o volume por mês.",
+          "pronto": "cada processo tem A, B e I preenchidos, com a origem do número anotada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Tabela de custo por tarefa",
+          "min": "30 min",
+          "texto": "Monte a planilha com 4 faixas para cada processo. Busque os preços no site do fornecedor, com data. Use minutos de revisão estimados e marque-os como hipótese a medir.",
+          "pronto": "a tabela tem 8 linhas (2 processos × 4 faixas), custo por tarefa e custo no mês, e cada preço tem data e link."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Risco do fornecedor",
+          "min": "15 min",
+          "texto": "Passe o vencedor de cada processo pelas 5 perguntas de risco. Se for o resumo de atendimento, considere a falha do laboratório em que a conversa vai para uma API estrangeira sem contrato (F10).",
+          "pronto": "cada vencedor tem as 5 respostas e uma decisão: usar, usar com condição ou trocar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Qual parcela costuma pesar mais no custo de uma tarefa numa PME?",
+          "opcoes": [
+            "Os tokens de entrada.",
+            "Os tokens de saída.",
+            "A revisão humana.",
+            "O câmbio."
+          ],
+          "certa": 2,
+          "explica": "Um minuto de uma pessoa costuma custar mais que os tokens de uma tarefa inteira. Por isso o teste de 20 tarefas mede o tempo de revisão.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "O modelo B tem token mais barato que o A, mas exige o dobro do tempo de revisão. O que concluir?",
+          "opcoes": [
+            "B é sempre mais barato.",
+            "A é sempre mais barato.",
+            "Depende: some tokens e revisão e compare o custo por tarefa.",
+            "Tanto faz."
+          ],
+          "certa": 2,
+          "explica": "A decisão sai da soma. Com revisão cara, o token mais barato pode dar a tarefa mais cara.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Por que a aula manda anotar data e link de cada preço?",
+          "opcoes": [
+            "Para enfeitar o relatório.",
+            "Porque os preços mudam a cada lançamento e o cliente precisa conferir a origem.",
+            "Porque é exigência legal.",
+            "Para comparar com o concorrente."
+          ],
+          "certa": 1,
+          "explica": "O preço por tarefa cai a cada geração de modelos. Número sem data envelhece e tira a credibilidade da sua conta.",
+          "ref": "passos"
+        },
+        {
+          "p": "Quando o modelo aberto rodando na própria empresa tende a ganhar?",
+          "opcoes": [
+            "Sempre, porque é grátis.",
+            "Quando o dado não pode sair da empresa, o volume é muito alto ou o custo precisa ser fixo.",
+            "Nunca.",
+            "Quando a tarefa é rara."
+          ],
+          "certa": 1,
+          "explica": "Local não é grátis: tem máquina, energia e manutenção. Ele compensa por privacidade, volume ou previsibilidade de custo.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {
+          "t": "A fórmula",
+          "texto": "(tokens × preço) × repetições + revisão humana + custo fixo dividido pelo volume."
+        },
+        {
+          "t": "Medir a revisão",
+          "texto": "20 tarefas por faixa, cronometradas por quem fará o trabalho."
+        },
+        {
+          "t": "Fornecedor também é risco",
+          "texto": "Para onde vai o dado, se a ferramenta sai de linha, licença e facilidade de troca."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fontes dos preços (out/2026) e para ir além",
+      "links": [
+        {
+          "t": "Anthropic: Claude Opus 5.5, US$ 4/20 por milhão de tokens (22/09/2026)",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Anthropic: Claude Sonnet 5.5, US$ 2/10 por milhão de tokens (28/09/2026)",
+          "href": "https://www.anthropic.com/news/claude-sonnet-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "xAI: Grok 4.7, US$ 2/6 por milhão de tokens (21/09/2026)",
+          "href": "https://docs.x.ai/developers/grok-4-7",
+          "icone": "arquivo"
+        },
+        {
+          "t": "The Next Web: Qwen3.8-27B aberto, roda localmente, licença Apache 2.0 (19/08/2026)",
+          "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model",
+          "icone": "chip"
+        },
+        {
+          "t": "OpenAI: desativações, Agent Builder sai em 30/11/2026",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "relogio"
+        },
+        {
+          "t": "Laboratório Horizonte: Resumo de atendimento (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "slug": "medir-90-dias",
+  "num": 6,
+  "menu": "Medir",
+  "titulo": "Medir de verdad: 30, 60 y 90 días",
+  "titulo_curto": "Medir 30/60/90",
+  "minutos": 18,
+  "lead": "\"El agente respondió 4 mil mensajes\" no dice si la empresa ganó algo. Medir de verdad es comparar con el número de antes, con la misma vara, mirando también lo que pudo haber empeorado. A los 30, 60 y 90 días la pregunta cambia: ¿funciona, se estabilizó, valió el dinero?",
+  "objetivo": "armar un panel de 3 indicadores con el valor antes y después y conducir las revisiones de 30, 60 y 90 días contra la línea de base.",
+  "competencias": [
+    "montar-painel-de-indicadores",
+    "comparar-com-linha-de-base",
+    "calcular-roi-e-payback",
+    "evitar-metrica-de-vaidade"
+  ],
+  "aprende": [
+    {
+      "t": "Los tres indicadores: resultado, operación y protección"
+    },
+    {
+      "t": "La métrica de vanidad y la meta que enseña a hacer trampa"
+    },
+    {
+      "t": "Qué se pregunta a los 30, 60 y 90 días"
+    },
+    {
+      "t": "ROI y payback en lenguaje de dueño"
+    }
+  ],
+  "hero_alt": "Tableta con un gráfico de líneas junto a dos hojas impresas con gráficos de barras, regla y lápiz.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El panel de tres indicadores",
+      "sub": "Uno de cada tipo, siempre con el valor de antes. Haz clic en cada uno.",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Resultado",
+          "sub": "lo que el dueño sigue de cerca",
+          "forte": true,
+          "detalhe": "Venta cerrada, margen, pedido entregado a tiempo, costo por pedido. Tarda en moverse, pero es lo que paga el proyecto. En Horizonte: pedidos cerrados a partir de un presupuesto enviado."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Operación",
+          "sub": "lo que cambia primero",
+          "detalhe": "Tiempo de respuesta, tiempo por tarea, cola del día. Se mueve en días y muestra si se está usando el agente. Solo, engaña."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Protección",
+          "sub": "lo que no puede empeorar",
+          "detalhe": "Error de precio, reclamo, descuento promedio, retrabajo, incidente con datos. Si la operación mejora y la protección empeora, la ganancia es falsa."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Línea de base",
+          "sub": "el número de antes",
+          "detalhe": "Cada indicador tiene el valor de antes del agente, medido de la misma forma, en el mismo tipo de período. Sin ella, el panel solo muestra movimiento.",
+          "itens": [
+            {
+              "t": "misma vara",
+              "icone": "check"
+            },
+            {
+              "t": "mismo período",
+              "icone": "calendario"
+            },
+            {
+              "t": "quién mide",
+              "icone": "usuario"
+            }
+          ]
+        }
+      ],
+      "legenda": "Frecuencia semanal o mensual, nunca diaria: el lunes hay acumulación y el viernes la gente sale temprano.",
+      "dica": "Contraejemplo del laboratorio (F11): el panel de Horizonte muestra mensajes respondidos y conversaciones iniciadas, sin columna de antes y sin ventas ni reclamos."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Las tres revisiones",
+      "sub": "Cada revisión responde una pregunta distinta.",
+      "passos": [
+        {
+          "titulo": "30 días",
+          "sub": "¿está funcionando?",
+          "texto": [
+            "Fin del piloto. ¿Se está usando el agente? ¿La operación mejoró frente a la línea de base? ¿Alguna protección empeoró?",
+            "Corrige las fricciones de uso: dónde el equipo abandona, dónde vuelve a la forma antigua. Decisión: seguir, ajustar o parar."
+          ],
+          "exemplo": {
+            "rot": "Señal de alerta",
+            "texto": "El uso cae en la tercera semana: el proceso no encajó en la rutina. Vuelve al diagnóstico."
+          }
+        },
+        {
+          "titulo": "60 días",
+          "sub": "¿se mantuvo estable?",
+          "texto": [
+            "¿La ganancia se mantuvo sin el consultor cerca? ¿El costo por tarea real coincide con el calculado en la clase 4? ¿Los errores bajaron o solo cambiaron de lugar?",
+            "Compara la ganancia estimada al comienzo con la real."
+          ],
+          "exemplo": {
+            "rot": "Pregunta",
+            "texto": "\"Si desaparezco por un mes, ¿esto sigue funcionando?\""
+          }
+        },
+        {
+          "titulo": "90 días",
+          "sub": "¿valió el dinero?",
+          "texto": [
+            "Ahora el indicador de resultado ya tuvo tiempo de moverse. Calcula el ROI y el payback y decide: expandir a otro equipo, mantener como está o apagar.",
+            "Lo que mediste se convierte en la línea de base del próximo ciclo."
+          ],
+          "exemplo": {
+            "rot": "Lenguaje de dueño",
+            "texto": "\"Invertimos R$ X, ganamos R$ Y por mes, el dinero vuelve en Z meses.\""
+          }
+        },
+        {
+          "titulo": "Cuidado con la meta",
+          "sub": "enseña a hacer trampa",
+          "texto": [
+            "Un indicador solo se vuelve objetivo: el tiempo de respuesta baja porque se responde cualquier cosa; la atención se cierra sin resolver; el descuento sube para cerrar la venta.",
+            "Por eso cada indicador de operación va junto con uno de protección. Y el panel muestra adopción: cuántas personas lo usan por semana."
+          ],
+          "exemplo": {
+            "rot": "Par correcto",
+            "texto": "Tiempo de respuesta (operación) + presupuestos con precio equivocado (protección)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: panel 30/60/90",
+      "sub": "Una línea por indicador. Pégalo en una hoja de cálculo y actualízalo con la frecuencia acordada.",
+      "blocos": [
+        {
+          "rot": "Panel 30/60/90",
+          "icone": "grafico",
+          "conteudo": "PANEL · <empresa> · <proceso> · línea de base medida el <fecha> por <quién>\n\n| Tipo | Indicador | Cómo se mide (fuente, quién cuenta) | Antes | 30 días | 60 días | 90 días | Meta |\n|---|---|---|---|---|---|---|---|\n| Resultado | <pedidos cerrados / presupuestos> | <hoja de ventas, Patrícia> | <...> | | | | <...> |\n| Operación | <mediana del tiempo hasta el presupuesto> | <50 pedidos, hora de entrada x envío> | <...> | | | | <...> |\n| Protección | <presupuestos con precio equivocado> | <revisión semanal> | <...> | | | | <no empeorar> |\n| Adopción | <personas que lo usaron en la semana> | <registro del agente> | 0 | | | | <...> |\n| Costo | <costo por tarea real (R$)> | <factura + minutos de revisión> | — | | | | <<= calculado> |\n\nREVISIÓN 30: ¿funciona? | REVISIÓN 60: ¿estable? | REVISIÓN 90: ¿valió? -> [expandir] [mantener] [apagar]"
+        },
+        {
+          "rot": "ROI y payback",
+          "icone": "caneta",
+          "conteudo": "Ganancia mensual (R$)  = (valor antes - valor después) x volumen x costo unitario\n                     (ej.: minutos ahorrados x pedidos x costo del minuto)\nCosto mensual (R$)  = herramienta + tokens + revisión humana + mantenimiento\nInversión (R$)  = diagnóstico + piloto + implantación (una sola vez)\n\nROI en el año (%)     = (ganancia mensual x 12 - costo mensual x 12 - inversión)\n                     / (costo mensual x 12 + inversión) x 100\nPayback (meses)    = inversión / (ganancia mensual - costo mensual)\n\nUsa la ganancia MEDIDA (panel), no la estimada. Si ganancia mensual <= costo mensual, no hay payback: el proyecto no se paga."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte en el día 90",
+            "html": "<ul><li><b>Operación:</b> mediana hasta el presupuesto de 3 h 40 min → 50 min.</li><li><b>Protección:</b> presupuestos con precio erróneo de 8% → 6%.</li><li><b>Resultado:</b> pedidos cerrados sobre presupuestos de 31% → 35%.</li><li><b>Adopción:</b> 5 de 6 vendedores lo usan todas las semanas.</li></ul><p>Inversión R$ 18 mil; ganancia medida R$ 9 mil/mes; costo R$ 2 mil/mes. Payback = 18 ÷ (9 − 2) ≈ <b>2,6 meses</b>. ROI en el año = (108 − 24 − 18) ÷ (24 + 18) ≈ <b>157%</b>.</p><p>Números ilustrativos, para practicar el cálculo.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Métrica de vanidad</b>: mensajes respondidos y conversaciones iniciadas miden movimiento, no resultado.</li><li><b>Sin columna \"antes\"</b>: el período empieza el día en que se encendió el agente (es la falla F11 del laboratorio).</li><li><b>Cambiar la vara de medir</b>: medir antes por muestra y después por el sistema da números que no se pueden comparar.</li><li><b>ROI con la ganancia estimada</b>: en el día 90 usa la medida.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el panel de Horizonte",
+      "sub": "Parte del panel del laboratorio, que tiene la falla F11.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Diagnosticar el panel actual",
+          "min": "15 min",
+          "texto": "En el laboratorio, abre el panel de indicadores de Horizonte. Haz una lista de lo que mide, de lo que falta (línea de base, resultado, protección) y de por qué nadie sabe si el agente ayudó.",
+          "pronto": "escribiste, en hasta 5 líneas, por qué el panel actual no prueba nada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Panel de 3 indicadores",
+          "min": "30 min",
+          "texto": "Arma el panel 30/60/90 para el piloto de la clase 5: un indicador de resultado, uno de operación y uno de protección, con la forma de medir y el valor de antes (real del laboratorio o simulado, marcado como simulación).",
+          "pronto": "el panel tiene 3 indicadores con valor antes y después completados y una línea que dice quién mide y de dónde sale el número."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · ROI y payback",
+          "min": "15 min",
+          "texto": "Con los números de tu panel y una inversión estimada, calcula el ROI y el payback y escribe la frase para Carlos en lenguaje de dueño.",
+          "pronto": "la frase cabe en dos líneas, tiene el valor invertido, la ganancia por mes y el plazo de retorno."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El panel muestra \"4.000 mensajes respondidos en el mes\". ¿Qué falta?",
+          "opcoes": [
+            "Nada, es un número excelente.",
+            "El valor de antes y un indicador de resultado y de protección.",
+            "Un gráfico más bonito.",
+            "El nombre del modelo usado."
+          ],
+          "certa": 1,
+          "explica": "Es una métrica de vanidad: mide movimiento. Sin línea de base y sin resultado (venta, margen) o protección (reclamo), no prueba ganancia.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "El tiempo de respuesta cayó a la mitad, pero los reclamos por precio se duplicaron. ¿Conclusión?",
+          "opcoes": [
+            "Éxito: la operación mejoró.",
+            "La ganancia es falsa: una protección empeoró; ajustar o parar.",
+            "Cambiar el indicador de protección.",
+            "Ignorar los reclamos."
+          ],
+          "certa": 1,
+          "explica": "Un indicador de operación solo enseña a hacer trampa. Si la protección empeora, el resultado no se sostiene.",
+          "ref": "passos"
+        },
+        {
+          "p": "Inversión de R$ 12 mil, ganancia medida de R$ 5 mil/mes, costo de R$ 1 mil/mes. ¿Payback?",
+          "opcoes": [
+            "2,4 meses.",
+            "3 meses.",
+            "12 meses.",
+            "No hay payback."
+          ],
+          "certa": 1,
+          "explica": "Payback = inversión ÷ (ganancia − costo) = 12 ÷ (5 − 1) = 3 meses. El error común es olvidar restar el costo mensual.",
+          "ref": "codigo"
+        },
+        {
+          "p": "¿Por qué medir semanal o mensualmente, y no a diario?",
+          "opcoes": [
+            "Para dar menos trabajo.",
+            "Porque el día tiene variación propia (acumulación el lunes, viernes más corto) que confunde la comparación.",
+            "Porque el sistema no lo permite.",
+            "Da lo mismo."
+          ],
+          "certa": 1,
+          "explica": "Los períodos cortos mezclan el efecto del agente con la variación normal de la semana.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Tres indicadores + línea de base",
+          "texto": "Resultado, operación y protección, siempre con el valor de antes y la misma vara de medir."
+        },
+        {
+          "t": "30, 60, 90",
+          "texto": "¿Funciona? ¿Se mantuvo estable? ¿Valió el dinero? Después: ampliar, mantener o apagar."
+        },
+        {
+          "t": "Sin vanidad",
+          "texto": "Movimiento no es resultado. La operación va de la mano con la protección."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Fuentes y para ir más allá",
+      "links": [
+        {
+          "t": "Gartner: solo 17% de las organizaciones con agentes en uso; IA agéntica en el pico del hype (copia en el Internet Archive)",
+          "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          "icone": "grafico"
+        },
+        {
+          "t": "LOOP-R: mejorar un proceso con evidencia y botón de volver atrás",
+          "href": "https://inematds.github.io/loop-r/guia/",
+          "icone": "fila"
+        },
+        {
+          "t": "Empresa-laboratorio: el panel sin línea de base",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Laboratorio Horizonte: Panel de indicadores (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}

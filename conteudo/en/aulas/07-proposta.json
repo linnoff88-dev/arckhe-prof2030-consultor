@@ -1,0 +1,348 @@
+{
+  "slug": "proposta",
+  "num": 7,
+  "menu": "Proposal",
+  "titulo": "Proposal, scope and price",
+  "titulo_curto": "Proposal and price",
+  "minutos": 18,
+  "lead": "Most fights with clients come from poorly written scope, not from bad work. A one-page proposal with today's number, what's in, what is NOT in, and the acceptance criterion protects both sides. The price comes from the method, never from improvising in the middle of a conversation.",
+  "objetivo": "write a one-page proposal with baseline, exclusions, client obligations, acceptance criterion, and package pricing.",
+  "competencias": [
+    "escrever-proposta-de-uma-pagina",
+    "definir-exclusoes-e-aceite",
+    "precificar-por-pacote",
+    "segurar-escopo"
+  ],
+  "aprende": [
+    {
+      "t": "The blocks of the one-page proposal"
+    },
+    {
+      "t": "Exclusions, client obligations, and acceptance criterion"
+    },
+    {
+      "t": "Three ways to charge: by the hour, by package, and by value"
+    },
+    {
+      "t": "Holding the scope when the client asks for \"just one more thing\""
+    }
+  ],
+  "hero_alt": "A single printed sheet on a wooden table, with a fountain pen and a signature line, and a blurred handshake in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The offer ladder",
+      "sub": "Each step is a package with its own timeline, deliverable, and price. Click each one.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Diagnosis",
+          "sub": "2 to 3 weeks",
+          "detalhe": "Discovery, inventory of AI in use, priority matrix, cost per task, and a one-page report. Fixed price. A free diagnosis teaches the client that diagnosis is worth nothing."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Pilot",
+          "sub": "30 days",
+          "forte": true,
+          "detalhe": "One process, one team, one metric, with the one-page plan from lesson 5. Fixed price, with the acceptance criterion and the stop criterion written down."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Rollout",
+          "sub": "in waves",
+          "detalhe": "Expand what the pilot proved, one team at a time. Each wave is a new proposal, with its own baseline."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Follow-up",
+          "sub": "monthly",
+          "detalhe": "30/60/90-day reviews, dashboard, adjustments when the model or the tool changes. It's the contract that doesn't end at delivery."
+        }
+      ],
+      "legenda": "Each step is sold only after the previous one has delivered. The client can stop at any of them.",
+      "dica": "If you skip the diagnosis and sell the rollout directly, you take on the risk of building the wrong thing."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to charge and what to write",
+      "sub": "Four proposal decisions.",
+      "passos": [
+        {
+          "titulo": "By the hour, by package, or by value",
+          "sub": "the logic of pricing",
+          "texto": [
+            "<b>By the hour</b> punishes efficiency: with AI you do in 4 hours what used to take 10, and you earn less. <b>By package</b> (fixed price per deliverable) is the default: estimated hours × your rate, plus a margin for the unexpected, checked against the value the client gains.",
+            "<b>By value</b> (a share of the gain) only works with a measured baseline and access to the number."
+          ],
+          "exemplo": {
+            "rot": "Price test",
+            "texto": "Is the price well below the measured annual gain? If not, reduce the scope, not the quality."
+          }
+        },
+        {
+          "titulo": "What is NOT included",
+          "sub": "the line that prevents the fight",
+          "texto": [
+            "Write down what stays out: integration with the management system, API costs and licenses (passed through at cost), legal opinion, penetration testing, new use cases.",
+            "A new request in the middle of the project becomes a separate proposal, with its own price."
+          ],
+          "exemplo": {
+            "rot": "Ready-made line",
+            "texto": "\"Great idea. It goes in the queue for the next phase, with its own proposal, so it doesn't delay this one.\""
+          }
+        },
+        {
+          "titulo": "Client obligations",
+          "sub": "without them there is no deadline",
+          "texto": [
+            "Access to the data and screens, one person with decision-making power available a few hours a week, validations on the agreed schedule, and a sponsor on the board.",
+            "If the client doesn't meet them, the deadline moves too. It's written down."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Patrícia Lima measures the baseline; Rafael grants the access; Carlos Mendes approves the phases."
+          }
+        },
+        {
+          "titulo": "Acceptance criterion",
+          "sub": "objective and binary",
+          "texto": [
+            "The acceptance criterion says when the work is delivered: objective, yes or no, agreed beforehand. \"Report delivered with all 6 sections and presented to the board\" is acceptance. \"Client satisfied\" is not.",
+            "Never promise the business result (\"+30% in sales\"): promise the method, the measurement, and the deliverable."
+          ],
+          "exemplo": {
+            "rot": "Pilot acceptance",
+            "texto": "\"Pilot run for 30 days, dashboard with before and after, and decision recorded.\""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: one-page proposal",
+      "sub": "Fill it in after discovery. The values between < > are yours: there is no market price here.",
+      "blocos": [
+        {
+          "rot": "Proposal (1 page)",
+          "icone": "arquivo",
+          "conteudo": "PROPOSAL · <company> · <date> · valid until <date>\n\n1. WHAT WE HEARD: <the pain in the client's own words, 2 lines>\n2. BASELINE: <metric> = <value> (measured on <date>, by <who>, <how>)\n   Goal: <metric> from <value> to <value> in <timeframe>, without worsening <safeguard>\n3. WHAT WE WILL DELIVER (package <Diagnosis | Pilot | Wave N | Follow-up>):\n   - <deliverable 1>  - <deliverable 2>  - <deliverable 3>\n4. WHAT IS NOT INCLUDED:\n   - integration with <system>   - API/license costs (paid by the client, at cost)\n   - legal opinion and security testing (we refer you to a specialist)\n   - new use cases (separate proposal)\n5. CLIENT OBLIGATIONS: access to <data/screens> by <date>; <name> available <N> h/week;\n   approvals within <N> business days; sponsor: <name>\n6. TIMELINE AND PHASES: <week 1-2: ...> <week 3-4: ...>\n7. ACCEPTANCE CRITERION: <objective, yes/no>\n8. RISKS: <what might not work> | what the company gives up: <...>\n9. INVESTMENT: R$ <value> (<package, fixed price>), payment <e.g.: 50% at start, 50% at acceptance>\n10. NEXT STEP: <client task> by <date>; next conversation: <date>"
+        },
+        {
+          "rot": "Calculating the package price",
+          "icone": "grafico",
+          "conteudo": "Estimated hours per deliverable ............ <h>\nYour hourly rate (floor) ................ R$ <rate>\nPackage floor = h x rate ............... R$ <...>\n+ contingency margin (rule of thumb 15-20%) R$ <...>\n= Proposed price ........................ R$ <...>\nCheck: price < client's measured/estimated annual gain? [yes/no]\nIf not: reduce scope (fewer deliverables), never quality."
+        }
+      ]
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulated conversation: Carlos wants \"just one more thing\"",
+      "sub": "A simulation to practice scope. Choose the answer you would give.",
+      "personagem": {
+        "nome": "Carlos Mendes",
+        "papel": "owner of Horizonte · reading the pilot proposal"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "I liked the proposal. But since you're going to work on WhatsApp anyway, can you also include the agent that closes the order on its own, for the same price?",
+          "opcoes": [
+            {
+              "t": "Sure, I'll include it so we can close quickly.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "You doubled the scope without changing the timeline or the price, and the agent that closes on its own has risks (discounts, approval) that the pilot hasn't tested yet."
+            },
+            {
+              "t": "It comes in as a next step, with its own proposal. First we prove the quote draft; if that works, the closing comes with data.",
+              "vai": "garantia",
+              "nota": 2,
+              "comenta": "Scope held without closing the door. The idea becomes the next wave, with a baseline."
+            },
+            {
+              "t": "That's not possible, it's another project.",
+              "vai": "garantia",
+              "nota": 1,
+              "comenta": "Right on content, curt in delivery. Show the path: when and how the idea comes in."
+            }
+          ]
+        },
+        "garantia": {
+          "cliente": "OK. And can you guarantee me at least 30% more sales?",
+          "opcoes": [
+            {
+              "t": "I guarantee it, AI always increases sales.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "A promise you don't control and that the dashboard can disprove on day 90. Credibility doesn't come back."
+            },
+            {
+              "t": "I don't guarantee sales. I guarantee the method: measuring response time, price errors, and closed orders against today's number, and stopping if it gets worse.",
+              "vai": "preco",
+              "nota": 2,
+              "comenta": "You promise what you control: method, measurement, and stop criterion. That's what the acceptance criterion says."
+            },
+            {
+              "t": "It depends on a lot of things.",
+              "vai": "preco",
+              "nota": 1,
+              "comenta": "True, but vague. Say what you do guarantee, instead of only what you don't."
+            }
+          ]
+        },
+        "preco": {
+          "cliente": "What if we pay by the hour? That way I only pay for what you use.",
+          "opcoes": [
+            {
+              "t": "I prefer a fixed price per deliverable: with AI I work faster, and you know the total cost before we start.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "A package gives the client predictability and doesn't penalize your efficiency."
+            },
+            {
+              "t": "Sure, I'll log the hours.",
+              "vai": "fim-meio",
+              "nota": 1,
+              "comenta": "It works, but it creates arguments over hours and makes you earn less when you work better."
+            },
+            {
+              "t": "Then I'll lower the price by 30% to close today.",
+              "vai": "fim-ruim",
+              "nota": 0,
+              "comenta": "An improvised discount teaches the client to always ask for a discount. If the price doesn't fit, reduce the scope."
+            }
+          ]
+        },
+        "fim-ruim": {
+          "fim": true,
+          "titulo": "Open scope",
+          "texto": "You accepted more work, promised a result, or lowered the price without changing the deliverable. It's the script for the fight in month 2. Go back and hold scope, guarantee, and price."
+        },
+        "fim-meio": {
+          "fim": true,
+          "titulo": "Closed, with a loose end",
+          "texto": "Scope and promise came out right, but charging by the hour will cause arguments. Next time, offer the package."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Protected proposal",
+          "texto": "The new idea became a next step, the promise is about method and measurement, and the price is fixed per deliverable. The client knows what they're buying and what's left out."
+        }
+      },
+      "licao": "New scope becomes a new proposal, the guarantee covers the method and the measurement, and price isn't negotiated on the fly: if it doesn't fit, reduce the scope."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the Horizonte proposal",
+      "sub": "A proposal for the pilot you designed in lesson 5.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · One-page proposal",
+          "min": "40 min",
+          "texto": "Fill in the 10 blocks of the template for the Horizonte pilot, with your price calculated from the package spreadsheet.",
+          "pronto": "the proposal fits on one page and has a dated baseline, at least 3 exclusions, client obligations with names, a yes/no acceptance criterion, and a fixed price."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Difficult client test",
+          "min": "15 min",
+          "texto": "Read the proposal as Carlos from the simulated conversation would: look for where he would ask for \"just one more thing,\" a sales guarantee, or a discount. Rewrite the passage that would leave the door open.",
+          "pronto": "no sentence in the proposal promises a business result, and every possible extra request has an exclusion or a next step."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which of these is a good acceptance criterion?",
+          "opcoes": [
+            "Client satisfied with the result.",
+            "A 30% increase in sales.",
+            "Pilot run for 30 days, dashboard with before and after, and decision recorded.",
+            "Agent working well."
+          ],
+          "certa": 2,
+          "explica": "Acceptance is objective and binary: you can say yes or no. Satisfaction is subjective, and sales results depend on things outside your control.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Why is charging by the hour a bad idea for people who work with AI?",
+          "opcoes": [
+            "It's illegal.",
+            "It punishes efficiency: the faster you deliver, the less you earn.",
+            "The client prefers it.",
+            "It can't be calculated."
+          ],
+          "certa": 1,
+          "explica": "With AI, the same work takes fewer hours. A fixed-price package per deliverable rewards the result and gives the client predictability.",
+          "ref": "passos"
+        },
+        {
+          "p": "The client asks to add a new case in the middle of the pilot. What should you do?",
+          "opcoes": [
+            "Add it at no cost, to please them.",
+            "Refuse and end the project.",
+            "Record it as a next step, with its own proposal and price.",
+            "Add it and extend the deadline without telling them."
+          ],
+          "certa": 2,
+          "explica": "A new request becomes a separate proposal. That way the current pilot finishes on time and the idea isn't lost.",
+          "ref": "simconversa"
+        },
+        {
+          "p": "The calculated price came out higher than the client's estimated annual gain. What should you adjust?",
+          "opcoes": [
+            "Give a discount until it fits.",
+            "Reduce the scope (fewer deliverables), keeping the quality.",
+            "Keep it and insist.",
+            "Charge by the hour."
+          ],
+          "certa": 1,
+          "explica": "If the price doesn't pay for itself, the package is too big for the problem. Cut deliverables, not quality or measurement.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "One page",
+          "texto": "What we heard, baseline, deliverables, exclusions, obligations, acceptance, risks, price, and next step."
+        },
+        {
+          "t": "Package, not hours",
+          "texto": "Hours × rate + contingency margin, checked against the client's gain."
+        },
+        {
+          "t": "Method guarantee",
+          "texto": "Promise measurement and a stop criterion, never a sales result."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Lab company: Horizonte Distribuidora",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Professional 2030: the other programs",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

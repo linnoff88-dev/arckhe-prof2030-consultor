@@ -1,0 +1,305 @@
+{
+  "slug": "projeto-final",
+  "num": 8,
+  "menu": "Final project",
+  "titulo": "Final project: the Horizonte diagnosis + What changed",
+  "titulo_curto": "Final project",
+  "minutos": 20,
+  "lead": "Now you put it all together: the complete diagnosis and adoption plan for Horizonte Distribuidora, in one page for Carlos and appendices for anyone who wants to check. The rubric says what needs to be there. At the end, the dashboard of what changed in the market this quarter, so your account doesn't go stale.",
+  "objetivo": "deliver the complete diagnosis and adoption plan for Horizonte, approved by the rubric, and update the account with what changed this quarter.",
+  "competencias": [
+    "entregar-diagnostico-completo",
+    "escrever-plano-de-adocao",
+    "comunicar-para-diretoria",
+    "atualizar-premissas-de-mercado"
+  ],
+  "aprende": [
+    {
+      "t": "The report structure: one page and six attachments"
+    },
+    {
+      "t": "How the rubric scores your diagnosis"
+    },
+    {
+      "t": "Fix the lab's F11 and F12 failures inside the plan"
+    },
+    {
+      "t": "What changed in the market in October 2026"
+    }
+  ],
+  "hero_alt": "A consultant with a tablet and the distributor's owner walking among pallets and shelves, he pointing at a workbench.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "What you deliver",
+      "sub": "One page up front, six attachments behind it. Click each block.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Discovery",
+          "sub": "attachment 1",
+          "detalhe": "Applied script (lesson 2) and inventory of AI in use: the tools employees use without IT knowing (failure F12), with the data that goes in and the risk."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Priorities",
+          "sub": "attachment 2",
+          "detalhe": "Value × feasibility matrix with 6 opportunities, the simplest-solution ladder, and the reason for each discard (lesson 3)."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Cost and vendor",
+          "sub": "attachment 3",
+          "detalhe": "Cost per task table for 2 processes in 4 tiers, with the date and link for each price, and the 5 vendor risk questions (lesson 4)."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "1-page report",
+          "sub": "for Carlos",
+          "forte": true,
+          "detalhe": "The situation in the owner's words, the bottleneck with a number, ONE recommendation, what not to do now, the 90-day plan, the investment, and the limits of your work. Read in 2 minutes.",
+          "itens": [
+            {
+              "t": "one recommendation",
+              "icone": "check"
+            },
+            {
+              "t": "what not to do",
+              "icone": "x"
+            },
+            {
+              "t": "90-day plan",
+              "icone": "calendario"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Pilot and dashboard",
+          "sub": "attachments 4 and 5",
+          "detalhe": "1-page pilot plan with a stop criterion (lesson 5) and a 30/60/90 dashboard with a baseline, which fixes the current dashboard that has no \"before\" (failure F11, lesson 6)."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Proposal",
+          "sub": "attachment 6",
+          "detalhe": "One-page proposal with exclusions, client obligations, acceptance criterion, and price per package (lesson 7)."
+        }
+      ],
+      "legenda": "The report answers \"what do I do on Monday?\". The attachments answer \"how did you get there?\".",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Diagnosis + adoption plan",
+        "texto": "Discovery, priorities, cost, pilot, dashboard, and proposal, summarized on one page the owner reads in two minutes."
+      }
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates: one-page report and rubric",
+      "sub": "Write the report last, after the attachments. Score it with the rubric before you deliver it.",
+      "blocos": [
+        {
+          "rot": "One-page report (board)",
+          "icone": "arquivo",
+          "conteudo": "AI DIAGNOSIS · Horizonte Distribuidora · <date> · <your name>\n\n1. SITUATION (Carlos's words, 3-5 sentences, with 1 literal quote)\n2. THE BOTTLENECK: <step> costs <R$/year or hours/week> (baseline: <value>, measured on <date>)\n3. WHAT ALREADY RUNS UNCONTROLLED: <n> AI tools in use; <n> with client data -> action: <...>\n4. RECOMMENDATION (just one): <opportunity> at the step <fixed rule / AI in one step / agent>\n   because: <value> and <feasibility>   estimated cost per task: R$ <...> (prices as of <date>)\n5. WHAT NOT TO DO NOW: <opportunity> - <reason> | <opportunity> - <reason>\n6. 90-DAY PLAN:\n   days 1-30 pilot (stop criterion: <...>) | day 30 decide | 31-60 stabilize | 61-90 measure ROI\n7. HOW WE'LL KNOW IT WORKED: <result>, <operation>, <protection> against the baseline\n8. INVESTMENT: diagnosis R$ <...> (done) | pilot R$ <...> | follow-up R$ <...>/month\n9. LIMITS: does not include legal opinion or security testing; data risks go to <Auditor/lawyer>\n10. DECISION REQUESTED: approve the pilot by <date>"
+        },
+        {
+          "rot": "Rubric (100 points, pass at 70 with no zeros)",
+          "icone": "check",
+          "conteudo": "| Criterion | 0 | 5 | 10 |\n|---|---|---|---|\n| Bottleneck baseline | missing | client's guess | measured, with date and who measured |\n| Inventory of AI in use (F12) | missing | list without risk | tool + data + account + risk + action |\n| Value x feasibility matrix | missing | no calculations | 6 items, redoable calculations, discards with reason |\n| When NOT to use AI | nothing discarded | discard without reason | >= 1 item solved without AI, with reason |\n| Cost per task | missing | only token price | 4 tiers + human review + date and link of the price |\n| Vendor risk | missing | generic | 5 questions answered for the winner |\n| Pilot plan | missing | no stop criterion | 1 page, stop with name and deadline, exit plan |\n| 30/60/90 dashboard (fixes F11) | missing | no protection | result + operation + protection, with before |\n| Proposal | missing | no exclusions | exclusions, obligations, accept yes/no, fixed price |\n| Report for the owner | missing | jargon or 3 recommendations | 1 page, 1 recommendation, no jargon, limits stated |"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Final project",
+      "sub": "Pull together what you did in lessons 2 through 7. Where something is missing, do it now.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The six attachments",
+          "min": "60 min",
+          "texto": "Gather and review the attachments: discovery + inventory (F12), matrix, cost per task, pilot plan, 30/60/90 dashboard (fixing F11), and proposal.",
+          "pronto": "all 6 attachments exist and every number has a written source (measured, from the lab, or simulation)."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The one-page report",
+          "min": "40 min",
+          "texto": "Write the report for Carlos Mendes. Read it aloud and cut whatever doesn't change his decision.",
+          "pronto": "the report fits on one page, has a single recommendation, what not to do now, and the decision requested with a date."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Self-assessment with the rubric",
+          "min": "20 min",
+          "texto": "Score your work with the rubric. For each criterion below 10, fix it or write why you couldn't.",
+          "pronto": "the sum is 70 or more and no criterion has a zero. Then check it against the lab answer key."
+        }
+      ],
+      "fonte": "Lab and answer key: <a href=\"https://inematds.github.io/prof2030-lab/\" target=\"_blank\" rel=\"noopener\">inematds.github.io/prof2030-lab</a> (the answer key is on a separate page, with a spoiler warning)."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Final quiz",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "How many recommendations should a one-page report have?",
+          "opcoes": [
+            "All the ones you found.",
+            "Three, so the owner can choose.",
+            "One, with what not to do right now next to it.",
+            "None: just the diagnosis."
+          ],
+          "certa": 2,
+          "explica": "Three competing recommendations hand the hard decision back to the owner. One recommendation, with the reason and with what stays out, is what they buy.",
+          "ref": "codigo",
+          "cert": true
+        },
+        {
+          "p": "How does your plan fix failure F11 (dashboard with no baseline)?",
+          "opcoes": [
+            "By swapping the chart.",
+            "By measuring the value from before and building result, operation and protection with the same yardstick.",
+            "By counting more messages.",
+            "By turning off the agent."
+          ],
+          "certa": 1,
+          "explica": "Without the number from before, there is nothing to compare. The 30/60/90 dashboard brings the baseline and indicators that show results, not just activity.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "A new model came out cheaper this quarter. What changes in your method?",
+          "opcoes": [
+            "Everything: redo the course.",
+            "Nothing in the method; you redo the cost per task table with the new price, with a date and a link.",
+            "Switch models immediately.",
+            "Ignore it until next year."
+          ],
+          "certa": 1,
+          "explica": "The method stays; the assumption changes. That is why the \"What changed\" dashboard is quarterly and every price has a date."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Course summary",
+      "itens": [
+        {
+          "t": "Diagnosis before the agent",
+          "texto": "Discovery with a number, an inventory of what already runs, and priorities with a reason."
+        },
+        {
+          "t": "Cost and risk",
+          "texto": "Cost per task with human review; vendors go through the risk questions."
+        },
+        {
+          "t": "Pilot, measurement, proposal",
+          "texto": "30 days with a stop criterion, a 30/60/90 dashboard against the baseline, and a one-page proposal with exclusions."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "What changed (Oct/2026)",
+      "sub": "Dashboard updated every quarter. The facts change; the method from lessons 1 to 7 stays.",
+      "itens": [
+        {
+          "t": "09/22/2026 · Opus 5.5 cheaper",
+          "texto": "Anthropic launched Claude Opus 5.5 at US$ 4/20 per million tokens, about 40% cheaper than Opus 5 for a typical task. Redo the cost table from lesson 4. <a href=\"https://www.anthropic.com/claude-opus-5-5\">anthropic.com</a>"
+        },
+        {
+          "t": "09/28/2026 · Sonnet 5.5, same price",
+          "texto": "Sonnet 5.5 kept US$ 2/10 and, according to Anthropic, uses fewer tokens per task: the cost per task drops even without a change to the price table. <a href=\"https://www.anthropic.com/news/claude-sonnet-5-5\">anthropic.com</a>"
+        },
+        {
+          "t": "09/21/2026 · Grok 4.7 in the mid tier",
+          "texto": "xAI launched Grok 4.7 at US$ 2/6. One more vendor in the middle tier: compare by task and run it through the risk questions. <a href=\"https://docs.x.ai/developers/grok-4-7\">docs.x.ai</a>"
+        },
+        {
+          "t": "08/2026 · Open model that runs locally",
+          "texto": "Alibaba's Qwen3.8-27B came out open (Apache 2.0 license) and runs on a powerful computer, at about 17 GB in the 4-bit version. The \"open local\" tier became viable for an SMB with sensitive data. <a href=\"https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model\">thenextweb.com</a>"
+        },
+        {
+          "t": "11/30/2026 · Agent Builder is retired",
+          "texto": "OpenAI announced on 06/03/2026 that Agent Builder will be shut down on 11/30/2026, with migration to the Agents SDK or Workspace Agents. This is the case for the pilot's exit plan. <a href=\"https://platform.openai.com/docs/deprecations\">platform.openai.com</a>"
+        },
+        {
+          "t": "09/25/2026 · Vendor in dispute with the government",
+          "texto": "A US appeals court upheld the \"supply chain risk\" label the Pentagon gave Anthropic. Vendor stability goes into the risk questions. <a href=\"https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html\">cnbc.com</a>"
+        },
+        {
+          "t": "2026 · Agents are still a minority",
+          "texto": "Gartner research: only 17% of organizations have AI agents in use, and agentic AI is at the peak of the hype. Diagnosis and measurement are still what makes the difference. <a href=\"https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai\">gartner.com (Internet Archive)</a>"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Next steps in Professional 2030",
+      "links": [
+        {
+          "t": "Lab company and answer key",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        },
+        {
+          "t": "AI auditor: the risk screening that complements the diagnosis",
+          "href": "https://inematds.github.io/prof2030-auditor/",
+          "icone": "escudo"
+        },
+        {
+          "t": "Professional 2030: INEMA certification (details coming soon)",
+          "href": "https://inematds.github.io/profissional-2030/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Source: Anthropic, Claude Opus 5.5 (09/22/2026)",
+          "href": "https://www.anthropic.com/claude-opus-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: Anthropic, Claude Sonnet 5.5 (09/28/2026)",
+          "href": "https://www.anthropic.com/news/claude-sonnet-5-5",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: xAI, Grok 4.7 (09/21/2026)",
+          "href": "https://docs.x.ai/developers/grok-4-7",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: The Next Web, Qwen3.8-27B (08/19/2026)",
+          "href": "https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: OpenAI, Agent Builder shutdown (11/30/2026)",
+          "href": "https://platform.openai.com/docs/deprecations",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: CNBC, Pentagon × Anthropic (09/25/2026)",
+          "href": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Source: Gartner, Hype Cycle for Agentic AI (Internet Archive)",
+          "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Horizonte Lab: Metrics dashboard (F11)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "lupa"
+        },
+        {
+          "t": "Horizonte Lab: Inventory and shadow AI (F12)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lupa"
+        }
+      ]
+    }
+  ]
+}
