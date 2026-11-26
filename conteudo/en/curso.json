@@ -1,21 +1,21 @@
 {
   "id": "prof2030-consultor",
   "lang": "en",
-  "url": "https://inematds.github.io/prof2030-consultor/en/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/en/",
   "nome": "AI Consultant",
   "sub": "Professional 2030 · training",
   "volta": {
     "t": "Professional 2030",
-    "href": "https://inematds.github.io/profissional-2030/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
   "lado_card": {
     "rot": "Lab company",
     "t": "Horizonte Distribuidora",
     "texto": "A fictional SMB with 40 people, the same one in all five courses. You run its diagnosis from start to finish.",
     "link": "Open the lab",
-    "href": "https://inematds.github.io/prof2030-lab/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/"
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">Lab company</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/337-profissional-2030-consultor-de-ia-diagnostico-piloto-e-medicao-de-valor-8-aulas/\">This course's page on INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guide: how to learn AI</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Professional 2030</a> · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Lab company</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/cursos/337-profissional-2030-consultor-de-ia-diagnostico-piloto-e-medicao-de-valor-8-aulas/\">This course's page on ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guide: how to learn AI</a>",
   "videos": {},
   "inicio": {
     "kicker": "Professional 2030 · AI Consultant · 8 lessons",
@@ -24,7 +24,7 @@
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "See Professional 2030",
-      "href": "https://inematds.github.io/profissional-2030/"
+      "href": "https://linnoff88-dev.github.io/arckhe-/"
     },
     "capa_alt": "A consultant's desk at a distributor: a notebook with a four-quadrant matrix, reports, and the warehouse in the background.",
     "numeros": [
@@ -54,7 +54,7 @@
           "People who want to help owners and the board adopt AI with a method, without selling a tool.",
           "Professionals in processes, management, IT, or consultative sales. No programming needed.",
           "People who already build with AI and want to move on to diagnosing, prioritizing, and measuring.",
-          "Recommended first: the <a href=\"https://inematds.github.io/prof2030-base/\">Common Core</a> (not required)."
+          "Recommended first: the <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Common Core</a> (not required)."
         ]
       },
       {
@@ -69,10 +69,10 @@
       {
         "t": "Professional 2030",
         "itens": [
-          "This course is part of <a href=\"https://inematds.github.io/profissional-2030/\">Professional 2030</a>: one common core, four training paths, and a lab.",
-          "Each training path will have an INEMA certification; details soon. It is a qualification certificate, not a regulated profession.",
-          "Common Core: <a href=\"https://inematds.github.io/prof2030-base/\">Trust what AI builds</a> · Lab: <a href=\"https://inematds.github.io/prof2030-lab/\">Horizonte Distribuidora</a>",
-          "Training paths: <a href=\"https://inematds.github.io/prof2030-consultor/\">Consultant</a> · <a href=\"https://inematds.github.io/prof2030-auditor/\">Auditor</a> · <a href=\"https://inematds.github.io/prof2030-mentor/\">Mentor</a> · <a href=\"https://inematds.github.io/prof2030-treinador/\">Trainer</a>"
+          "This course is part of <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Professional 2030</a>: one common core, four training paths, and a lab.",
+          "Each training path will have an ARCKHÉ certification; details soon. It is a qualification certificate, not a regulated profession.",
+          "Common Core: <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Trust what AI builds</a> · Lab: <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Horizonte Distribuidora</a>",
+          "Training paths: <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Consultant</a> · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Auditor</a> · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Mentor</a> · <a href=\"https://linnoff88-dev.github.io/arckhe-/\">Trainer</a>"
         ]
       }
     ]

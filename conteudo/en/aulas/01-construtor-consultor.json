@@ -137,7 +137,7 @@
           "sub": "written scope",
           "texto": [
             "An AI consultant is not a security auditor, a lawyer, or a legacy-system programmer. When the case calls for a legal opinion, a penetration test, or heavy integration, you bring in someone qualified.",
-            "The INEMA certification in this program is a qualification, not a regulated profession. Tell the client this."
+            "The ARCKHÉ certification in this program is a qualification, not a regulated profession. Tell the client this."
           ],
           "exemplo": {
             "rot": "Ready-made line",
@@ -159,7 +159,7 @@
         {
           "rot": "Scope card (5 lines)",
           "icone": "lista",
-          "conteudo": "I DO: discovery, diagnosis, prioritization, pilot plan, 30/60/90 measurement.\nI DON'T: legal opinions, penetration tests, integration with legacy systems.\nI CALL A SPECIALIST WHEN: <sensitive data at scale, contract, security>.\nMY RESULT IS MEASURED BY: <client indicator against the baseline>.\nMY CERTIFICATION: INEMA qualification (not a regulated profession)."
+          "conteudo": "I DO: discovery, diagnosis, prioritization, pilot plan, 30/60/90 measurement.\nI DON'T: legal opinions, penetration tests, integration with legacy systems.\nI CALL A SPECIALIST WHEN: <sensitive data at scale, contract, security>.\nMY RESULT IS MEASURED BY: <client indicator against the baseline>.\nMY CERTIFICATION: ARCKHÉ qualification (not a regulated profession)."
         },
         {
           "rot": "Prompt: stress test of the statement",
@@ -280,7 +280,7 @@
         },
         {
           "t": "Professional 2030: the Common Core and the four tracks",
-          "href": "https://inematds.github.io/profissional-2030/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         }
       ]

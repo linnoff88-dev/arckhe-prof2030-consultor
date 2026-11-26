@@ -137,7 +137,7 @@
           "sub": "alcance escrito",
           "texto": [
             "Un consultor de IA no es auditor de seguridad, abogado ni programador de sistemas heredados. Cuando el caso pide un dictamen jurídico, una prueba de intrusión o una integración pesada, llamas a quien está habilitado.",
-            "La certificación INEMA de esta formación es de calificación, no de una profesión regulada. Díselo al cliente."
+            "La certificación ARCKHÉ de esta formación es de calificación, no de una profesión regulada. Díselo al cliente."
           ],
           "exemplo": {
             "rot": "Frase lista",
@@ -159,7 +159,7 @@
         {
           "rot": "Tarjeta de alcance (5 líneas)",
           "icone": "lista",
-          "conteudo": "HAGO: descubrimiento, diagnóstico, prioridad, plan de piloto, medición 30/60/90.\nNO HAGO: dictamen jurídico, prueba de intrusión, integración con sistemas heredados.\nLLAMO A UN ESPECIALISTA CUANDO: <dato sensible a escala, contrato, seguridad>.\nMI RESULTADO SE MIDE POR: <indicador del cliente contra la línea de base>.\nMI CERTIFICACIÓN: calificación INEMA (no es una profesión regulada)."
+          "conteudo": "HAGO: descubrimiento, diagnóstico, prioridad, plan de piloto, medición 30/60/90.\nNO HAGO: dictamen jurídico, prueba de intrusión, integración con sistemas heredados.\nLLAMO A UN ESPECIALISTA CUANDO: <dato sensible a escala, contrato, seguridad>.\nMI RESULTADO SE MIDE POR: <indicador del cliente contra la línea de base>.\nMI CERTIFICACIÓN: calificación ARCKHÉ (no es una profesión regulada)."
         },
         {
           "rot": "Prompt: prueba de estrés de la frase",
@@ -280,7 +280,7 @@
         },
         {
           "t": "Profesional 2030: la base común y las cuatro formaciones",
-          "href": "https://inematds.github.io/profissional-2030/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/",
           "icone": "camadas"
         }
       ]

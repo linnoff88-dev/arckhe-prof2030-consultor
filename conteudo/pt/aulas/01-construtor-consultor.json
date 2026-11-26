@@ -53,7 +53,7 @@
          "texto": ["Todo processo que você mapear sai dividido em quatro: o que fica com a pessoa (julgamento, relaçêo), o que vai para um agente (caminho que muda a cada vez), o que vira automaçêo simples (regra fixa) e o que deveria deixar de existir.", "A quarta caixa costuma dar o ganho mais barato."],
          "exemplo": {"rot": "Exemplo na Horizonte", "texto": "Lembrete de boleto vencido: automaçêo simples. Responder dúvida de produto no WhatsApp: agente com limites. Aprovar desconto acima da tabela: pessoa. Relatório que ninguém lê: deixa de existir."}},
         {"titulo": "O que você nêo é", "sub": "escopo escrito",
-         "texto": ["Consultor de IA nêo é auditor de segurança, advogado nem programador de sistema legado. Quando o caso pede parecer jurídico, teste de invasêo ou integraçêo pesada, você chama quem é habilitado.", "A certificaçêo INEMA desta formaçêo é de qualificaçêo, nêo de profissêo regulada. Diga isso ao cliente."],
+         "texto": ["Consultor de IA nêo é auditor de segurança, advogado nem programador de sistema legado. Quando o caso pede parecer jurídico, teste de invasêo ou integraçêo pesada, você chama quem é habilitado.", "A certificaçêo ARCKHÉ desta formaçêo é de qualificaçêo, nêo de profissêo regulada. Diga isso ao cliente."],
          "exemplo": {"rot": "Frase pronta", "texto": "\"Eu faço o diagnóstico, a prioridade e a mediçêo. Para LGPD formal e segurança, trago um especialista.\""}}
       ]
     },
@@ -65,7 +65,7 @@
         {"rot": "Frase de posicionamento (2 linhas)", "icone": "caneta",
          "conteudo": "Eu ajudo <tipo de empresa> a <resultado em número ou decisêo>\ncomeçando por um diagnóstico de <prazo>.\nEu nêo <o que você nêo faz: vendo ferramenta antes do diagnóstico,\nprogramo sistemas legados, dou parecer jurídico>."},
         {"rot": "Cartêo de escopo (5 linhas)", "icone": "lista",
-         "conteudo": "FAÇO: descoberta, diagnóstico, prioridade, plano de piloto, mediçêo 30/60/90.\nNêO FAÇO: parecer jurídico, teste de invasêo, integraçêo com sistema legado.\nCHAMO UM ESPECIALISTA QUANDO: <dado sensível em escala, contrato, segurança>.\nMEU RESULTADO É MEDIDO POR: <indicador do cliente contra a linha de base>.\nMINHA CERTIFICAÇêO: qualificaçêo INEMA (nêo é profissêo regulada)."},
+         "conteudo": "FAÇO: descoberta, diagnóstico, prioridade, plano de piloto, mediçêo 30/60/90.\nNêO FAÇO: parecer jurídico, teste de invasêo, integraçêo com sistema legado.\nCHAMO UM ESPECIALISTA QUANDO: <dado sensível em escala, contrato, segurança>.\nMEU RESULTADO É MEDIDO POR: <indicador do cliente contra a linha de base>.\nMINHA CERTIFICAÇêO: qualificaçêo ARCKHÉ (nêo é profissêo regulada)."},
         {"rot": "Prompt: teste de estresse da frase", "icone": "chat",
          "conteudo": "Você é o dono de uma distribuidora com 40 funcionários, cético com IA.\nLeia a minha frase de posicionamento abaixo e:\n1) diga em uma linha o que você entendeu que eu vendo;\n2) faça as 3 perguntas mais duras que você faria antes de me contratar;\n3) aponte qualquer palavra de jargêo ou promessa que você nêo acredita.\nNêo elogie.\n\nFrase: <cole aqui>"}
       ],
@@ -121,7 +121,7 @@
       "links": [
         {"t": "Anthropic: Claude Opus 5.5 (22/09/2026), preço e custo por tarefa", "href": "https://www.anthropic.com/claude-opus-5-5", "icone": "arquivo"},
         {"t": "Gartner: Hype Cycle for Agentic AI, 17% com agentes em uso (cópia no Internet Archive)", "href": "https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai", "icone": "grafico"},
-        {"t": "Profissional 2030: a base comum e as quatro formações", "href": "https://inematds.github.io/profissional-2030/", "icone": "camadas"}
+        {"t": "Profissional 2030: a base comum e as quatro formações", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "camadas"}
       ]
     }
   ]
