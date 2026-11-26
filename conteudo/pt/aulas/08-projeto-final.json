@@ -5,8 +5,8 @@
   "titulo": "Projeto final: o diagnóstico da Horizonte + O que mudou",
   "titulo_curto": "Projeto final",
   "minutos": 20,
-  "lead": "Agora você junta tudo: o diagnóstico completo e o plano de adoção da Horizonte Distribuidora, em uma página para o Carlos e anexos para quem quiser conferir. A rubrica diz o que precisa estar lá. No fim, o painel do que mudou no mercado neste trimestre, para a sua conta não envelhecer.",
-  "objetivo": "entregar o diagnóstico completo e o plano de adoção da Horizonte, aprovados pela rubrica, e atualizar a conta com o que mudou no trimestre.",
+  "lead": "Agora você junta tudo: o diagnóstico completo e o plano de adoçêo da Horizonte Distribuidora, em uma página para o Carlos e anexos para quem quiser conferir. A rubrica diz o que precisa estar lá. No fim, o painel do que mudou no mercado neste trimestre, para a sua conta nêo envelhecer.",
+  "objetivo": "entregar o diagnóstico completo e o plano de adoçêo da Horizonte, aprovados pela rubrica, e atualizar a conta com o que mudou no trimestre.",
   "competencias": [
     "entregar-diagnostico-completo",
     "escrever-plano-de-adocao",
@@ -44,7 +44,7 @@
           "icone": "alvo",
           "titulo": "Prioridades",
           "sub": "anexo 2",
-          "detalhe": "Matriz valor × viabilidade com 6 oportunidades, a escada da solução mais simples e o motivo de cada descarte (aula 3)."
+          "detalhe": "Matriz valor × viabilidade com 6 oportunidades, a escada da soluçêo mais simples e o motivo de cada descarte (aula 3)."
         },
         {
           "icone": "grafico",
@@ -57,14 +57,14 @@
           "titulo": "Relatório de 1 página",
           "sub": "para o Carlos",
           "forte": true,
-          "detalhe": "Situação em palavras do dono, o gargalo com número, UMA recomendação, o que não fazer agora, o plano de 90 dias, o investimento e os limites do seu trabalho. Lido em 2 minutos.",
+          "detalhe": "Situaçêo em palavras do dono, o gargalo com número, UMA recomendaçêo, o que nêo fazer agora, o plano de 90 dias, o investimento e os limites do seu trabalho. Lido em 2 minutos.",
           "itens": [
             {
-              "t": "uma recomendação",
+              "t": "uma recomendaçêo",
               "icone": "check"
             },
             {
-              "t": "o que não fazer",
+              "t": "o que nêo fazer",
               "icone": "x"
             },
             {
@@ -89,7 +89,7 @@
       "legenda": "O relatório responde \"o que eu faço segunda-feira?\". Os anexos respondem \"como você chegou nisso?\".",
       "rolagem": true,
       "rolagem_fim": {
-        "titulo": "Diagnóstico + plano de adoção",
+        "titulo": "Diagnóstico + plano de adoçêo",
         "texto": "Descoberta, prioridades, custo, piloto, painel e proposta, resumidos numa página que o dono lê em dois minutos."
       }
     },
@@ -101,12 +101,12 @@
         {
           "rot": "Relatório de uma página (diretoria)",
           "icone": "arquivo",
-          "conteudo": "DIAGNÓSTICO DE IA · Horizonte Distribuidora · <data> · <seu nome>\n\n1. SITUAÇÃO (palavras do Carlos, 3-5 frases, com 1 citação literal)\n2. O GARGALO: <etapa> custa <R$/ano ou horas/semana> (linha de base: <valor>, medida em <data>)\n3. O QUE JÁ RODA SEM CONTROLE: <n> ferramentas de IA em uso; <n> com dado de cliente -> ação: <...>\n4. RECOMENDAÇÃO (uma só): <oportunidade> no degrau <regra / IA num passo / agente>\n   porque: <valor> e <viabilidade>   custo por tarefa estimado: R$ <...> (preços de <data>)\n5. O QUE NÃO FAZER AGORA: <oportunidade> - <motivo> | <oportunidade> - <motivo>\n6. PLANO DE 90 DIAS:\n   dias 1-30 piloto (critério de parar: <...>) | dia 30 decide | 31-60 estabiliza | 61-90 mede ROI\n7. COMO VAMOS SABER SE DEU CERTO: <resultado>, <operação>, <proteção> contra a linha de base\n8. INVESTIMENTO: diagnóstico R$ <...> (feito) | piloto R$ <...> | acompanhamento R$ <...>/mês\n9. LIMITES: não inclui parecer jurídico nem teste de segurança; riscos de dados vão para <Auditor/advogado>\n10. DECISÃO PEDIDA: aprovar o piloto até <data>"
+          "conteudo": "DIAGNÓSTICO DE IA · Horizonte Distribuidora · <data> · <seu nome>\n\n1. SITUAÇêO (palavras do Carlos, 3-5 frases, com 1 citaçêo literal)\n2. O GARGALO: <etapa> custa <R$/ano ou horas/semana> (linha de base: <valor>, medida em <data>)\n3. O QUE JÁ RODA SEM CONTROLE: <n> ferramentas de IA em uso; <n> com dado de cliente -> açêo: <...>\n4. RECOMENDAÇêO (uma só): <oportunidade> no degrau <regra / IA num passo / agente>\n   porque: <valor> e <viabilidade>   custo por tarefa estimado: R$ <...> (preços de <data>)\n5. O QUE NêO FAZER AGORA: <oportunidade> - <motivo> | <oportunidade> - <motivo>\n6. PLANO DE 90 DIAS:\n   dias 1-30 piloto (critério de parar: <...>) | dia 30 decide | 31-60 estabiliza | 61-90 mede ROI\n7. COMO VAMOS SABER SE DEU CERTO: <resultado>, <operaçêo>, <proteçêo> contra a linha de base\n8. INVESTIMENTO: diagnóstico R$ <...> (feito) | piloto R$ <...> | acompanhamento R$ <...>/mês\n9. LIMITES: nêo inclui parecer jurídico nem teste de segurança; riscos de dados vêo para <Auditor/advogado>\n10. DECISêO PEDIDA: aprovar o piloto até <data>"
         },
         {
           "rot": "Rubrica (100 pontos, aprovado com 70 e nenhum zero)",
           "icone": "check",
-          "conteudo": "| Critério | 0 | 5 | 10 |\n|---|---|---|---|\n| Linha de base do gargalo | ausente | chute do cliente | medida, com data e quem mediu |\n| Inventário de IA em uso (F12) | ausente | lista sem risco | ferramenta + dado + conta + risco + ação |\n| Matriz valor x viabilidade | ausente | sem contas | 6 itens, contas refazíveis, descartes com motivo |\n| Quando NÃO usar IA | nada descartado | descarte sem motivo | >= 1 item resolvido sem IA, com motivo |\n| Custo por tarefa | ausente | só preço de token | 4 faixas + revisão humana + data e link do preço |\n| Risco do fornecedor | ausente | genérico | 5 perguntas respondidas para o vencedor |\n| Plano de piloto | ausente | sem critério de parar | 1 página, parar com nome e prazo, plano de saída |\n| Painel 30/60/90 (corrige F11) | ausente | sem proteção | resultado + operação + proteção, com antes |\n| Proposta | ausente | sem exclusões | exclusões, obrigações, aceite sim/não, preço fixo |\n| Relatório para o dono | ausente | jargão ou 3 recomendações | 1 página, 1 recomendação, sem jargão, limites ditos |"
+          "conteudo": "| Critério | 0 | 5 | 10 |\n|---|---|---|---|\n| Linha de base do gargalo | ausente | chute do cliente | medida, com data e quem mediu |\n| Inventário de IA em uso (F12) | ausente | lista sem risco | ferramenta + dado + conta + risco + açêo |\n| Matriz valor x viabilidade | ausente | sem contas | 6 itens, contas refazíveis, descartes com motivo |\n| Quando NêO usar IA | nada descartado | descarte sem motivo | >= 1 item resolvido sem IA, com motivo |\n| Custo por tarefa | ausente | só preço de token | 4 faixas + revisêo humana + data e link do preço |\n| Risco do fornecedor | ausente | genérico | 5 perguntas respondidas para o vencedor |\n| Plano de piloto | ausente | sem critério de parar | 1 página, parar com nome e prazo, plano de saída |\n| Painel 30/60/90 (corrige F11) | ausente | sem proteçêo | resultado + operaçêo + proteçêo, com antes |\n| Proposta | ausente | sem exclusões | exclusões, obrigações, aceite sim/nêo, preço fixo |\n| Relatório para o dono | ausente | jargêo ou 3 recomendações | 1 página, 1 recomendaçêo, sem jargêo, limites ditos |"
         }
       ]
     },
@@ -120,20 +120,20 @@
           "titulo": "E1 · Os seis anexos",
           "min": "60 min",
           "texto": "Reúna e revise os anexos: descoberta + inventário (F12), matriz, custo por tarefa, plano de piloto, painel 30/60/90 (corrigindo a F11) e proposta.",
-          "pronto": "os 6 anexos existem e cada número tem origem escrita (medido, do laboratório ou simulação)."
+          "pronto": "os 6 anexos existem e cada número tem origem escrita (medido, do laboratório ou simulaçêo)."
         },
         {
           "id": "e2",
           "titulo": "E2 · O relatório de uma página",
           "min": "40 min",
-          "texto": "Escreva o relatório para o Carlos Mendes. Leia em voz alta e corte o que não muda a decisão dele.",
-          "pronto": "o relatório cabe em uma página, tem uma única recomendação, o que não fazer agora e a decisão pedida com data."
+          "texto": "Escreva o relatório para o Carlos Mendes. Leia em voz alta e corte o que nêo muda a decisêo dele.",
+          "pronto": "o relatório cabe em uma página, tem uma única recomendaçêo, o que nêo fazer agora e a decisêo pedida com data."
         },
         {
           "id": "e3",
-          "titulo": "E3 · Autoavaliação pela rubrica",
+          "titulo": "E3 · Autoavaliaçêo pela rubrica",
           "min": "20 min",
-          "texto": "Pontue o seu trabalho com a rubrica. Para cada critério abaixo de 10, corrija ou escreva por que não deu.",
+          "texto": "Pontue o seu trabalho com a rubrica. Para cada critério abaixo de 10, corrija ou escreva por que nêo deu.",
           "pronto": "a soma é 70 ou mais e nenhum critério tem zero. Depois, confira com o gabarito do laboratório."
         }
       ],
@@ -142,18 +142,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste final",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Quantas recomendações o relatório de uma página deve ter?",
           "opcoes": [
             "Todas as que você encontrou.",
             "Três, para o dono escolher.",
-            "Uma, com o que não fazer agora ao lado.",
+            "Uma, com o que nêo fazer agora ao lado.",
             "Nenhuma: só o diagnóstico."
           ],
           "certa": 2,
-          "explica": "Três recomendações concorrentes devolvem a decisão difícil ao dono. Uma recomendação, com o motivo e com o que fica de fora, é o que ele compra.",
+          "explica": "Três recomendações concorrentes devolvem a decisêo difícil ao dono. Uma recomendaçêo, com o motivo e com o que fica de fora, é o que ele compra.",
           "ref": "codigo",
           "cert": true
         },
@@ -161,12 +161,12 @@
           "p": "Como o seu plano corrige a falha F11 (painel sem linha de base)?",
           "opcoes": [
             "Trocando o gráfico.",
-            "Medindo o valor de antes e montando resultado, operação e proteção com a mesma régua.",
+            "Medindo o valor de antes e montando resultado, operaçêo e proteçêo com a mesma régua.",
             "Contando mais mensagens.",
             "Desligando o agente."
           ],
           "certa": 1,
-          "explica": "Sem o número de antes não há comparação. O painel 30/60/90 traz a linha de base e indicadores que mostram resultado, não só movimento.",
+          "explica": "Sem o número de antes nêo há comparaçêo. O painel 30/60/90 traz a linha de base e indicadores que mostram resultado, nêo só movimento.",
           "ref": "diagrama"
         },
         {
@@ -184,7 +184,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "Resumo da formação",
+      "titulo": "Resumo da formaçêo",
       "itens": [
         {
           "t": "Diagnóstico antes do agente",
@@ -192,10 +192,10 @@
         },
         {
           "t": "Conta e risco",
-          "texto": "Custo por tarefa com revisão humana; fornecedor passa pelas perguntas de risco."
+          "texto": "Custo por tarefa com revisêo humana; fornecedor passa pelas perguntas de risco."
         },
         {
-          "t": "Piloto, medição, proposta",
+          "t": "Piloto, mediçêo, proposta",
           "texto": "30 dias com critério de parar, painel 30/60/90 contra a linha de base e proposta de uma página com exclusões."
         }
       ]
@@ -207,7 +207,7 @@
       "itens": [
         {
           "t": "22/09/2026 · Opus 5.5 mais barato",
-          "texto": "A Anthropic lançou o Claude Opus 5.5 a US$ 4/20 por milhão de tokens, cerca de 40% mais barato que o Opus 5 por tarefa típica. Refaça a tabela de custo da aula 4. <a href=\"https://www.anthropic.com/claude-opus-5-5\">anthropic.com</a>"
+          "texto": "A Anthropic lançou o Claude Opus 5.5 a US$ 4/20 por milhêo de tokens, cerca de 40% mais barato que o Opus 5 por tarefa típica. Refaça a tabela de custo da aula 4. <a href=\"https://www.anthropic.com/claude-opus-5-5\">anthropic.com</a>"
         },
         {
           "t": "28/09/2026 · Sonnet 5.5, mesmo preço",
@@ -219,19 +219,19 @@
         },
         {
           "t": "08/2026 · Modelo aberto que roda local",
-          "texto": "O Qwen3.8-27B, da Alibaba, saiu aberto (licença Apache 2.0) e roda em computador potente, com cerca de 17 GB na versão de 4 bits. A faixa \"aberto local\" ficou viável para PME com dado sensível. <a href=\"https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model\">thenextweb.com</a>"
+          "texto": "O Qwen3.8-27B, da Alibaba, saiu aberto (licença Apache 2.0) e roda em computador potente, com cerca de 17 GB na versêo de 4 bits. A faixa \"aberto local\" ficou viável para PME com dado sensível. <a href=\"https://thenextweb.com/news/alibaba-qwen3-8-27b-local-frontier-model\">thenextweb.com</a>"
         },
         {
           "t": "30/11/2026 · Agent Builder sai de linha",
-          "texto": "A OpenAI anunciou em 03/06/2026 o desligamento do Agent Builder em 30/11/2026, com migração para o Agents SDK ou Workspace Agents. É o caso para o plano de saída do piloto. <a href=\"https://platform.openai.com/docs/deprecations\">platform.openai.com</a>"
+          "texto": "A OpenAI anunciou em 03/06/2026 o desligamento do Agent Builder em 30/11/2026, com migraçêo para o Agents SDK ou Workspace Agents. É o caso para o plano de saída do piloto. <a href=\"https://platform.openai.com/docs/deprecations\">platform.openai.com</a>"
         },
         {
           "t": "25/09/2026 · Fornecedor em disputa com governo",
-          "texto": "Um tribunal de apelação nos EUA manteve o rótulo de \"risco de cadeia de suprimentos\" dado pelo Pentágono à Anthropic. Estabilidade do fornecedor entra nas perguntas de risco. <a href=\"https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html\">cnbc.com</a>"
+          "texto": "Um tribunal de apelaçêo nos EUA manteve o rótulo de \"risco de cadeia de suprimentos\" dado pelo Pentágono à Anthropic. Estabilidade do fornecedor entra nas perguntas de risco. <a href=\"https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html\">cnbc.com</a>"
         },
         {
-          "t": "2026 · Agentes ainda são minoria",
-          "texto": "Pesquisa do Gartner: só 17% das organizações têm agentes de IA em uso, e a IA agêntica está no pico do hype. Diagnóstico e medição continuam sendo a diferença. <a href=\"https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai\">gartner.com (Internet Archive)</a>"
+          "t": "2026 · Agentes ainda sêo minoria",
+          "texto": "Pesquisa do Gartner: só 17% das organizações têm agentes de IA em uso, e a IA agêntica está no pico do hype. Diagnóstico e mediçêo continuam sendo a diferença. <a href=\"https://web.archive.org/web/2026/https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai\">gartner.com (Internet Archive)</a>"
         }
       ]
     },
@@ -250,7 +250,7 @@
           "icone": "escudo"
         },
         {
-          "t": "Profissional 2030: certificação INEMA (detalhes em breve)",
+          "t": "Profissional 2030: certificaçêo INEMA (detalhes em breve)",
           "href": "https://inematds.github.io/profissional-2030/",
           "icone": "camadas"
         },
@@ -275,7 +275,7 @@
           "icone": "arquivo"
         },
         {
-          "t": "Fonte: OpenAI, desativação do Agent Builder (30/11/2026)",
+          "t": "Fonte: OpenAI, desativaçêo do Agent Builder (30/11/2026)",
           "href": "https://platform.openai.com/docs/deprecations",
           "icone": "arquivo"
         },

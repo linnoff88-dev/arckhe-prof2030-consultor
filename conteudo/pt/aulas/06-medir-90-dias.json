@@ -5,7 +5,7 @@
   "titulo": "Medir de verdade: 30, 60 e 90 dias",
   "titulo_curto": "Medir 30/60/90",
   "minutos": 18,
-  "lead": "\"O agente respondeu 4 mil mensagens\" não diz se a empresa ganhou alguma coisa. Medir de verdade é comparar com o número de antes, na mesma régua, olhando também o que pode ter piorado. Em 30, 60 e 90 dias a pergunta muda: funciona, ficou estável, valeu o dinheiro?",
+  "lead": "\"O agente respondeu 4 mil mensagens\" nêo diz se a empresa ganhou alguma coisa. Medir de verdade é comparar com o número de antes, na mesma régua, olhando também o que pode ter piorado. Em 30, 60 e 90 dias a pergunta muda: funciona, ficou estável, valeu o dinheiro?",
   "objetivo": "montar um painel de 3 indicadores com valor antes e depois e conduzir as revisões de 30, 60 e 90 dias contra a linha de base.",
   "competencias": [
     "montar-painel-de-indicadores",
@@ -15,7 +15,7 @@
   ],
   "aprende": [
     {
-      "t": "Os três indicadores: resultado, operação e proteção"
+      "t": "Os três indicadores: resultado, operaçêo e proteçêo"
     },
     {
       "t": "Métrica de vaidade e a meta que ensina a trapacear"
@@ -43,15 +43,15 @@
         },
         {
           "icone": "relogio",
-          "titulo": "Operação",
+          "titulo": "Operaçêo",
           "sub": "o que muda primeiro",
           "detalhe": "Tempo de resposta, tempo por tarefa, fila do dia. Mexe em dias e mostra se o agente está sendo usado. Sozinho, engana."
         },
         {
           "icone": "escudo",
-          "titulo": "Proteção",
-          "sub": "o que não pode piorar",
-          "detalhe": "Erro de preço, reclamação, desconto médio, retrabalho, incidente com dado. Se a operação melhora e a proteção piora, o ganho é falso."
+          "titulo": "Proteçêo",
+          "sub": "o que nêo pode piorar",
+          "detalhe": "Erro de preço, reclamaçêo, desconto médio, retrabalho, incidente com dado. Se a operaçêo melhora e a proteçêo piora, o ganho é falso."
         },
         {
           "icone": "arquivo",
@@ -75,23 +75,23 @@
         }
       ],
       "legenda": "Frequência semanal ou mensal, nunca diária: segunda tem acúmulo e sexta tem saída cedo.",
-      "dica": "Contraexemplo do laboratório (F11): o painel da Horizonte mostra mensagens respondidas e conversas iniciadas, sem coluna de antes e sem venda nem reclamação."
+      "dica": "Contraexemplo do laboratório (F11): o painel da Horizonte mostra mensagens respondidas e conversas iniciadas, sem coluna de antes e sem venda nem reclamaçêo."
     },
     {
       "tipo": "passos",
       "titulo": "As três revisões",
-      "sub": "Cada revisão responde uma pergunta diferente.",
+      "sub": "Cada revisêo responde uma pergunta diferente.",
       "passos": [
         {
           "titulo": "30 dias",
           "sub": "está funcionando?",
           "texto": [
-            "Fim do piloto. O agente está sendo usado? A operação melhorou contra a linha de base? Alguma proteção piorou?",
-            "Corrija os atritos de uso: onde a equipe desiste, onde volta ao jeito antigo. Decisão: seguir, ajustar ou parar."
+            "Fim do piloto. O agente está sendo usado? A operaçêo melhorou contra a linha de base? Alguma proteçêo piorou?",
+            "Corrija os atritos de uso: onde a equipe desiste, onde volta ao jeito antigo. Decisêo: seguir, ajustar ou parar."
           ],
           "exemplo": {
             "rot": "Sinal de alerta",
-            "texto": "Uso caindo na terceira semana: o processo não encaixou na rotina. Volte ao diagnóstico."
+            "texto": "Uso caindo na terceira semana: o processo nêo encaixou na rotina. Volte ao diagnóstico."
           }
         },
         {
@@ -123,11 +123,11 @@
           "sub": "ela ensina a trapacear",
           "texto": [
             "Indicador sozinho vira alvo: tempo de resposta cai porque se responde qualquer coisa; atendimento fecha sem resolver; desconto sobe para fechar venda.",
-            "Por isso cada indicador de operação anda junto com um de proteção. E o painel mostra adoção: quantas pessoas usam por semana."
+            "Por isso cada indicador de operaçêo anda junto com um de proteçêo. E o painel mostra adoçêo: quantas pessoas usam por semana."
           ],
           "exemplo": {
             "rot": "Par certo",
-            "texto": "Tempo de resposta (operação) + orçamentos com preço errado (proteção)."
+            "texto": "Tempo de resposta (operaçêo) + orçamentos com preço errado (proteçêo)."
           }
         }
       ]
@@ -140,12 +140,12 @@
         {
           "rot": "Painel 30/60/90",
           "icone": "grafico",
-          "conteudo": "PAINEL · <empresa> · <processo> · linha de base medida em <data> por <quem>\n\n| Tipo | Indicador | Como se mede (fonte, quem conta) | Antes | 30 dias | 60 dias | 90 dias | Meta |\n|---|---|---|---|---|---|---|---|\n| Resultado | <pedidos fechados / orçamentos> | <planilha de vendas, Patrícia> | <...> | | | | <...> |\n| Operação | <mediana do tempo até o orçamento> | <50 pedidos, hora entrada x envio> | <...> | | | | <...> |\n| Proteção | <orçamentos com preço errado> | <conferência semanal> | <...> | | | | <não piorar> |\n| Adoção | <pessoas que usaram na semana> | <registro do agente> | 0 | | | | <...> |\n| Custo | <custo por tarefa real (R$)> | <fatura + minutos de revisão> | — | | | | <<= calculado> |\n\nREVISÃO 30: funciona? | REVISÃO 60: estável? | REVISÃO 90: valeu? -> [expandir] [manter] [desligar]"
+          "conteudo": "PAINEL · <empresa> · <processo> · linha de base medida em <data> por <quem>\n\n| Tipo | Indicador | Como se mede (fonte, quem conta) | Antes | 30 dias | 60 dias | 90 dias | Meta |\n|---|---|---|---|---|---|---|---|\n| Resultado | <pedidos fechados / orçamentos> | <planilha de vendas, Patrícia> | <...> | | | | <...> |\n| Operaçêo | <mediana do tempo até o orçamento> | <50 pedidos, hora entrada x envio> | <...> | | | | <...> |\n| Proteçêo | <orçamentos com preço errado> | <conferência semanal> | <...> | | | | <nêo piorar> |\n| Adoçêo | <pessoas que usaram na semana> | <registro do agente> | 0 | | | | <...> |\n| Custo | <custo por tarefa real (R$)> | <fatura + minutos de revisêo> | — | | | | <<= calculado> |\n\nREVISêO 30: funciona? | REVISêO 60: estável? | REVISêO 90: valeu? -> [expandir] [manter] [desligar]"
         },
         {
           "rot": "ROI e payback",
           "icone": "caneta",
-          "conteudo": "Ganho mensal (R$)  = (valor antes - valor depois) x volume x custo unitário\n                     (ex.: minutos economizados x pedidos x custo do minuto)\nCusto mensal (R$)  = ferramenta + tokens + revisão humana + manutenção\nInvestimento (R$)  = diagnóstico + piloto + implantação (uma vez)\n\nROI no ano (%)     = (ganho mensal x 12 - custo mensal x 12 - investimento)\n                     / (custo mensal x 12 + investimento) x 100\nPayback (meses)    = investimento / (ganho mensal - custo mensal)\n\nUse o ganho MEDIDO (painel), não o estimado. Se ganho mensal <= custo mensal, não há payback: o projeto não se paga."
+          "conteudo": "Ganho mensal (R$)  = (valor antes - valor depois) x volume x custo unitário\n                     (ex.: minutos economizados x pedidos x custo do minuto)\nCusto mensal (R$)  = ferramenta + tokens + revisêo humana + manutençêo\nInvestimento (R$)  = diagnóstico + piloto + implantaçêo (uma vez)\n\nROI no ano (%)     = (ganho mensal x 12 - custo mensal x 12 - investimento)\n                     / (custo mensal x 12 + investimento) x 100\nPayback (meses)    = investimento / (ganho mensal - custo mensal)\n\nUse o ganho MEDIDO (painel), nêo o estimado. Se ganho mensal <= custo mensal, nêo há payback: o projeto nêo se paga."
         }
       ],
       "saida": {
@@ -153,11 +153,11 @@
         "abas": [
           {
             "rot": "Horizonte no dia 90",
-            "html": "<ul><li><b>Operação:</b> mediana até o orçamento de 3 h 40 min → 50 min.</li><li><b>Proteção:</b> orçamentos com preço errado de 8% → 6%.</li><li><b>Resultado:</b> pedidos fechados sobre orçamentos de 31% → 35%.</li><li><b>Adoção:</b> 5 de 6 vendedores usando toda semana.</li></ul><p>Investimento R$ 18 mil; ganho medido R$ 9 mil/mês; custo R$ 2 mil/mês. Payback = 18 ÷ (9 − 2) ≈ <b>2,6 meses</b>. ROI no ano = (108 − 24 − 18) ÷ (24 + 18) ≈ <b>157%</b>.</p><p>Números ilustrativos, para treinar a conta.</p>"
+            "html": "<ul><li><b>Operaçêo:</b> mediana até o orçamento de 3 h 40 min → 50 min.</li><li><b>Proteçêo:</b> orçamentos com preço errado de 8% → 6%.</li><li><b>Resultado:</b> pedidos fechados sobre orçamentos de 31% → 35%.</li><li><b>Adoçêo:</b> 5 de 6 vendedores usando toda semana.</li></ul><p>Investimento R$ 18 mil; ganho medido R$ 9 mil/mês; custo R$ 2 mil/mês. Payback = 18 ÷ (9 − 2) ≈ <b>2,6 meses</b>. ROI no ano = (108 − 24 − 18) ÷ (24 + 18) ≈ <b>157%</b>.</p><p>Números ilustrativos, para treinar a conta.</p>"
           },
           {
             "rot": "Erros comuns",
-            "html": "<ul><li><b>Métrica de vaidade</b>: mensagens respondidas e conversas iniciadas medem movimento, não resultado.</li><li><b>Sem coluna \"antes\"</b>: o período começa no dia em que o agente foi ligado (é a falha F11 do laboratório).</li><li><b>Mudar a régua</b>: medir antes por amostra e depois pelo sistema dá números que não se comparam.</li><li><b>ROI com o ganho estimado</b>: no dia 90 use o medido.</li></ul>"
+            "html": "<ul><li><b>Métrica de vaidade</b>: mensagens respondidas e conversas iniciadas medem movimento, nêo resultado.</li><li><b>Sem coluna \"antes\"</b>: o período começa no dia em que o agente foi ligado (é a falha F11 do laboratório).</li><li><b>Mudar a régua</b>: medir antes por amostra e depois pelo sistema dá números que nêo se comparam.</li><li><b>ROI com o ganho estimado</b>: no dia 90 use o medido.</li></ul>"
           }
         ]
       }
@@ -171,14 +171,14 @@
           "id": "e1",
           "titulo": "E1 · Diagnosticar o painel atual",
           "min": "15 min",
-          "texto": "No laboratório, abra o painel de indicadores da Horizonte. Liste o que ele mede, o que falta (linha de base, resultado, proteção) e por que ninguém sabe se o agente ajudou.",
-          "pronto": "você escreveu, em até 5 linhas, por que o painel atual não prova nada."
+          "texto": "No laboratório, abra o painel de indicadores da Horizonte. Liste o que ele mede, o que falta (linha de base, resultado, proteçêo) e por que ninguém sabe se o agente ajudou.",
+          "pronto": "você escreveu, em até 5 linhas, por que o painel atual nêo prova nada."
         },
         {
           "id": "e2",
           "titulo": "E2 · Painel de 3 indicadores",
           "min": "30 min",
-          "texto": "Monte o painel 30/60/90 para o piloto da aula 5: um indicador de resultado, um de operação e um de proteção, com a forma de medir e o valor de antes (real do laboratório ou simulado, marcado como simulação).",
+          "texto": "Monte o painel 30/60/90 para o piloto da aula 5: um indicador de resultado, um de operaçêo e um de proteçêo, com a forma de medir e o valor de antes (real do laboratório ou simulado, marcado como simulaçêo).",
           "pronto": "o painel tem 3 indicadores com valor antes e depois preenchidos e uma linha dizendo quem mede e de onde vem o número."
         },
         {
@@ -193,31 +193,31 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "O painel mostra \"4.000 mensagens respondidas no mês\". O que falta?",
           "opcoes": [
             "Nada, é um ótimo número.",
-            "O valor de antes e um indicador de resultado e de proteção.",
+            "O valor de antes e um indicador de resultado e de proteçêo.",
             "Um gráfico mais bonito.",
             "O nome do modelo usado."
           ],
           "certa": 1,
-          "explica": "É métrica de vaidade: mede movimento. Sem linha de base e sem resultado (venda, margem) ou proteção (reclamação), não prova ganho.",
+          "explica": "É métrica de vaidade: mede movimento. Sem linha de base e sem resultado (venda, margem) ou proteçêo (reclamaçêo), nêo prova ganho.",
           "ref": "diagrama",
           "cert": true
         },
         {
-          "p": "O tempo de resposta caiu pela metade, mas as reclamações de preço dobraram. Conclusão?",
+          "p": "O tempo de resposta caiu pela metade, mas as reclamações de preço dobraram. Conclusêo?",
           "opcoes": [
-            "Sucesso: a operação melhorou.",
-            "O ganho é falso: uma proteção piorou; ajustar ou parar.",
-            "Trocar o indicador de proteção.",
+            "Sucesso: a operaçêo melhorou.",
+            "O ganho é falso: uma proteçêo piorou; ajustar ou parar.",
+            "Trocar o indicador de proteçêo.",
             "Ignorar as reclamações."
           ],
           "certa": 1,
-          "explica": "Indicador de operação sozinho ensina a trapacear. Se a proteção piora, o resultado não se sustenta.",
+          "explica": "Indicador de operaçêo sozinho ensina a trapacear. Se a proteçêo piora, o resultado nêo se sustenta.",
           "ref": "passos"
         },
         {
@@ -226,22 +226,22 @@
             "2,4 meses.",
             "3 meses.",
             "12 meses.",
-            "Não há payback."
+            "Nêo há payback."
           ],
           "certa": 1,
           "explica": "Payback = investimento ÷ (ganho − custo) = 12 ÷ (5 − 1) = 3 meses. O erro comum é esquecer de tirar o custo mensal.",
           "ref": "codigo"
         },
         {
-          "p": "Por que medir semanal ou mensal, e não diário?",
+          "p": "Por que medir semanal ou mensal, e nêo diário?",
           "opcoes": [
             "Para dar menos trabalho.",
-            "Porque o dia tem variação própria (acúmulo na segunda, sexta mais curta) que confunde a comparação.",
-            "Porque o sistema não deixa.",
+            "Porque o dia tem variaçêo própria (acúmulo na segunda, sexta mais curta) que confunde a comparaçêo.",
+            "Porque o sistema nêo deixa.",
             "Tanto faz."
           ],
           "certa": 1,
-          "explica": "Períodos curtos misturam o efeito do agente com a variação normal da semana.",
+          "explica": "Períodos curtos misturam o efeito do agente com a variaçêo normal da semana.",
           "ref": "diagrama"
         }
       ]
@@ -252,7 +252,7 @@
       "itens": [
         {
           "t": "Três indicadores + linha de base",
-          "texto": "Resultado, operação e proteção, sempre com o valor de antes e a mesma régua."
+          "texto": "Resultado, operaçêo e proteçêo, sempre com o valor de antes e a mesma régua."
         },
         {
           "t": "30, 60, 90",
@@ -260,7 +260,7 @@
         },
         {
           "t": "Sem vaidade",
-          "texto": "Movimento não é resultado. Operação anda junto com proteção."
+          "texto": "Movimento nêo é resultado. Operaçêo anda junto com proteçêo."
         }
       ]
     },
@@ -274,7 +274,7 @@
           "icone": "grafico"
         },
         {
-          "t": "LOOP-R: melhorar um processo com evidência e botão de voltar",
+          "t": "LOOP-R: melhorar um processo com evidência e botêo de voltar",
           "href": "https://inematds.github.io/loop-r/guia/",
           "icone": "fila"
         },

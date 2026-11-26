@@ -27,7 +27,7 @@
       "t": "Pedir dados sem criar um problema de LGPD"
     }
   ],
-  "hero_alt": "Consultora anotando à mão enquanto o dono de uma distribuidora explica o trabalho, com prateleiras de caixas ao fundo.",
+  "hero_alt": "Consultora anotando à mêo enquanto o dono de uma distribuidora explica o trabalho, com prateleiras de caixas ao fundo.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -44,14 +44,14 @@
           "icone": "fila",
           "titulo": "O caminho do pedido",
           "sub": "10 min",
-          "detalhe": "\"Me conta, passo a passo, o que acontece desde que o cliente pede até o dinheiro entrar.\" Anote cada etapa, quem faz e onde fica parado. Peça um caso real da semana passada, não a regra."
+          "detalhe": "\"Me conta, passo a passo, o que acontece desde que o cliente pede até o dinheiro entrar.\" Anote cada etapa, quem faz e onde fica parado. Peça um caso real da semana passada, nêo a regra."
         },
         {
           "icone": "alvo",
           "titulo": "O gargalo",
           "sub": "10 min",
           "forte": true,
-          "detalhe": "Onde forma fila, onde se refaz trabalho, onde se perde cliente. Para cada dor, peça o número: quantos por semana, quanto tempo, quanto custa. Dor sem número ainda é opinião.",
+          "detalhe": "Onde forma fila, onde se refaz trabalho, onde se perde cliente. Para cada dor, peça o número: quantos por semana, quanto tempo, quanto custa. Dor sem número ainda é opiniêo.",
           "itens": [
             {
               "t": "quantos por semana?",
@@ -71,13 +71,13 @@
           "icone": "lupa",
           "titulo": "IA que já roda",
           "sub": "7 min",
-          "detalhe": "\"Quem aqui já usa ChatGPT, Gemini, resumidor, extensão de navegador? Com que dado?\" É a IA na sombra: ferramentas que a TI não conhece, muitas vezes com dado de cliente. Entra no inventário."
+          "detalhe": "\"Quem aqui já usa ChatGPT, Gemini, resumidor, extensêo de navegador? Com que dado?\" É a IA na sombra: ferramentas que a TI nêo conhece, muitas vezes com dado de cliente. Entra no inventário."
         },
         {
           "icone": "cadeado",
           "titulo": "Dados e acesso",
           "sub": "8 min",
-          "detalhe": "Onde moram os dados, quem tem a senha, o que pode sair da empresa. Peça para ver a tela, não para receber a base. Amostra só sem CPF e sem telefone."
+          "detalhe": "Onde moram os dados, quem tem a senha, o que pode sair da empresa. Peça para ver a tela, nêo para receber a base. Amostra só sem CPF e sem telefone."
         },
         {
           "icone": "calendario",
@@ -86,11 +86,11 @@
           "detalhe": "Resuma em três frases e pergunte \"é isso mesmo?\". Combine uma tarefa do cliente (ex.: contar os pedidos da semana) e a data da devolutiva. Nada de \"depois te mando uma proposta\"."
         }
       ],
-      "legenda": "Fale 20% do tempo. Os 80% restantes são do dono e da equipe.",
+      "legenda": "Fale 20% do tempo. Os 80% restantes sêo do dono e da equipe.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Saída da conversa",
-        "texto": "O gargalo com um número de hoje, a lista de IA que já roda e o que pode ou não sair da empresa. Com isso a aula 3 consegue priorizar."
+        "texto": "O gargalo com um número de hoje, a lista de IA que já roda e o que pode ou nêo sair da empresa. Com isso a aula 3 consegue priorizar."
       }
     },
     {
@@ -99,11 +99,11 @@
       "sub": "Clique em cada um.",
       "passos": [
         {
-          "titulo": "Caso, não regra",
+          "titulo": "Caso, nêo regra",
           "sub": "a semana passada",
           "texto": [
             "\"Como vocês atendem?\" gera resposta de manual. \"Me conta o último pedido que deu problema\" gera o processo real, com as gambiarras.",
-            "Junte três casos do mesmo tipo: um caso é anedota, três já mostram padrão."
+            "Junte três casos do mesmo tipo: um caso é anedota, três já mostram padrêo."
           ],
           "exemplo": {
             "rot": "Pergunta boa",
@@ -115,7 +115,7 @@
           "sub": "a linha de base nasce aqui",
           "texto": [
             "Linha de base é o número de hoje, antes de qualquer mudança. Sem ela, daqui a 90 dias ninguém consegue dizer se a IA ajudou.",
-            "Se ninguém sabe o número, a primeira tarefa do cliente é contar durante uma semana. \"Não sei, vamos contar\" é uma resposta válida."
+            "Se ninguém sabe o número, a primeira tarefa do cliente é contar durante uma semana. \"Nêo sei, vamos contar\" é uma resposta válida."
           ],
           "exemplo": {
             "rot": "Na Horizonte",
@@ -126,7 +126,7 @@
           "titulo": "IA na sombra",
           "sub": "o inventário",
           "texto": [
-            "Funcionários usam ferramentas de IA por conta própria, às vezes com a conta pessoal e com dado de cliente. Não é para punir ninguém: é para saber o que existe.",
+            "Funcionários usam ferramentas de IA por conta própria, às vezes com a conta pessoal e com dado de cliente. Nêo é para punir ninguém: é para saber o que existe.",
             "Para cada ferramenta: quem usa, para quê, que dado entra, conta pessoal ou da empresa, quem paga."
           ],
           "exemplo": {
@@ -135,15 +135,15 @@
           }
         },
         {
-          "titulo": "Dados com minimização",
+          "titulo": "Dados com minimizaçêo",
           "sub": "LGPD no diagnóstico",
           "texto": [
-            "O consultor não precisa da base de clientes para diagnosticar. Peça para ver a tela, peça contagens e amostras sem CPF, telefone e endereço.",
+            "O consultor nêo precisa da base de clientes para diagnosticar. Peça para ver a tela, peça contagens e amostras sem CPF, telefone e endereço.",
             "Se precisar de dado pessoal, combine por escrito a finalidade e o prazo de descarte. Parecer jurídico é com advogado."
           ],
           "exemplo": {
             "rot": "Frase pronta",
-            "texto": "\"Não me mande a planilha. Me mostra a tela e me diz quantas linhas tem por mês.\""
+            "texto": "\"Nêo me mande a planilha. Me mostra a tela e me diz quantas linhas tem por mês.\""
           }
         }
       ]
@@ -156,7 +156,7 @@
         {
           "rot": "Roteiro de descoberta",
           "icone": "lista",
-          "conteudo": "DESCOBERTA · <empresa> · <data> · com <nome e cargo>\n\n[0-3] ABERTURA\n- \"Meu objetivo hoje é entender onde o trabalho trava. O que eu sugerir depois sai daqui.\"\n- \"Olhei <site / avaliações / redes>.\"  - \"Posso anotar?\"\n\n[3-13] O CAMINHO DO PEDIDO\n1. Do pedido até o dinheiro entrar: quais etapas, quem faz cada uma?\n2. Me conta o último caso que deu problema, passo a passo.\n3. Quando você (dono) não está, o que para?\n\n[13-23] O GARGALO (sempre pedir o número)\n4. Onde forma fila? Quantos por semana?\n5. Que trabalho é refeito toda semana? Quanto tempo leva?\n6. Onde vocês perdem cliente: antes, durante ou depois da venda?\n7. Esse número está anotado em algum lugar? Se não: quem pode contar por 1 semana?\n\n[23-30] IA QUE JÁ RODA (sem julgamento)\n8. Quem usa ChatGPT, Gemini, Copilot, resumidor, extensão? Para quê?\n9. Com que dado? Conta pessoal ou da empresa? Quem paga?\n\n[30-38] DADOS E ACESSO\n10. Onde ficam pedidos, clientes, preços? Quem tem a senha de admin?\n11. Pode me mostrar a tela do sistema principal por 2 minutos?\n12. Que dado NÃO pode sair da empresa?\n\n[38-45] FECHAMENTO\n- Resumo em 3 frases + \"é isso mesmo?\"\n- Tarefa do cliente: <contar X por 1 semana> até <data>\n- Devolutiva marcada: <data>\n\nNOTAS: coluna \"me surpreendeu\" | frases do dono, palavra por palavra"
+          "conteudo": "DESCOBERTA · <empresa> · <data> · com <nome e cargo>\n\n[0-3] ABERTURA\n- \"Meu objetivo hoje é entender onde o trabalho trava. O que eu sugerir depois sai daqui.\"\n- \"Olhei <site / avaliações / redes>.\"  - \"Posso anotar?\"\n\n[3-13] O CAMINHO DO PEDIDO\n1. Do pedido até o dinheiro entrar: quais etapas, quem faz cada uma?\n2. Me conta o último caso que deu problema, passo a passo.\n3. Quando você (dono) nêo está, o que para?\n\n[13-23] O GARGALO (sempre pedir o número)\n4. Onde forma fila? Quantos por semana?\n5. Que trabalho é refeito toda semana? Quanto tempo leva?\n6. Onde vocês perdem cliente: antes, durante ou depois da venda?\n7. Esse número está anotado em algum lugar? Se nêo: quem pode contar por 1 semana?\n\n[23-30] IA QUE JÁ RODA (sem julgamento)\n8. Quem usa ChatGPT, Gemini, Copilot, resumidor, extensêo? Para quê?\n9. Com que dado? Conta pessoal ou da empresa? Quem paga?\n\n[30-38] DADOS E ACESSO\n10. Onde ficam pedidos, clientes, preços? Quem tem a senha de admin?\n11. Pode me mostrar a tela do sistema principal por 2 minutos?\n12. Que dado NêO pode sair da empresa?\n\n[38-45] FECHAMENTO\n- Resumo em 3 frases + \"é isso mesmo?\"\n- Tarefa do cliente: <contar X por 1 semana> até <data>\n- Devolutiva marcada: <data>\n\nNOTAS: coluna \"me surpreendeu\" | frases do dono, palavra por palavra"
         },
         {
           "rot": "Inventário de IA em uso (IA na sombra)",
@@ -166,14 +166,14 @@
         {
           "rot": "Pedido de dados (mínimo necessário)",
           "icone": "cadeado",
-          "conteudo": "Para o diagnóstico eu preciso SÓ de:\n- contagens: pedidos por semana, mensagens por dia, orçamentos enviados\n- tempos: 50 pedidos com hora de entrada e hora de resposta (sem nome do cliente)\n- telas: ver o sistema em reunião, sem copiar a base\nNÃO preciso de: CPF, telefone, endereço, base de clientes completa.\nSe surgir necessidade de dado pessoal: finalidade e descarte por escrito."
+          "conteudo": "Para o diagnóstico eu preciso SÓ de:\n- contagens: pedidos por semana, mensagens por dia, orçamentos enviados\n- tempos: 50 pedidos com hora de entrada e hora de resposta (sem nome do cliente)\n- telas: ver o sistema em reuniêo, sem copiar a base\nNêO preciso de: CPF, telefone, endereço, base de clientes completa.\nSe surgir necessidade de dado pessoal: finalidade e descarte por escrito."
         }
       ]
     },
     {
       "tipo": "simconversa",
       "titulo": "Conversa simulada: Carlos Mendes, dono da Horizonte",
-      "sub": "Simulação para treinar. Escolha a resposta que você daria; o comentário aparece logo depois.",
+      "sub": "Simulaçêo para treinar. Escolha a resposta que você daria; o comentário aparece logo depois.",
       "personagem": {
         "nome": "Carlos Mendes",
         "papel": "dono da Horizonte Distribuidora · 40 pessoas"
@@ -187,19 +187,19 @@
               "t": "Faço sim. Em duas semanas está no ar, por um valor fechado.",
               "vai": "fim-pressa",
               "nota": 0,
-              "comenta": "Você deu a receita antes do exame. Sem saber o volume, o processo e onde estão os dados, preço e prazo são chute."
+              "comenta": "Você deu a receita antes do exame. Sem saber o volume, o processo e onde estêo os dados, preço e prazo sêo chute."
             },
             {
               "t": "Antes do preço: me conta o caminho de um pedido, do WhatsApp até o dinheiro entrar?",
               "vai": "caminho",
               "nota": 2,
-              "comenta": "Boa. Você mostrou que o preço sai do diagnóstico e começou pelo processo, não pela ferramenta."
+              "comenta": "Boa. Você mostrou que o preço sai do diagnóstico e começou pelo processo, nêo pela ferramenta."
             },
             {
               "t": "O do seu concorrente funciona bem?",
               "vai": "caminho",
               "nota": 1,
-              "comenta": "Pergunta útil para entender a pressão, mas o número do concorrente não serve para a Horizonte. Melhor ir ao processo de vocês."
+              "comenta": "Pergunta útil para entender a pressêo, mas o número do concorrente nêo serve para a Horizonte. Melhor ir ao processo de vocês."
             }
           ]
         },
@@ -213,16 +213,16 @@
               "comenta": "Você transformou a dor em número. Esse é o começo da linha de base."
             },
             {
-              "t": "Então o agente resolve: ele monta o orçamento na hora.",
+              "t": "Entêo o agente resolve: ele monta o orçamento na hora.",
               "vai": "fim-pressa",
               "nota": 0,
-              "comenta": "Voltou a prescrever. Ainda não sabe de onde sairiam preço, estoque e desconto."
+              "comenta": "Voltou a prescrever. Ainda nêo sabe de onde sairiam preço, estoque e desconto."
             },
             {
               "t": "Quem mais participa desse processo?",
               "vai": "numero",
               "nota": 1,
-              "comenta": "Bom saber quem participa, mas você pulou o número. Sem ele não existe antes e depois."
+              "comenta": "Bom saber quem participa, mas você pulou o número. Sem ele nêo existe antes e depois."
             }
           ]
         },
@@ -239,7 +239,7 @@
               "t": "Quatro horas é muito. Com IA cai para cinco minutos.",
               "vai": "fim-pressa",
               "nota": 0,
-              "comenta": "Promessa sem medida. Se não cair, você perdeu a credibilidade no primeiro mês."
+              "comenta": "Promessa sem medida. Se nêo cair, você perdeu a credibilidade no primeiro mês."
             },
             {
               "t": "Tudo bem, a gente usa as quatro horas como base.",
@@ -253,7 +253,7 @@
           "cliente": "Combinado. Ah, e a Juliana do atendimento já usa um site que resume as conversas. Ajuda bastante.",
           "opcoes": [
             {
-              "t": "Ótimo, então já estão adiantados com IA.",
+              "t": "Ótimo, entêo já estêo adiantados com IA.",
               "vai": "fim-meio",
               "nota": 0,
               "comenta": "Você deixou passar a IA na sombra: conversa de cliente indo para um site sem contrato. É risco de LGPD."
@@ -279,25 +279,25 @@
               "t": "Pode mandar, quanto mais dado melhor.",
               "vai": "fim-meio",
               "nota": 0,
-              "comenta": "Você acabou de receber CPF e telefone sem precisar. Minimização: peça só o necessário."
+              "comenta": "Você acabou de receber CPF e telefone sem precisar. Minimizaçêo: peça só o necessário."
             },
             {
-              "t": "Não precisa. Me mostra a tela em reunião e me diz quantos clientes ativos tem.",
+              "t": "Nêo precisa. Me mostra a tela em reuniêo e me diz quantos clientes ativos tem.",
               "vai": "fim-bom",
               "nota": 2,
-              "comenta": "Minimização na prática. O diagnóstico não precisa da base, e você protege o cliente e a si mesmo."
+              "comenta": "Minimizaçêo na prática. O diagnóstico nêo precisa da base, e você protege o cliente e a si mesmo."
             }
           ]
         },
         "fim-pressa": {
           "fim": true,
           "titulo": "Você prescreveu antes do exame",
-          "texto": "O agente pode até sair, mas sobre um processo que você não conhece e sem número para comparar. Volte e faça as perguntas de processo e de número antes da solução."
+          "texto": "O agente pode até sair, mas sobre um processo que você nêo conhece e sem número para comparar. Volte e faça as perguntas de processo e de número antes da soluçêo."
         },
         "fim-meio": {
           "fim": true,
           "titulo": "Conversa boa, com um risco que passou",
-          "texto": "Você chegou ao gargalo e ao número, mas deixou passar um risco de dado. Na descoberta, IA na sombra e minimização valem tanto quanto o gargalo."
+          "texto": "Você chegou ao gargalo e ao número, mas deixou passar um risco de dado. Na descoberta, IA na sombra e minimizaçêo valem tanto quanto o gargalo."
         },
         "fim-bom": {
           "fim": true,
@@ -316,14 +316,14 @@
           "id": "e1",
           "titulo": "E1 · Preparar a conversa",
           "min": "20 min",
-          "texto": "Abra o laboratório da Horizonte Distribuidora e leia a apresentação da empresa e das pessoas. Escreva 3 hipóteses de gargalo e 2 perguntas para cada uma, sem sugerir solução dentro da pergunta.",
+          "texto": "Abra o laboratório da Horizonte Distribuidora e leia a apresentaçêo da empresa e das pessoas. Escreva 3 hipóteses de gargalo e 2 perguntas para cada uma, sem sugerir soluçêo dentro da pergunta.",
           "pronto": "você tem 3 hipóteses e 6 perguntas, e nenhuma pergunta cita ferramenta."
         },
         {
           "id": "e2",
           "titulo": "E2 · Roteiro aplicado",
           "min": "30 min",
-          "texto": "Preencha o roteiro de 45 minutos com o que o laboratório mostra e com a conversa simulada acima. Onde não houver resposta, escreva a tarefa que o cliente teria de fazer.",
+          "texto": "Preencha o roteiro de 45 minutos com o que o laboratório mostra e com a conversa simulada acima. Onde nêo houver resposta, escreva a tarefa que o cliente teria de fazer.",
           "pronto": "o roteiro tem um gargalo com número (ou a tarefa de contar) e uma data de devolutiva."
         },
         {
@@ -339,18 +339,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Patrícia diz que o orçamento demora \"umas quatro horas\". O que fazer com esse número?",
           "opcoes": [
             "Usar como linha de base.",
-            "Ignorar, porque é opinião.",
+            "Ignorar, porque é opiniêo.",
             "Combinar que ela anote entrada e resposta de 50 pedidos para medir de verdade.",
             "Pedir ao dono um número melhor."
           ],
           "certa": 2,
-          "explica": "Chute vira discussão na hora de medir o resultado. Contar uma amostra transforma a opinião em linha de base, e o número fica do cliente.",
+          "explica": "Chute vira discussêo na hora de medir o resultado. Contar uma amostra transforma a opiniêo em linha de base, e o número fica do cliente.",
           "ref": "passos",
           "cert": true
         },
@@ -360,10 +360,10 @@
             "Elogia, porque a empresa já usa IA.",
             "Registra no inventário: ferramenta, dado que entra, tipo de conta e risco.",
             "Manda bloquear o site na hora.",
-            "Ignora, porque não é o foco."
+            "Ignora, porque nêo é o foco."
           ],
           "certa": 1,
-          "explica": "É IA na sombra com dado de cliente. Primeiro inventariar, sem julgamento; a recomendação vem no diagnóstico. Proibir de cara fecha a porta.",
+          "explica": "É IA na sombra com dado de cliente. Primeiro inventariar, sem julgamento; a recomendaçêo vem no diagnóstico. Proibir de cara fecha a porta.",
           "ref": "codigo"
         },
         {
@@ -375,7 +375,7 @@
             "Pedir ao Rafael da TI para mandar."
           ],
           "certa": 1,
-          "explica": "Minimização: o diagnóstico não precisa de CPF nem de telefone. Receber dado sem necessidade cria responsabilidade para você e para a empresa.",
+          "explica": "Minimizaçêo: o diagnóstico nêo precisa de CPF nem de telefone. Receber dado sem necessidade cria responsabilidade para você e para a empresa.",
           "ref": "simconversa"
         },
         {

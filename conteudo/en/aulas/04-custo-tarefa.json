@@ -147,7 +147,7 @@
         {
           "rot": "Formula (spreadsheet)",
           "icone": "grafico",
-          "conteudo": "INPUTS (one row per model tier)\nA  input tokens per task\nB  output tokens per task\nC  input price (US$ per million)   <- check on the website, with date\nD  output price  (US$ per million)\nE  average repetitions per task (1 = right on the first try)\nF  exchange rate (R$ per US$)                 <- today's\nG  minutes of human review per task <- measured on 20 tasks\nH  hourly cost of whoever reviews (R$)\nI  volume per month\nJ  fixed cost per month (R$)             <- local: machine/36 + power + maintenance\n\nCALCULATION\nTokens (R$)      = (A*C + B*D) / 1000000 * E * F\nRevisão (R$)     = G / 60 * H\nFixo por tarefa  = J / I\nCUSTO POR TAREFA = Tokens + Revisão + Fixo por tarefa\nCUSTO NO MÊS     = CUSTO POR TAREFA * I"
+          "conteudo": "INPUTS (one row per model tier)\nA  input tokens per task\nB  output tokens per task\nC  input price (US$ per million)   <- check on the website, with date\nD  output price  (US$ per million)\nE  average repetitions per task (1 = right on the first try)\nF  exchange rate (R$ per US$)                 <- today's\nG  minutes of human review per task <- measured on 20 tasks\nH  hourly cost of whoever reviews (R$)\nI  volume per month\nJ  fixed cost per month (R$)             <- local: machine/36 + power + maintenance\n\nCALCULATION\nTokens (R$)      = (A*C + B*D) / 1000000 * E * F\nRevisêo (R$)     = G / 60 * H\nFixo por tarefa  = J / I\nCUSTO POR TAREFA = Tokens + Revisêo + Fixo por tarefa\nCUSTO NO MÊS     = CUSTO POR TAREFA * I"
         },
         {
           "rot": "Vendor risk questions",
